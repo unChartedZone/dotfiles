@@ -53,15 +53,15 @@ git_arrows() {
 
 # indicate a job (for example, vim) has been backgrounded
 # If there is a job in the background, display a ✱
-suspended_jobs() {
-    local sj
-    sj=$(jobs 2>/dev/null | tail -n 1)
-    if [[ $sj == "" ]]; then
-        echo ""
-    else
-        echo "%{$FG[208]%}✱%f"
-    fi
-}
+#suspended_jobs() {
+#    local sj
+#    sj=$(jobs 2>/dev/null | tail -n 1)
+#    if [[ $sj == "" ]]; then
+#        echo ""
+#    else
+#        echo "%{$FG[208]%}✱%f"
+#    fi
+#}
 
 precmd() {
     vcs_info
@@ -69,8 +69,9 @@ precmd() {
 }
 
 #export PROMPT='%(?.%F{205}.%F{red})▲%f '
-export PROMPT='%(?.%F{199}.%F{red})▲%f '
+export PROMPT='%(?.%F{199}.%F{blue})▲%f '
 #export PROMPT='%(?.%F{205}.%F{red})⇨%f '
-export RPROMPT='`git_dirty`%F{241}$vcs_info_msg_0_%f `git_arrows``suspended_jobs`'
+#export RPROMPT='`git_dirty`%F{241}$vcs_info_msg_0_%f `git_arrows``suspended_jobs`'
+export RPROMPT='`git_dirty`%F{241}$vcs_info_msg_0_%f `git_arrows`'
 #export RPROMPT='`git_dirty`'
 #export RPROMPT='goFuckyourself'
