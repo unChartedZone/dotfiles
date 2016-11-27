@@ -3,7 +3,6 @@ export ZSH=$DOTFILES/zsh
 
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
-
 #[[ -e ~/.terminfo ]] && export TERMINFO_DIRS=~/.terminfo:/usr/share/terminfo
 
 # define the code directory
@@ -21,12 +20,12 @@ export REPORTTIME=10
 
 
 # initialize autocomplete
-#autoload -U compinit add-zsh-hook
-#compinit
-#
-#for config ($ZSH/**/*completion.sh) source $config
-#
-#export EDITOR='vim'
+autoload -U compinit add-zsh-hook
+compinit
+
+for config ($ZSH/**/*completion.sh) source $config
+
+export EDITOR='vim'
 
 export PATH=/usr/local/bin:$PATH
 
