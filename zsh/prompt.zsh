@@ -36,7 +36,7 @@ git_arrows() {
     local arrows=""
     local status
     arrow_status="$(command git rev-list --left-right --count HEAD...@'{u}' 2>/dev/null)"
-
+	number_of_commits_ahead="$(git rev-list --left-right --count master...origin/master | awk '{print$1}')"
     # do nothing if the command failed
     (( !$? )) || return
 
@@ -47,7 +47,7 @@ git_arrows() {
     (( ${right:-0} > 0 )) && arrows+="%F{011}⇣%f"
     (( ${left:-0} > 0 )) && arrows+="%F{012}⇡%f"
 
-    echo $arrows
+    echo $arrows $number_of_commits_ahead
 }
 
 precmd() {
