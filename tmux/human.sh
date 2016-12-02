@@ -2,8 +2,11 @@
 
 tm_icon="♟"
 tm_color_background=colour234
-tm_color_active=colour118
-tm_color_inactive=colour241
+#tm_color_active=colour118
+#tm_color_active="#557EC2"
+tm_color_active="#4C89E7"
+#tm_color_inactive=colour241
+tm_color_inactive="#6E436E"
 tm_color_feature=colour4
 tm_color_music=colour203
 
