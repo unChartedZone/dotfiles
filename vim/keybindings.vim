@@ -5,6 +5,9 @@ inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
 nmap <C-n> :CtrlPTag<CR>
 nmap <C-m> :CtrlPBufTagAll<CR>
 
+"Nerdtree Keybinding(s)
+nmap <C-t> :NERDTreeToggle<CR>
+
 "Tagbar settings
 nmap <F8> :TagbarToggle<CR>
 
