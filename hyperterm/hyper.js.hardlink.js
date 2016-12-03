@@ -8,7 +8,8 @@ module.exports = {
     fontFamily: 'Fira Mono for Powerline, Monaco, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    //cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: '#814CC8',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -17,11 +18,11 @@ module.exports = {
     foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: 'rgba(0,0,0,0.8)',
+    backgroundColor: 'rgba(40,44,52,0.8)',
 
     // border color (window, tabs)
-    //borderColor: '#58FFDF',
-    borderColor: 'rgb(248,28,229)',
+    borderColor: '#58FFDF',
+    //borderColor: 'rgb(248,28,229)',
 
     // custom css to embed in the main window
     css: '',
