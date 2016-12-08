@@ -47,7 +47,7 @@ git_arrows() {
     (( ${right:-0} > 0 )) && arrows+="%F{011}⇣%f"
     (( ${left:-0} > 0 )) && arrows+="%F{012}⇡%f"
 
-    echo $arrows $number_of_commits_ahead
+    echo $arrows 
 }
 
 precmd() {
