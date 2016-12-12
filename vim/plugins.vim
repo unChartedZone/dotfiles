@@ -4,6 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'Shougo/neocomplete'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
@@ -19,7 +20,6 @@ Plugin 'tpope/vim-commentary'
 "Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 "Plugin 'powerline/fonts'
 "Plugin 'vim-syntastic/syntastic'
-"Plugin 'Valloric/YouCompleteMe'
 "Plugin 'keith/swift.vim'
 Plugin 'davidhalter/jedi-vim'
 "Plugin 'majutsushi/tagbar'
