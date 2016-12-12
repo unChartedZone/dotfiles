@@ -2,7 +2,7 @@ module.exports = {
   config: {
 	//potato
     // default font size in pixels for all tabs
-    fontSize: 13,
+    fontSize: 12,
 
     // font family with optional fallbacks
     fontFamily: 'Fira Mono for Powerline, Monaco, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
@@ -18,7 +18,8 @@ module.exports = {
     foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: 'rgba(40,44,52,0.8)',
+    // backgroundColor: 'rgba(40,44,52,0.8)',
+	backgroundColor: 'black',
 
     // border color (window, tabs)
     borderColor: '#58FFDF',
@@ -62,7 +63,8 @@ module.exports = {
       blue: '#AFD8FF',
       magenta: '#FFFFFF',
       cyan: '#00ffff',
-      white: '#d0d0d0',
+      // white: '#d0d0d0',
+	  white: 'ffffff',
       lightBlack: '#808080',
       lightRed: '#FF647D',
       lightGreen: '#33ff00',
