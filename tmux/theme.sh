@@ -1,10 +1,15 @@
 #### COLOUR
 
-tm_color_active=colour51
 tm_icon="🍔 "
+# tm_color_active=colour51
+# tm_color_active="#4973BD"
+tm_color_active="#D786E6"
 tm_color_inactive=colour241
-tm_color_feature=colour198
-tm_color_music=colour41
+# tm_color_feature=colour198
+# tm_color_feature="#D786E6"
+tm_color_feature="#4973BD"
+# tm_color_music=colour41
+tm_color_music=colour203
 tm_active_border_color=colour51
 
 # separators
