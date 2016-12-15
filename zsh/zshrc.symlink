@@ -1,6 +1,9 @@
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
 
+# Should set the tab bar for iterm
+printf -- $'\033]6;1;bg;red;brightness;0\a\033]6;1;bg;green;brightness;0\a\033]6;1;bg;blue;brightness;0\a'
+
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
 #[[ -e ~/.terminfo ]] && export TERMINFO_DIRS=~/.terminfo:/usr/share/terminfo 
@@ -11,7 +14,7 @@ export REPORTTIME=10
 #fi
 
 # source all .zsh files inside of the zsh/ directory
-#for config ($ZSH/**/*.zsh) source $config
+for config ($ZSH/**/*.zsh) source $config
 
 #if [[ -a ~/.localrc ]]; then
 #    source ~/.localrc
