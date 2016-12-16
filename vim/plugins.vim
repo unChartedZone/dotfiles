@@ -17,7 +17,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'davidhalter/jedi-vim'
-" Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 "Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 "Plugin 'powerline/fonts'
 "Plugin 'vim-syntastic/syntastic'

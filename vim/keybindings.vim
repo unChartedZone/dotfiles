@@ -1,7 +1,7 @@
 " #################### Custom Key bindings ##########################
 "Sets neocomplete on and lets tab work for selecting suggestions
 inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
-"CtrlP settings
+"CtrlP Keybindings
 nmap <C-n> :CtrlPTag<CR>
 nmap <C-m> :CtrlPBufTagAll<CR>
 
