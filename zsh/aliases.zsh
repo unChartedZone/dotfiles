@@ -85,3 +85,5 @@ alias mvim="open -a /usr/local/Cellar/macvim/8.0-116/MacVim.app/Contents/MacOS/M
 
 alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chrome"
 #alias canary="/Applications/Google\\ Chrome\\ Canary.app/Contents/MacOS/Google\\ Chrome\\ Canary"
+
+alias nvim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
