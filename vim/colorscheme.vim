@@ -4,4 +4,4 @@ set background=dark
 colorscheme hybrid
 "colorscheme hybrid_material
 "colorscheme Tomorrow-Night
-"colorscheme one
+" colorscheme onedark

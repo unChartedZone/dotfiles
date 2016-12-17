@@ -5,4 +5,4 @@ set autochdir
 set mouse=a
 set laststatus=2
 set clipboard=unnamed "Lets vim and clipboard play nice togehter
-
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store    " MacOSX/Linux
