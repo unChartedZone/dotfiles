@@ -4,26 +4,24 @@ alias reload!='source ~/.zshrc'
 # To quicly ssh to any of my desired servers
 alias masc='ssh masc0038@rohan.sdsu.edu'
 alias legolas='ssh valdez@legolas.sdsu.edu'
-alias tmux="TERM=screen-256color-bce tmux"
 alias edoras="ssh cssc0038@edoras.sdsu.edu"
 alias alucard="ssh chris@alucard.io"
 alias unchartedzone="ssh chris@unchartedzone.me"
 alias mvim="open -a /usr/local/Cellar/macvim/8.0-116/MacVim.app/Contents/MacOS/MacVim"
 
 # Detect which `ls` flavor is in use
-#if ls --color > /dev/null 2>&1; then # GNU `ls`
-#    colorflag="--color"
-#else # OS X `ls`
-#    colorflag="-G"
-#fi
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+    colorflag="--color"
+else # OS X `ls`
+    colorflag="-G"
+fi
 
-#alias vim="vim"
 
 # Filesystem aliases
-#alias ..='cd ..'
-#alias ...='cd ../..'
-#alias ....="cd ../../.."
-#alias .....="cd ../../../.."
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 #alias l="ls -lah ${colorflag}"
 #alias la="ls -AF ${colorflag}"
