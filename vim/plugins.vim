@@ -25,6 +25,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 "####### Status Bar Plugins #########################################
 Plugin 'vim-airline/vim-airline'
+Plugin 'chriskempson/base16-vim'
 Plugin 'vim-airline/vim-airline-themes'
 "####### End of Status Bar Plugins ##################################
 
