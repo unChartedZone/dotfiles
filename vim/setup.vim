@@ -1,4 +1,5 @@
 so ~/.dotfiles/vim/plugins.vim
+so ~/.dotfiles/vim/colorscheme.vim
 so ~/.dotfiles/vim/keybindings.vim
 so ~/.dotfiles/vim/ctrlpSettings.vim
 so ~/.dotfiles/vim/airline.vim
