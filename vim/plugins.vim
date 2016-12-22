@@ -25,20 +25,21 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 "####### Status Bar Plugins #########################################
 Plugin 'vim-airline/vim-airline'
-Plugin 'chriskempson/base16-vim'
 Plugin 'vim-airline/vim-airline-themes'
 "####### End of Status Bar Plugins ##################################
 
 "####### Color Schemes and Syntax Plugins ###########################
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
+Plugin 'crusoexia/vim-monokai'
+Plugin 'morhetz/gruvbox'
 "####### End of Color Schemes and Syntax Plugins ####################
 
 "####### Unused Plugins #############################################
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 "Plugin 'powerline/fonts'
-"Plugin 'vim-syntastic/syntastic'
 "Plugin 'keith/swift.vim'
 "Plugin 'majutsushi/tagbar'
 "Plugin 'justmao945/vim-clang'
