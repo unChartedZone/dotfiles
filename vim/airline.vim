@@ -10,3 +10,8 @@ let g:airline_theme='onedark'
 let g:airline_section_warning = ''
 "Enable the tab bar styling
 let g:airline#extensions#tabline#enabled = 1
+
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+" set term=xterm-256color
+set fillchars+=stl:\ ,stlnc:\

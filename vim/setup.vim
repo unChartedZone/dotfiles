@@ -3,6 +3,7 @@ so ~/.dotfiles/vim/colorscheme.vim
 so ~/.dotfiles/vim/keybindings.vim
 so ~/.dotfiles/vim/ctrlpSettings.vim
 so ~/.dotfiles/vim/airline.vim
+so ~/.dotfiles/vim/autocomplete.vim
 
 set number
 set tabstop=4 shiftwidth=4 number autoindent noexpandtab nowrap linebreak nolist 
