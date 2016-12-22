@@ -4,6 +4,7 @@ inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
 "CtrlP Keybindings
 nmap <C-n> :CtrlPTag<CR>
 nmap <C-m> :CtrlPBufTagAll<CR>
+nmap <C-b> :CtrlPBuffer<CR>
 
 "Nerdtree Keybinding(s)
 nmap <C-t> :NERDTreeToggle<CR>
@@ -20,4 +21,6 @@ command A !git add .
 
 "Remap escape key
 inoremap <C-c> <esc>
+
+
 " ###################################################################

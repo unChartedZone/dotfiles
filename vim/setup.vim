@@ -1,3 +1,8 @@
+so ~/.dotfiles/vim/plugins.vim
+so ~/.dotfiles/vim/keybindings.vim
+so ~/.dotfiles/vim/ctrlpSettings.vim
+so ~/.dotfiles/vim/airline.vim
+
 set number
 set tabstop=4 shiftwidth=4 number autoindent noexpandtab nowrap linebreak nolist 
 set backspace=2
