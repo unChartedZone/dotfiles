@@ -30,10 +30,12 @@ Plugin 'vim-airline/vim-airline-themes'
 
 "####### Color Schemes and Syntax Plugins ###########################
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
 Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
-Plugin 'crusoexia/vim-monokai'
 Plugin 'morhetz/gruvbox'
+Plugin 'scwood/vim-hybrid'
+Plugin 'juanedi/predawn.vim'
 "####### End of Color Schemes and Syntax Plugins ####################
 
 "####### Unused Plugins #############################################
