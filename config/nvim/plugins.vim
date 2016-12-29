@@ -19,6 +19,7 @@ Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
  Plugin 'tpope/vim-commentary'
  Plugin 'davidhalter/jedi-vim'
 Plugin 'joshdick/onedark.vim'
+Plugin 'morhetz/gruvbox'
 Plugin 'KeitaNakamura/neodark.vim'
 " Plugin 'Shougo/neocomplete'
 "Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
