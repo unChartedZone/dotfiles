@@ -28,15 +28,17 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 "####### End of Status Bar Plugins ##################################
 
-"####### Color Schemes and Syntax Plugins ###########################
+"####### Syntax Plugins ###########################
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
+"####### Syntax Plugins ####################
+
+"####### Color Schemes ###########################
 Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'morhetz/gruvbox'
-Plugin 'scwood/vim-hybrid'
 Plugin 'juanedi/predawn.vim'
-"####### End of Color Schemes and Syntax Plugins ####################
+"####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
 "Plugin 'Valloric/YouCompleteMe'
@@ -52,3 +54,6 @@ Plugin 'juanedi/predawn.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+"NerdTree Settings
+let g:NERDTreeWinSize=21
