@@ -1,6 +1,6 @@
 ###### COLOUR
 
-tm_icon="♟"
+tm_icon="🍔 "
 tm_color_background=colour234
 # tm_color_active=colour118
 # tm_color_active="#D786E6"
@@ -57,7 +57,7 @@ tm_itunes="#[fg=$tm_color_music,bg=$tm_color_background]$tm_right_separator_blac
 #tm_battery="#[fg=colour255,bg=$tm_color_music]$tm_right_separator_black#[bg=colour255]#(~/.dotfiles/bin/battery_indicator.sh)"
 
 # tm_date="#[bg=colour255,fg=$tm_color_inactive]$tm_right_separator_black#[bg=$tm_color_inactive,fg=$tm_color_background] %R %d %b"
-tm_date="#[bg=colour255,fg=$tm_color_inactive]$tm_right_separator_black#[bg=$temp,fg=$tm_color_background] %R %d %b"
+tm_date="#[bg=$temp,fg=$tm_color_inactive]$tm_right_separator_black#[bg=$temp,fg=$tm_color_background] %R %d %b"
 tm_host="#[bg=$tm_color_inactive,fg=$tm_color_feature]$tm_right_separator_black#[bg=$tm_color_feature,fg=$tm_color_background,bold] #h "
 tm_session_name="#[bg=$tm_color_feature,fg=$tm_color_background,bold]$tm_icon #S #[fg=$tm_color_feature,bg=default,nobold]$tm_left_separator_black"
 
