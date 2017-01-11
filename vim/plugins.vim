@@ -38,6 +38,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'juanedi/predawn.vim'
+Plugin 'cdmedia/itg_flat_vim'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
