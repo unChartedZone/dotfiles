@@ -1,8 +1,27 @@
+# tmux -f (config file) attach is the command to execute this script
 source-file ~/.tmux.conf
 new-session -s brogrammer -n dotfiles
-split-window -h -p 50 -t dotfiles
-select-pane -t 1
-split-window -v -p 50 -t dotfiles
+send-keys "cd ~/.dotfiles" C-m
+send-keys "clear" C-m
+split-window -h -p 40 -t dotfiles
+send-keys "cd ~/.dotfiles" C-m
+send-keys "clear" C-m
+split-window -v -t dotfiles
+send-keys "cd ~/.dotfiles" C-m
+send-keys "clear" C-m
+
+new-window -n school
+send-keys "cd ~/Documents/chrisSchoolWork/spring2017" C-m
+send-keys "clear" C-m
+
 new-window -n personalResume
-#select-window -t dev:1
-#select-pane -t 1
+send-keys "cd ~/WebstormProjects/personalResume" C-m
+send-keys "clear" C-m
+
+new-window -n unchartedzone
+send-keys "cd ~/Workshop/webProjects/unchartedzoneRepo" C-m
+send-keys "clear" C-m
+
+new-window -n alucard
+send-keys "cd ~/Workshop/webProjects/alucard" C-m
+send-keys "clear" C-m
