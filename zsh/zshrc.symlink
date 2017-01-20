@@ -2,7 +2,10 @@ export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
 
 # Should set the tab bar for iterm
-printf -- $'\033]6;1;bg;red;brightness;0\a\033]6;1;bg;green;brightness;0\a\033]6;1;bg;blue;brightness;0\a'
+# printf -- $'\033]6;1;bg;red;brightness;0\a\033]6;1;bg;green;brightness;0\a\033]6;1;bg;blue;brightness;0\a'
+# printf -- $'\033]6;1;bg;red;brightness;29\a\033]6;1;bg;green;brightness;33\a\033]6;1;bg;blue;brightness;31\a'
+# printf -- $'\033]6;1;bg;red;brightness;66\a\033]6;1;bg;green;brightness;244\a\033]6;1;bg;blue;brightness;176\a'
+printf -- $'\033]6;1;bg;red;brightness;160\a\033]6;1;bg;green;brightness;64\a\033]6;1;bg;blue;brightness;65\a'
 
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
