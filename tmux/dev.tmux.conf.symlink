@@ -9,6 +9,7 @@ send-keys "clear" C-m
 split-window -v -t dotfiles
 send-keys "cd ~/.dotfiles" C-m
 send-keys "clear" C-m
+select-pane -t 0
 
 new-window -n school
 send-keys "cd ~/Documents/chrisSchoolWork/spring2017" C-m
