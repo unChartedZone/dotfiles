@@ -8,6 +8,7 @@ alias edoras="ssh cssc0038@edoras.sdsu.edu"
 alias alucard="ssh chris@alucard.io"
 alias unchartedzone="ssh chris@unchartedzone.me"
 alias mvim="open -a /usr/local/Cellar/macvim/8.0-116/MacVim.app/Contents/MacOS/MacVim"
+alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
