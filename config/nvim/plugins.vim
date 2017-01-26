@@ -35,3 +35,6 @@ Plugin 'morhetz/gruvbox'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+
+let g:airline#extensions#tabline#enabled = 1
