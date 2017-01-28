@@ -16,7 +16,6 @@ Plugin 'rstacruz/sparkup'
 Plugin 'Shougo/neocomplete'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'justmao945/vim-clang'
 "####### End of Autocomplete Plugins ################################
 
 "####### File Navigation Plugins ####################################
@@ -44,6 +43,7 @@ Plugin 'cdmedia/itg_flat_vim'
 
 "####### Unused Plugins #############################################
 "Plugin 'Valloric/YouCompleteMe'
+"Plugin 'justmao945/vim-clang'
 "Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 "Plugin 'powerline/fonts'
 "Plugin 'keith/swift.vim'
