@@ -15,14 +15,6 @@ new-window -n school
 send-keys "cd ~/Documents/chrisSchoolWork/spring2017" C-m
 send-keys "clear" C-m
 
-new-window -n programZero
-send-keys "cd ~/Documents/chrisSchoolWork/spring2017/cs570/programZero" C-m
-send-keys "clear" C-m
-
-new-window -n rohan
-send-keys "cd ~/Documents/chrisSchoolWork/spring2017/cs570/programZero" C-m
-send-keys "clear" C-m
-
 new-window -n personalResume
 send-keys "cd ~/WebstormProjects/personalResume" C-m
 send-keys "clear" C-m
