@@ -27,4 +27,4 @@ new-window -n alucard
 send-keys "cd ~/Workshop/webProjects/alucard" C-m
 send-keys "clear" C-m
 
-select-pane -t school
+select-window -t school
