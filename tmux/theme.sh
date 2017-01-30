@@ -41,7 +41,8 @@ set-window-option -g  window-status-current-format "#[bold]#I #W"
 
 # pane border
 set-option -g pane-border-fg $tm_color_inactive
-set-option -g pane-active-border-fg $tm_active_border_color
+# set-option -g pane-active-border-fg $tm_active_border_color
+set-option -g pane-active-border-fg $tm_color_active
 
 # message text
 set-option -g message-bg default

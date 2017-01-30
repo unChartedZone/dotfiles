@@ -6,11 +6,14 @@ export ZSH=$DOTFILES/zsh
 # printf -- $'\033]6;1;bg;red;brightness;29\a\033]6;1;bg;green;brightness;33\a\033]6;1;bg;blue;brightness;31\a'
 # printf -- $'\033]6;1;bg;red;brightness;66\a\033]6;1;bg;green;brightness;244\a\033]6;1;bg;blue;brightness;176\a'
 
-# This is a nice red color
-# printf -- $'\033]6;1;bg;red;brightness;160\a\033]6;1;bg;green;brightness;64\a\033]6;1;bg;blue;brightness;65\a'
+# This is a nice shade of red I like
+printf -- $'\033]6;1;bg;red;brightness;160\a\033]6;1;bg;green;brightness;64\a\033]6;1;bg;blue;brightness;65\a'
 
 # This is a nice shade of yellow I like
-printf -- $'\033]6;1;bg;red;brightness;222\a\033]6;1;bg;green;brightness;147\a\033]6;1;bg;blue;brightness;95\a'
+# printf -- $'\033]6;1;bg;red;brightness;222\a\033]6;1;bg;green;brightness;147\a\033]6;1;bg;blue;brightness;95\a'
+
+# This is a nice shade of purple I like
+# printf -- $'\033]6;1;bg;red;brightness;215\a\033]6;1;bg;green;brightness;134\a\033]6;1;bg;blue;brightness;230\a'
 
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
