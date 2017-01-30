@@ -10,7 +10,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'rstacruz/sparkup'
-"####### General Plugins ############################################
+"####### End of General Plugins ############################################
 
 "####### Autocomplete Plugins #######################################
 Plugin 'Shougo/neocomplete'
@@ -39,6 +39,7 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'juanedi/predawn.vim'
 Plugin 'cdmedia/itg_flat_vim'
+Plugin 'alessandroyorba/sierra'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
@@ -56,5 +57,42 @@ Plugin 'cdmedia/itg_flat_vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+"####### PLUGIN SETTINGS #############################################
+
 "NerdTree Settings
 let g:NERDTreeWinSize=21
+
+"Ctrlp Settings
+let g:ctrlp_show_hidden = 1
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(DS_STORE|idea|exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+"Vim Airline Settings
+let g:airline_powerline_fonts = 1
+"let g:airline_theme='wombat'
+let g:airline_theme='tomorrow'
+" let g:airline_theme='onedark'
+" let g:airline_theme='base16_tomorrow'
+" let g:airline_theme='gruvbox'
+" let g:airline_theme='one'
+" let g:airline_theme='base16_eighties'
+" let g:airline_section_c = '%t,%m'
+let g:airline_section_warning = ''
+"Enable the tab bar styling
+let g:airline#extensions#tabline#enabled = 1
+
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+" set term=xterm-256color
+set fillchars+=stl:\ ,stlnc:\
+
+"Autocomplete Plugins Settings
+let g:neocomplete#enable_at_startup = 1
+let g:tern_show_argument_hints='on_hold'
+let g:tern_map_keys=1
+"Disables the preview window
+set completeopt-=preview
