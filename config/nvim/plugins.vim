@@ -57,5 +57,11 @@ Plugin 'morhetz/gruvbox'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
+"Airline Settings
 let g:airline#extensions#tabline#enabled = 1
+
+"Autocomplete Plugins Settings
+let g:tern_show_argument_hints='on_hold'
+let g:tern_map_keys=1
+"Disables the preview window
+set completeopt-=preview
