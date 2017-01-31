@@ -7,13 +7,21 @@ export ZSH=$DOTFILES/zsh
 # printf -- $'\033]6;1;bg;red;brightness;66\a\033]6;1;bg;green;brightness;244\a\033]6;1;bg;blue;brightness;176\a'
 
 # This is a nice shade of red I like
-printf -- $'\033]6;1;bg;red;brightness;160\a\033]6;1;bg;green;brightness;64\a\033]6;1;bg;blue;brightness;65\a'
+# printf -- $'\033]6;1;bg;red;brightness;160\a\033]6;1;bg;green;brightness;64\a\033]6;1;bg;blue;brightness;65\a'
 
 # This is a nice shade of yellow I like
 # printf -- $'\033]6;1;bg;red;brightness;222\a\033]6;1;bg;green;brightness;147\a\033]6;1;bg;blue;brightness;95\a'
 
 # This is a nice shade of purple I like
 # printf -- $'\033]6;1;bg;red;brightness;215\a\033]6;1;bg;green;brightness;134\a\033]6;1;bg;blue;brightness;230\a'
+
+# This a shade of light agua green I like
+# rgb(81, 190, 149)
+printf -- $'\033]6;1;bg;red;brightness;81\a\033]6;1;bg;green;brightness;190\a\033]6;1;bg;blue;brightness;149\a'
+
+# This is a shade of dark green I like
+#rgb(12, 75, 51)
+# printf -- $'\033]6;1;bg;red;brightness;12\a\033]6;1;bg;green;brightness;75\a\033]6;1;bg;blue;brightness;51\a'
 
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
@@ -78,3 +86,6 @@ if [ -z ${DOTFILES_LOADED+x} ]; then
 fi
 
 DOTFILES_LOADED=1
+
+echo "Welcome Back, Christian Valdez"
+# alias tmux="env TERM=xterm-256color tmux"
