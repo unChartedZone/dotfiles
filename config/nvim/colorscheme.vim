@@ -4,7 +4,7 @@ set background=dark
 " colorscheme hybrid
 "colorscheme hybrid_material
 "colorscheme Tomorrow-Night
-colorscheme onedark
-" colorscheme gruvbox
-" let g:airline_theme='gruvbox'
-let g:airline_theme='onedark'
+" colorscheme onedark
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
+" let g:airline_theme='onedark'
