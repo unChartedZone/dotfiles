@@ -1,0 +1,60 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+'.source.java':
+  'System.out.println':
+    'prefix': 'sout'
+    'body': 'System.out.println($2);'
+  'main':
+    'prefix': 'psvm'
+    'body': 'public static void main(String[] args) {$2}'
+
+'.source.c':
+    'For Loop':
+        'prefix': 'for'
+        'body': 'for (${1:i} = ${2:0}; ${1:i} < ${3:count}; ${1:i}${4:++}) {\n\t${5:/* code */}\n}'
+    'sizer':
+      'prefix': 'sizeof'
+      'body': 'sizeof(${1:type})'
+    'scanner':
+      'prefix': 'scanf'
+      'body': 'scanf("%${1:d}", &${2:var});'
+
+'.source.cpp':
+    'StandardTemplateLibrary':
+        'prefix': 'std'
+        'body': 'using namespace std;'
+    # 'sicxeAssembler':
+    #     'prefix': 'sicxe'
+    #     'body': 'sicxe_asm::$2'
+
+'.text.html.basic':
+    'Acronyms':
+        'prefix': 'acron'
+        'body': '<acronym title="$1">$2</acronym>$0'
+    'Div':
+        'prefix': 'div'
+        'body': '<div id="$2">\n\t$3\n</div>'
+
+'.source.python':
+    'print_func':
+        'prefix': 'print'
+        'body': 'print($1)'
