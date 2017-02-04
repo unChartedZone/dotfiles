@@ -65,3 +65,6 @@ let g:tern_show_argument_hints='on_hold'
 let g:tern_map_keys=1
 "Disables the preview window
 set completeopt-=preview
+
+"YouCompleteMe Settings
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'

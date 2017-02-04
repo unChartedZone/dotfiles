@@ -7,7 +7,7 @@ alias legolas='ssh valdez@legolas.sdsu.edu'
 alias edoras="ssh cssc0038@edoras.sdsu.edu"
 alias alucard="ssh chris@alucard.io"
 alias unchartedzone="ssh chris@unchartedzone.me"
-alias mvim="open -a /usr/local/Cellar/macvim/8.0-116/MacVim.app/Contents/MacOS/MacVim"
+alias mvim="open -a /usr/local/Cellar/macvim/8.0-125/MacVim.app/Contents/MacOS/MacVim"
 alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 
 # Detect which `ls` flavor is in use
