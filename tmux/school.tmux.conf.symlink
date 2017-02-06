@@ -1,0 +1,8 @@
+source-file ~/.tmux.conf
+new-session -s school -n programOne
+send-keys "cd ~/Documents/chrisSchoolWork/spring2017/cs570/programOne" C-m
+send-keys "clear" C-m
+
+new-window -n school
+send-keys "cd ~/Documents/chrisSchoolWork/spring2017" C-m
+send-keys "clear" C-m

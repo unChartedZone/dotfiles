@@ -11,10 +11,6 @@ send-keys "cd ~/.dotfiles" C-m
 send-keys "clear" C-m
 select-pane -t 0
 
-new-window -n school
-send-keys "cd ~/Documents/chrisSchoolWork/spring2017" C-m
-send-keys "clear" C-m
-
 new-window -n personalResume
 send-keys "cd ~/WebstormProjects/personalResume" C-m
 send-keys "clear" C-m
@@ -27,4 +23,4 @@ new-window -n alucard
 send-keys "cd ~/Workshop/webProjects/alucard" C-m
 send-keys "clear" C-m
 
-select-window -t school
+select-window -t dotfiles
