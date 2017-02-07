@@ -2,10 +2,10 @@ module.exports = {
   config: {
 	//potato
     // default font size in pixels for all tabs
-    fontSize: 12,
+    fontSize: 13,
 
     // font family with optional fallbacks
-    fontFamily: 'Fira Mono for Powerline, Monaco, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: 'Monaco, Fira Mono for Powerline,  Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     //cursorColor: 'rgba(248,28,229,0.8)',
@@ -32,7 +32,8 @@ module.exports = {
     termCSS: '',
 
     // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
+    // padding: '12px 14px',
+    padding: '6px 14px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -104,7 +105,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: ['hyperterm-atom-dark'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
