@@ -13,4 +13,5 @@ set clipboard=unnamed "Lets vim and clipboard play nice togehter
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store    " MacOSX/Linux
 set ttyfast
 set cursorline
+set list lcs=tab:\|\ "This is for indent guides"
 " set lazyredraw
