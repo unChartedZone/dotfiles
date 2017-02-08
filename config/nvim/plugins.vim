@@ -57,6 +57,15 @@ Plugin 'morhetz/gruvbox'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+"Ctrlp Settings
+let g:ctrlp_show_hidden = 1
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
 "Airline Settings
 let g:airline#extensions#tabline#enabled = 1
 
