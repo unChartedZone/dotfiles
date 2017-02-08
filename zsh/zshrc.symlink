@@ -20,11 +20,15 @@ export ZSH=$DOTFILES/zsh
 # rgb(14, 201, 211)
 # rgb(28, 211, 155)
 # printf -- $'\033]6;1;bg;red;brightness;81\a\033]6;1;bg;green;brightness;190\a\033]6;1;bg;blue;brightness;149\a'
-printf -- $'\033]6;1;bg;red;brightness;28\a\033]6;1;bg;green;brightness;211\a\033]6;1;bg;blue;brightness;155\a'
+# printf -- $'\033]6;1;bg;red;brightness;28\a\033]6;1;bg;green;brightness;211\a\033]6;1;bg;blue;brightness;155\a'
 
 # This is a shade of dark green I like
 #rgb(12, 75, 51)
 # printf -- $'\033]6;1;bg;red;brightness;12\a\033]6;1;bg;green;brightness;75\a\033]6;1;bg;blue;brightness;51\a'
+#
+# Shade of salmon pink
+# rgb(237, 101, 104)
+printf -- $'\033]6;1;bg;red;brightness;237\a\033]6;1;bg;green;brightness;101\a\033]6;1;bg;blue;brightness;104\a'
 
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
