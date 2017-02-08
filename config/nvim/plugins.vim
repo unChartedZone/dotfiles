@@ -37,6 +37,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'joshdick/onedark.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'morhetz/gruvbox'
+Plugin 'colepeters/spacemacs-theme.vim'
+Plugin 'marciomazza/vim-brogrammer-theme'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
@@ -61,7 +63,7 @@ filetype plugin indent on    " required
 let g:ctrlp_show_hidden = 1
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'dir':  '\v[\/]\.(git|hg|svn)|cmake-build-debug$',
   \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }

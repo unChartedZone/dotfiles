@@ -38,8 +38,8 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'juanedi/predawn.vim'
-Plugin 'cdmedia/itg_flat_vim'
-Plugin 'alessandroyorba/sierra'
+Plugin 'albertorestifo/github.vim'
+Plugin 'marciomazza/vim-brogrammer-theme'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
@@ -52,6 +52,7 @@ Plugin 'alessandroyorba/sierra'
 "Plugin 'artur-shaik/vim-javacomplete2'
 "Plugin 'godlygeek/tabular'
 "Plugin 'plasticboy/vim-markdown'
+" Plugin 'nathanaelkane/vim-indent-guides'
 "####### End of Unused Plugins #######################################
 
 call vundle#end()            " required
@@ -66,8 +67,8 @@ let g:NERDTreeWinSize=21
 let g:ctrlp_show_hidden = 1
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(DS_STORE|idea|exe|so|dll)$',
+  \ 'dir':  '\v[\/]\.(git|hg|svn)|cmake-build-debug$',
+  \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
