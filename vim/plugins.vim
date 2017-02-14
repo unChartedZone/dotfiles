@@ -29,8 +29,10 @@ Plugin 'vim-airline/vim-airline-themes'
 "####### End of Status Bar Plugins ##################################
 
 "####### Syntax Plugins ###########################
-Plugin 'jelera/vim-javascript-syntax'
+" Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'othree/yajs.vim'
 "####### Syntax Plugins ####################
 
 "####### Color Schemes ###########################
@@ -40,6 +42,8 @@ Plugin 'morhetz/gruvbox'
 Plugin 'juanedi/predawn.vim'
 Plugin 'albertorestifo/github.vim'
 Plugin 'marciomazza/vim-brogrammer-theme'
+Plugin 'kristijanhusak/vim-hybrid-material'
+Plugin 'whatyouhide/vim-gotham'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
@@ -75,8 +79,9 @@ let g:ctrlp_custom_ignore = {
 "Vim Airline Settings
 let g:airline_powerline_fonts = 1
 "let g:airline_theme='wombat'
-let g:airline_theme='tomorrow'
-" let g:airline_theme='onedark'
+" let g:airline_theme='tomorrow'
+" let g:airline_theme='github'
+let g:airline_theme='onedark'
 " let g:airline_theme='base16_tomorrow'
 " let g:airline_theme='gruvbox'
 " let g:airline_theme='one'
@@ -101,3 +106,18 @@ set completeopt-=preview
 "Vim-clang settings
 " let g:clang_cpp_completeopt = 'longest,menuone'
 " let g:clang_auto = 1
+
+" Javascript Library Settings
+let g:used_javascript_libs = 'jquery'
+
+"Synstatic Recommended settings
+" set statusline+=%#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR> :lopen<CR>
