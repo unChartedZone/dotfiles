@@ -7,5 +7,3 @@ set background=dark
 " colorscheme onedark
 colorscheme gruvbox
 " colorscheme spacemacs-theme
-let g:airline_theme='gruvbox'
-" let g:airline_theme='onedark'

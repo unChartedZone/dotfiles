@@ -69,7 +69,11 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 "Airline Settings
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+" let g:airline_section_c = '%t,%m'
+let g:airline_section_warning = ''
 
 "Autocomplete Plugins Settings
 let g:tern_show_argument_hints='on_hold'
