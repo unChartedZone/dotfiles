@@ -7,7 +7,7 @@ alias legolas='ssh valdez@legolas.sdsu.edu'
 alias edoras="ssh cssc0038@edoras.sdsu.edu"
 alias alucard="ssh chris@alucard.io"
 alias unchartedzone="ssh chris@unchartedzone.me"
-alias mvim="open -a /usr/local/Cellar/macvim/8.0-125/MacVim.app/Contents/MacOS/MacVim"
+alias mvim="open -a /usr/local/Cellar/macvim/8.0-126/MacVim.app/Contents/MacOS/MacVim"
 alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 alias school="tmux -f ~/.dotfiles/tmux/school.tmux.conf.symlink attach"
 
@@ -25,7 +25,8 @@ alias ...='cd ../..'
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-#alias l="ls -lah ${colorflag}"
+alias ls="ls ${colorflag}"
+alias l="ls -lah ${colorflag}"
 #alias la="ls -AF ${colorflag}"
 #alias ll="ls -lFh ${colorflag}"
 #alias lld="ls -l | grep ^d"

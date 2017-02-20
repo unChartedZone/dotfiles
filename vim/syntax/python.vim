@@ -144,8 +144,9 @@ endif
 "
 " Keywords
 "
+"
 
-syn keyword pythonStatement     break continue del
+syn keyword pythonStatement     break continue del print
 syn keyword pythonStatement     exec return
 syn keyword pythonStatement     pass raise
 syn keyword pythonStatement     global assert
@@ -549,5 +550,3 @@ if version >= 508 || !exists("did_python_syn_inits")
   delcommand HiLink
 endif
 
-let b:current_syntax = "python"
-syn match pythonBoolean "\(\W\|^\)\zsself\ze\."
