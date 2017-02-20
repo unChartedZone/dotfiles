@@ -63,7 +63,7 @@ filetype plugin indent on    " required
 let g:ctrlp_show_hidden = 1
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)|cmake-build-debug$',
+  \ 'dir':  '\v[\/]\.(git|hg|svn|idea)|cmake-build-debug$',
   \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
