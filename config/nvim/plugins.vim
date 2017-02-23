@@ -39,6 +39,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'marciomazza/vim-brogrammer-theme'
+Plugin 'albertorestifo/github.vim'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
