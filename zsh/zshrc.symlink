@@ -14,12 +14,22 @@ export ZSH=$DOTFILES/zsh
 
 # This is a nice shade of purple I like
 # printf -- $'\033]6;1;bg;red;brightness;215\a\033]6;1;bg;green;brightness;134\a\033]6;1;bg;blue;brightness;230\a'
+# Another shade of purple I like
+#rgb(215, 160, 242)
+#rgb(169, 53, 227)
+# printf -- $'\033]6;1;bg;red;brightness;169\a\033]6;1;bg;green;brightness;53\a\033]6;1;bg;blue;brightness;227\a'
 
 # This a shade of light agua green I like
 # rgb(81, 190, 149)
 # rgb(14, 201, 211)
 # rgb(28, 211, 155)
+# rgb(0, 255, 204)
+# rgb(0, 153, 153)
+# rgb(0, 128, 128)
 # printf -- $'\033]6;1;bg;red;brightness;81\a\033]6;1;bg;green;brightness;190\a\033]6;1;bg;blue;brightness;149\a'
+# printf -- $'\033]6;1;bg;red;brightness;0\a\033]6;1;bg;green;brightness;255\a\033]6;1;bg;blue;brightness;204\a'
+# printf -- $'\033]6;1;bg;red;brightness;0\a\033]6;1;bg;green;brightness;153\a\033]6;1;bg;blue;brightness;153\a'
+printf -- $'\033]6;1;bg;red;brightness;0\a\033]6;1;bg;green;brightness;128\a\033]6;1;bg;blue;brightness;128\a'
 # printf -- $'\033]6;1;bg;red;brightness;28\a\033]6;1;bg;green;brightness;211\a\033]6;1;bg;blue;brightness;155\a'
 
 # This is a shade of dark green I like
@@ -28,7 +38,7 @@ export ZSH=$DOTFILES/zsh
 #
 # Shade of salmon pink
 # rgb(237, 101, 104)
-printf -- $'\033]6;1;bg;red;brightness;237\a\033]6;1;bg;green;brightness;101\a\033]6;1;bg;blue;brightness;104\a'
+# printf -- $'\033]6;1;bg;red;brightness;237\a\033]6;1;bg;green;brightness;101\a\033]6;1;bg;blue;brightness;104\a'
 
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
