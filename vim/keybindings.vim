@@ -22,5 +22,8 @@ command A !git add .
 "Remap escape key
 inoremap <C-c> <esc>
 
+" Lets me use shift enter to go to end of line, only works in iterm
+inoremap ✠ <C-o>A
+
 
 " ###################################################################
