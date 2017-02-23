@@ -1,12 +1,10 @@
 set -g default-command "login-shell"
 #this is how you do comments in tmux 
-# source ~/.dotfiles/tmux/tmux.conf.symlink
+
 set-option -ga terminal-overrides ",xterm-256color:Tc"
 # set -g default-terminal "xterm-256color"
 set -g default-terminal "screen-256color"
 source ~/.dotfiles/tmux/theme.sh
-# source ~/.dotfiles/tmux/human.sh
-# source ~/Workshop/dotfiles/tmux/human.sh
 source ~/.dotfiles/tmux/keybindings.conf
 # source ~/.dotfiles/tmux/dev.tmux.conf.symlink
 
@@ -34,3 +32,4 @@ source ~/.dotfiles/tmux/mouse.conf
 
 # fix ssh agent when tmux is detached
 setenv -g $SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
+set-option -g renumber-windows on
