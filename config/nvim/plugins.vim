@@ -13,7 +13,7 @@ Plugin 'rstacruz/sparkup'
 "####### End of General Plugins ############################################
 
 "####### Autocomplete Plugins #######################################
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plugin 'ternjs/tern_for_vim'
 Plugin 'davidhalter/jedi-vim'
 "####### End of Autocomplete Plugins ################################
@@ -34,7 +34,8 @@ Plugin 'pangloss/vim-javascript'
 "####### Syntax Plugins ####################
 
 "####### Color Schemes ###########################
-Plugin 'joshdick/onedark.vim'
+" Plugin 'joshdick/onedark.vim'
+Plugin 'rakr/vim-one'
 Plugin 'chriskempson/base16-vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'colepeters/spacemacs-theme.vim'
@@ -43,7 +44,7 @@ Plugin 'albertorestifo/github.vim'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
-" Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plugin 'Valloric/YouCompleteMe'
 " Plugin 'KeitaNakamura/neodark.vim'
 " Plugin 'Shougo/neocomplete'
 "Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
