@@ -9,9 +9,7 @@
 # This is a nice shade of yellow I like
 # printf -- $'\033]6;1;bg;red;brightness;222\a\033]6;1;bg;green;brightness;147\a\033]6;1;bg;blue;brightness;95\a' #rgb(222, 147, 95)
 
-# Shades of purple I like
-# printf -- $'\033]6;1;bg;red;brightness;215\a\033]6;1;bg;green;brightness;134\a\033]6;1;bg;blue;brightness;230\a' #rgb(215, 134, 230)
-# printf -- $'\033]6;1;bg;red;brightness;215\a\033]6;1;bg;green;brightness;160\a\033]6;1;bg;blue;brightness;242\a' #rgb(215, 160, 242)
+# Shade of purple I like
 printf -- $'\033]6;1;bg;red;brightness;169\a\033]6;1;bg;green;brightness;53\a\033]6;1;bg;blue;brightness;227\a' #rgb(169, 53, 227)
 
 # This a shade of light agua green I like
