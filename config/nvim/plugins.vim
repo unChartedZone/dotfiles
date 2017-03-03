@@ -10,10 +10,11 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'rstacruz/sparkup'
+Plugin 'tpope/vim-surround'
 "####### End of General Plugins ############################################
 
 "####### Autocomplete Plugins #######################################
-Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'davidhalter/jedi-vim'
 "####### End of Autocomplete Plugins ################################
@@ -44,7 +45,7 @@ Plugin 'albertorestifo/github.vim'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
-" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plugin 'KeitaNakamura/neodark.vim'
 " Plugin 'Shougo/neocomplete'
 "Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}

@@ -10,6 +10,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'rstacruz/sparkup'
+Plugin 'tpope/vim-surround'
 "####### End of General Plugins ############################################
 
 "####### Autocomplete Plugins #######################################
