@@ -7,7 +7,7 @@ export ZSH=$DOTFILES/zsh
 # printf -- $'\033]6;1;bg;red;brightness;66\a\033]6;1;bg;green;brightness;244\a\033]6;1;bg;blue;brightness;176\a'
 
 # This is a nice shade of red I like
-# printf -- $'\033]6;1;bg;red;brightness;160\a\033]6;1;bg;green;brightness;64\a\033]6;1;bg;blue;brightness;65\a'
+printf -- $'\033]6;1;bg;red;brightness;160\a\033]6;1;bg;green;brightness;64\a\033]6;1;bg;blue;brightness;65\a'
 
 # This is a nice shade of yellow I like
 # printf -- $'\033]6;1;bg;red;brightness;222\a\033]6;1;bg;green;brightness;147\a\033]6;1;bg;blue;brightness;95\a'
@@ -17,7 +17,7 @@ export ZSH=$DOTFILES/zsh
 # Another shade of purple I like
 #rgb(215, 160, 242)
 #rgb(169, 53, 227)
-# printf -- $'\033]6;1;bg;red;brightness;169\a\033]6;1;bg;green;brightness;53\a\033]6;1;bg;blue;brightness;227\a'
+printf -- $'\033]6;1;bg;red;brightness;169\a\033]6;1;bg;green;brightness;53\a\033]6;1;bg;blue;brightness;227\a'
 
 # This a shade of light agua green I like
 # rgb(81, 190, 149)
@@ -29,7 +29,7 @@ export ZSH=$DOTFILES/zsh
 # printf -- $'\033]6;1;bg;red;brightness;81\a\033]6;1;bg;green;brightness;190\a\033]6;1;bg;blue;brightness;149\a'
 # printf -- $'\033]6;1;bg;red;brightness;0\a\033]6;1;bg;green;brightness;255\a\033]6;1;bg;blue;brightness;204\a'
 # printf -- $'\033]6;1;bg;red;brightness;0\a\033]6;1;bg;green;brightness;153\a\033]6;1;bg;blue;brightness;153\a'
-printf -- $'\033]6;1;bg;red;brightness;0\a\033]6;1;bg;green;brightness;128\a\033]6;1;bg;blue;brightness;128\a'
+# printf -- $'\033]6;1;bg;red;brightness;0\a\033]6;1;bg;green;brightness;128\a\033]6;1;bg;blue;brightness;128\a'
 # printf -- $'\033]6;1;bg;red;brightness;28\a\033]6;1;bg;green;brightness;211\a\033]6;1;bg;blue;brightness;155\a'
 
 # This is a shade of dark green I like
@@ -76,9 +76,9 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$DOTFILES/bin:$PATH
 
 # check for custom bin directory and add to path
-if [[ -d ~/bin ]]; then
-    export PATH=~/bin:$PATH
-fi
+# if [[ -d ~/bin ]]; then
+#     export PATH=~/bin:$PATH
+# fi
 
 # [ -z "$TMUX" ] && export TERM=xterm-256color
 # export TERM="xterm-256color"
@@ -113,3 +113,5 @@ it2prof() { echo -e "\033]50;SetProfile=$1\a"  }
 
 echo "Welcome Back, Christian Valdez"
 # alias tmux="env TERM=xterm-256color tmux"
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
