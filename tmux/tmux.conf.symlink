@@ -4,7 +4,8 @@ set -g default-command "login-shell"
 set-option -ga terminal-overrides ",xterm-256color:Tc"
 # set -g default-terminal "xterm-256color"
 set -g default-terminal "screen-256color"
-source ~/.dotfiles/tmux/theme.sh
+source ~/.dotfiles/tmux/hybrid_tmux.sh
+# source ~/Workshop/dotfiles/tmux/human.sh
 source ~/.dotfiles/tmux/keybindings.conf
 # source ~/.dotfiles/tmux/dev.tmux.conf.symlink
 

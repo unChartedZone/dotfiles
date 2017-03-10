@@ -11,6 +11,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'rstacruz/sparkup'
 Plugin 'tpope/vim-surround'
+Plugin 'ryanoasis/vim-devicons'
 "####### End of General Plugins ############################################
 
 "####### Autocomplete Plugins #######################################
@@ -64,6 +65,7 @@ filetype plugin indent on    " required
 
 "Ctrlp Settings
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDevIconsGetFileTypeSymbol(v:val) . " " . v:val) '
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn|idea)|cmake-build-debug$',

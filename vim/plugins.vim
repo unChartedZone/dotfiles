@@ -11,6 +11,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'rstacruz/sparkup'
 Plugin 'tpope/vim-surround'
+Plugin 'christoomey/vim-tmux-navigator'
 "####### End of General Plugins ############################################
 
 "####### Autocomplete Plugins #######################################
@@ -46,6 +47,7 @@ Plugin 'albertorestifo/github.vim'
 Plugin 'marciomazza/vim-brogrammer-theme'
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'whatyouhide/vim-gotham'
+Plugin 'ryanoasis/vim-devicons'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
@@ -71,6 +73,7 @@ let g:NERDTreeWinSize=21
 
 "Ctrlp Settings
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDevIconsGetFileTypeSymbol(v:val) . " " . v:val) '
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn|idea)|cmake-build-debug$',
@@ -92,6 +95,7 @@ let g:airline_theme='tomorrow'
 let g:airline_section_warning = ''
 "Enable the tab bar styling
 let g:airline#extensions#tabline#enabled = 1
+" let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol='x'
 
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
@@ -104,6 +108,8 @@ let g:tern_show_argument_hints='on_hold'
 let g:tern_map_keys=1
 "Disables the preview window
 set completeopt-=preview
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+
 
 "Vim-clang settings
 " let g:clang_cpp_completeopt = 'longest,menuone'
@@ -123,3 +129,6 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 nnoremap <C-w>E :SyntasticCheck<CR> :lopen<CR>
+
+"Devicons Settings
+set guifont=FuraCode\ Nerd\ Font:h12
