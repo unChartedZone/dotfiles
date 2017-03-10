@@ -1,5 +1,4 @@
 so ~/.dotfiles/vim/plugins.vim
-let python_highlight_all = 1
 so ~/.dotfiles/vim/colorscheme.vim
 so ~/.dotfiles/vim/keybindings.vim
 
