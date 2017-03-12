@@ -48,6 +48,7 @@ Plugin 'marciomazza/vim-brogrammer-theme'
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'whatyouhide/vim-gotham'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'arcticicestudio/nord-vim'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
