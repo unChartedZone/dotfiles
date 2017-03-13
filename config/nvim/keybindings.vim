@@ -4,11 +4,12 @@ inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
 "CtrlP Keybindings
 nmap <C-n> :CtrlPTag<CR>
 nmap <C-m> :CtrlPBufTagAll<CR>
+nmap <C-b> :CtrlPBuffer<CR>
 nmap ∂ :CtrlPBufTagAll<CR>
 nmap ¥ :CtrlP<CR>
 
 "Nerdtree Keybinding(s)
-" nmap <C-t> :NERDTreeToggle<CR>
+nmap <C-t> :NERDTreeToggle<CR>
 nmap ∫ :NERDTreeToggle<CR>
 
 "Tagbar settings
@@ -26,5 +27,8 @@ inoremap <C-c> <esc>
 
 " Lets me use shift enter to go to end of line, only works in iterm
 inoremap ✠ <C-o>A
+
+
+
 
 " ###################################################################
