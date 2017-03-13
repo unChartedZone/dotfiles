@@ -1,5 +1,4 @@
 so ~/.dotfiles/vim/plugins.vim
-so ~/.dotfiles/vim/colorscheme.vim
 so ~/.dotfiles/vim/keybindings.vim
 
 " set number
@@ -16,3 +15,16 @@ set cursorline
 set list lcs=tab:\|\ "This is for indent guides"
 set splitright "This makes it so that splits are put on the right by default
 " set lazyredraw
+
+"----- Colorscheme Settings------------------------------------------------------
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
+set t_Co=256
+syntax enable
+set background=dark
+colorscheme hybrid
+
+
+
+
