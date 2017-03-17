@@ -22,6 +22,7 @@ Plugin 'davidhalter/jedi-vim'
 
 "####### File Navigation Plugins ####################################
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ctrlpvim/ctrlp.vim'
 "####### End of File Navigation Plugins #############################
 
@@ -49,6 +50,7 @@ Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'whatyouhide/vim-gotham'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'arcticicestudio/nord-vim'
+Plugin 'scwood/vim-hybrid'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
