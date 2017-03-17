@@ -55,4 +55,4 @@ tm_host="#[bg=$tm_color_inactive,fg=$tm_color_feature]$tm_right_separator_black#
 tm_session_name="#[bg=$tm_color_feature,fg=$tm_color_background,bold]$tm_icon #S #[fg=$tm_color_feature,bg=default,nobold]$tm_left_separator_black"
 
 set -g status-left $tm_session_name
-set -g status-right $tm_itunes' '$tm_rdio' '$tm_battery' '$tm_date' '$tm_host
+set -g status-right $tm_tunes' '$tm_date' '$tm_host
