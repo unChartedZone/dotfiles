@@ -46,8 +46,8 @@ set-option -g display-panes-active-colour $tm_color_active
 set-option -g display-panes-colour $tm_color_inactive
 
 tm_tunes="#[fg=$tm_color_music,bg=$tm_color_background]$tm_right_separator_black#[fg=$tm_color_background,bg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/tunes.scpt)"
-tm_date="#[bg=$tm_color_music,fg=$tm_color_inactive]$tm_right_separator_black#[bg=$tm_color_inactive,fg=$tm_color_background] %R %d %b"
-tm_host="#[bg=$tm_color_inactive,fg=$tm_color_feature]$tm_right_separator_black#[bg=$tm_color_feature,fg=$tm_color_background,bold] #h "
+tm_date="#[bg=$tm_color_music,fg=$tm_color_active]$tm_right_separator_black#[bg=$tm_color_active,fg=$tm_color_background] %R %d %b"
+tm_host="#[bg=$tm_color_active,fg=$tm_color_feature]$tm_right_separator_black#[bg=$tm_color_feature,fg=$tm_color_background,bold] #h "
 
 tm_session_name="#[bg=$tm_color_feature,fg=$tm_color_background,bold]$tm_icon #S #[fg=$tm_color_feature,bg=default,nobold]$tm_left_separator_black"
 
