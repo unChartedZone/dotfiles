@@ -15,6 +15,8 @@ set cursorline
 set list lcs=tab:\|\ "This is for indent guides"
 set splitright "This makes it so that splits are put on the right by default
 " set lazyredraw
+set textwidth=80
+set colorcolumn=+1
 
 "----- Colorscheme Settings------------------------------------------------------
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
