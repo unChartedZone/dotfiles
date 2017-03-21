@@ -66,7 +66,7 @@ bindkey -v
 
 function zle-line-init zle-keymap-select {
     VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]% %{$reset_color%}"
-	RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $(git_dirty) $(git_branch) $(git_arrows) $EPS1"
+	RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $(git_dirty)$(git_branch)$(git_arrows) $EPS1"
 	zle reset-prompt
 }
 
