@@ -50,17 +50,29 @@ git_arrows() {
     echo $arrows 
 }
 
+git_branch() {
+	temp="%F{241}$vcs_info_msg_0_%f"
+	echo $temp
+}
+
 # Enable vi mode
 bindkey -v
 
+# function zle-line-init zle-keymap-select {
+#     VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]% %{$reset_color%}"
+# 	RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $(git_custom_status) $EPS1"
+# 	zle reset-prompt
+# }
+
 function zle-line-init zle-keymap-select {
     VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]% %{$reset_color%}"
-	RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $(git_custom_status) $EPS1"
+	RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $(git_dirty) $(git_branch) $(git_arrows) $EPS1"
 	zle reset-prompt
 }
 
-# zle -N zle-line-init
-# zle -N zle-keymap-select
+zle -N zle-line-init
+zle -N zle-keymap-select
+export KEYTIMEOUT=1
 
 precmd() {
     vcs_info
@@ -69,4 +81,5 @@ precmd() {
 
 # export PROMPT='%(?.%F{yellow}.%F{blue})➤ (?.%F{yellow}.%F{blue})➤ ➤%f '
 export PROMPT='%(?.%F{227}.%F{blue})⚡︎%f '
-export RPROMPT='`git_dirty`%F{241}$vcs_info_msg_0_%f `git_arrows`'
+# export PROMPT='%(?.%F{199}.%F{blue})➤%f '
+export RPROMPT='`git_dirty`%F{241}$vcs_info_msg_0_%f `git_arrows` '
