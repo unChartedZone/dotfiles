@@ -51,6 +51,7 @@ Plugin 'whatyouhide/vim-gotham'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'scwood/vim-hybrid'
+Plugin 'colepeters/spacemacs-theme.vim'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
