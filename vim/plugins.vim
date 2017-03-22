@@ -107,11 +107,12 @@ set fillchars+=stl:\ ,stlnc:\
 
 "Autocomplete Plugins Settings
 let g:neocomplete#enable_at_startup = 1
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 let g:tern_show_argument_hints='on_hold'
 let g:tern_map_keys=1
+
 "Disables the preview window
 set completeopt-=preview
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 
 
 "Vim-clang settings
@@ -121,7 +122,7 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 " Javascript Library Settings
 let g:used_javascript_libs = 'jquery'
 
-"Synstatic Recommended settings
+"Synstatic Recommended settings -------------------------------------------------------------------
 " set statusline+=%#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
