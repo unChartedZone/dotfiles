@@ -73,7 +73,6 @@ filetype plugin indent on    " required
 "####### PLUGIN SETTINGS #############################################
 
 "NerdTree Settings
-let g:NERDTreeWinSize=21
 
 "Ctrlp Settings
 let g:ctrlp_show_hidden = 1
