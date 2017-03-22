@@ -28,6 +28,10 @@ inoremap <C-c> <esc>
 " Lets me use shift enter to go to end of line, only works in iterm
 inoremap ✠ <C-o>A
 
+"Fix for vim-tmux-navigator
+nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
+
+command OpenInBrowser !chrome %
 
 
 
