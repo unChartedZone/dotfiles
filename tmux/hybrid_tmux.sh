@@ -10,7 +10,7 @@ tm_color_inactive=colour241
 tm_color_feature="#4973BD"
 # tm_color_music=colour41
 tm_color_music=colour203
-tm_active_border_color="#D786E6"
+tm_active_border_color="#de935f"
 
 # separators
 tm_separator_left_bold="◀"
@@ -42,7 +42,6 @@ set-window-option -g  window-status-current-format "#[bold]#I #W"
 # pane border
 set-option -g pane-border-fg $tm_color_inactive
 set-option -g pane-active-border-fg $tm_active_border_color
-# set-option -g pane-active-border-fg $tm_color_active
 
 # message text
 set-option -g message-bg default

@@ -10,7 +10,7 @@
 printf -- $'\033]6;1;bg;red;brightness;222\a\033]6;1;bg;green;brightness;147\a\033]6;1;bg;blue;brightness;95\a' #rgb(222, 147, 95)
 
 # Shade of purple I like
-printf -- $'\033]6;1;bg;red;brightness;169\a\033]6;1;bg;green;brightness;53\a\033]6;1;bg;blue;brightness;227\a' #rgb(169, 53, 227)
+# printf -- $'\033]6;1;bg;red;brightness;169\a\033]6;1;bg;green;brightness;53\a\033]6;1;bg;blue;brightness;227\a' #rgb(169, 53, 227)
 
 # This is a shade of dark green I like
 # printf -- $'\033]6;1;bg;red;brightness;12\a\033]6;1;bg;green;brightness;75\a\033]6;1;bg;blue;brightness;51\a' #rgb(12, 75, 51)
