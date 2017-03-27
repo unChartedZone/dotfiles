@@ -64,6 +64,9 @@ Plugin 'albertorestifo/github.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+"NerdTree Settings
+let NERDTreeIgnore = ['\.o$']
+
 "Ctrlp Settings
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDevIconsGetFileTypeSymbol(v:val) . " " . v:val) '

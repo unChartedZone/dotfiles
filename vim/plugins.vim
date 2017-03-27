@@ -73,6 +73,7 @@ filetype plugin indent on    " required
 "####### PLUGIN SETTINGS #############################################
 
 "NerdTree Settings
+let NERDTreeIgnore = ['\.o$']
 
 "Ctrlp Settings
 let g:ctrlp_show_hidden = 1
