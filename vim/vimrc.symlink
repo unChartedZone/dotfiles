@@ -26,6 +26,7 @@ set t_Co=256
 syntax enable
 set background=dark
 colorscheme hybrid
+let g:airline_theme='tomorrow'
 
 "----- Keybindings ------------------------------------------------------
 " set a map leader for more key combos
@@ -65,7 +66,6 @@ inoremap ✠ <C-o>A
 nmap ß :w<CR>
 
 command OpenInBrowser !chrome %
-
 
 
 

@@ -91,7 +91,6 @@ let g:ctrlp_custom_ignore = {
 "Vim Airline Settings
 let g:airline_powerline_fonts = 1
 "let g:airline_theme='wombat'
-let g:airline_theme='tomorrow'
 " let g:airline_theme='github'
 " let g:airline_theme='onedark'
 " let g:airline_theme='base16_tomorrow'
