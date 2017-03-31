@@ -1,6 +1,6 @@
 # My Dotfiles
 
-These are the config files for zsh,tmux, hyperterm, intellij, clion, ctags, and everything
+These are the config files for zsh, tmux, hyperterm, intellij, clion, ctags, and everything
 else I need to be productive on my computer.
 
 ## Homebrew
