@@ -7,6 +7,6 @@ set background=dark
 " colorscheme tomorrow
 " colorscheme onedark
 " colorscheme gruvbox
-colorscheme gruvbox
-let g:airline_theme='gruvbox'
+colorscheme hybrid
+let g:airline_theme='tomorrow'
 " let g:airline_theme='onedark'
