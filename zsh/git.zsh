@@ -1,11 +1,11 @@
 # git aliases
 alias ga='git add'
-alias gs='git status'
 alias gb='git branch'
- alias gpull='git pull'
-alias gpush='git push'
 alias gdiff='git diff'
 alias glog="git log"
+alias gpull='git pull'
+alias gpush='git push'
+alias gs='git status'
 # alias gmv='git mv'
 # alias grm='git rm'
 # alias grn='git-rename'
