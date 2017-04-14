@@ -10,6 +10,7 @@ alias unchartedzone="ssh chris@unchartedzone.me"
 # alias mvim="open -a /usr/local/Cellar/macvim/8.0-126/MacVim.app/Contents/MacOS/MacVim"
 alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 alias school="cd ~/Documents/chrisSchoolWork/spring2017/"
+alias copyP2="scp ~/Documents/chrisSchoolWork/spring2017/cs570/programTwo/p2.c masc0089@rohan.sdsu.edu:~/Two"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
