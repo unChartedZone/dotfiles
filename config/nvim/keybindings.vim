@@ -1,4 +1,8 @@
 " #################### Custom Key bindings ##########################
+" set a map leader for more key combos
+let mapleader = ','
+let g:mapleader = ','
+
 "Sets neocomplete on and lets tab work for selecting suggestions
 inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
 "CtrlP Keybindings
