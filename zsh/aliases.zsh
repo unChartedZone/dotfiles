@@ -7,7 +7,6 @@ alias legolas='ssh valdez@legolas.sdsu.edu'
 alias edoras="ssh cssc0038@edoras.sdsu.edu"
 alias alucard="ssh chris@alucard.io"
 alias unchartedzone="ssh chris@unchartedzone.me"
-# alias mvim="open -a /usr/local/Cellar/macvim/8.0-126/MacVim.app/Contents/MacOS/MacVim"
 alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 alias school="cd ~/Documents/chrisSchoolWork/spring2017/"
 alias copyP2="scp ~/Documents/chrisSchoolWork/spring2017/cs570/programTwo/p2.c masc0089@rohan.sdsu.edu:~/Two"
@@ -86,6 +85,5 @@ alias ll="ls -lFh ${colorflag}"
 #alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
 alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chrome"
-#alias canary="/Applications/Google\\ Chrome\\ Canary.app/Contents/MacOS/Google\\ Chrome\\ Canary"
 
 alias nvim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
