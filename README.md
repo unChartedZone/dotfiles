@@ -14,8 +14,10 @@ to make zsh your default shell. Then run the command `ln -s
 dotfiles/zsh/zshrc.symlink ~/.zshrc` to make a soft link.
 
 ## Tmux 
-Tmux is a great tool if like to have multiple terminal windows open at
-once at get nothing accomplished.
+Tmux is a great tool if you like to have multiple terminal windows open at
+once and get nothing accomplished. I made the prefix key for tmux Ctrl-A and
+change my caps-lock key to be a second ctrl key, that way allowing me to quickly
+enable the prefix motion.
 
 ## Vim & Neovim 
 I use both Vim and Neovim depending on my needs. Vim for any
