@@ -76,7 +76,6 @@ filetype plugin indent on    " required
 let NERDTreeIgnore = ['\.o$']
 
 " GitGutter Settings 
-let g:gitgutter_sign_removed = '✗'
 
 "Ctrlp Settings
 let g:ctrlp_show_hidden = 1
