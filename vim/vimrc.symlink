@@ -1,7 +1,8 @@
 so ~/.dotfiles/vim/plugins.vim "Install plugins and set there settings
 
-"----- General Settings------------------------------------------------------
-" set number
+"##########################################################
+" General Settings {{{
+
 set relativenumber
 set tabstop=4 shiftwidth=4 number autoindent noexpandtab nowrap linebreak nolist 
 set backspace=2
@@ -17,8 +18,11 @@ set splitright "This makes it so that splits are put on the right by default
 " set lazyredraw
 set textwidth=80
 set colorcolumn=+1
+" }}}
+"##########################################################
 
-"----- Colorscheme Settings------------------------------------------------------
+"##########################################################
+" Colorscheme Settings {{{
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
@@ -27,8 +31,11 @@ syntax enable
 set background=dark
 colorscheme hybrid
 let g:airline_theme='tomorrow'
+" }}}
+"##########################################################
 
-"----- Keybindings ------------------------------------------------------
+"##########################################################
+" Keybindings Settings {{{
 " set a map leader for more key combos
 let mapleader = ','
 let g:mapleader = ','
@@ -67,5 +74,11 @@ nmap ß :w<CR>
 
 command OpenInBrowser !chrome %
 
+nnoremap <leader-a> <C-a>
 
+
+" }}}
+"##########################################################
+
+" vim:foldmethod=marker:foldlevel=0
 
