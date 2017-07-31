@@ -52,6 +52,8 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'scwood/vim-hybrid'
 Plugin 'colepeters/spacemacs-theme.vim'
+Plugin 'ayu-theme/ayu-vim'
+Plugin 'cdmedia/itg_flat_vim'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
