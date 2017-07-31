@@ -11,13 +11,13 @@ set mouse=a "Lets the mouse to be used in vim
 set laststatus=2 "Set up the status bar in vim
 set clipboard=unnamed "Lets vim and clipboard play nice togehter
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store    " MacOSX/Linux
-set ttyfast
-set cursorline
+set ttyfast "No idea what this does
+set cursorline "Adds a highlight for the current line
 set list lcs=tab:\|\ "This is for indent guides"
 set splitright "This makes it so that splits are put on the right by default
-" set lazyredraw
-set textwidth=80
-set colorcolumn=+1
+set hlsearch "Highlight words when searching
+set wildmenu
+
 " }}}
 "##########################################################
 
