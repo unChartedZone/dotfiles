@@ -67,14 +67,14 @@ command A !git add .
 inoremap <C-c> <esc>
 
 " Lets me use shift enter to go to end of line, only works in iterm
-inoremap ✠ <C-o>A
+inoremap ✠ <esc>A
 
 "Save with command s
 nmap ß :w<CR>
 
 command OpenInBrowser !chrome %
 
-nnoremap <leader-a> <C-a>
+nnoremap <Leader>a <C-a>
 
 
 " }}}

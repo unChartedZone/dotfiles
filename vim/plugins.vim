@@ -112,6 +112,11 @@ set fillchars+=stl:\ ,stlnc:\
 "Autocomplete Plugins Settings
 let g:neocomplete#enable_at_startup = 1
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript setlocal omnifunc=tern#Complete
+if !exists('g:neocomplete#force_omni_input_patterns')
+	  let g:neocomplete#force_omni_input_patterns = {}
+  endif
+let g:neocomplete#force_omni_input_patterns.javascript = '\h\w*\|[^. \t]\.\w*'
 let g:tern_show_argument_hints='on_hold'
 let g:tern_map_keys=1
 
