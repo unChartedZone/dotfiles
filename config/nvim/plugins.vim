@@ -73,7 +73,7 @@ let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDe
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn|idea)|cmake-build-debug$',
-  \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)$',
+  \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)|vsh$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
@@ -92,3 +92,5 @@ set completeopt-=preview
 
 "YouCompleteMe Settings
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
