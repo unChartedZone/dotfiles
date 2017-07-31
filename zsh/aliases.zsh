@@ -7,6 +7,7 @@ alias legolas='ssh valdez@legolas.sdsu.edu'
 alias edoras="ssh cssc0038@edoras.sdsu.edu"
 alias alucard="ssh chris@alucard.io"
 alias unchartedzone="ssh chris@unchartedzone.me"
+alias wordpress="ssh chris@138.68.246.123"
 alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 alias school="cd ~/Documents/chrisSchoolWork/spring2017/"
 
