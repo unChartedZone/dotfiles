@@ -35,6 +35,9 @@ inoremap ✠ <C-o>A
 "Fix for vim-tmux-navigator
 nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
 
+"Save with command s
+nmap ß :w<CR>
+
 command OpenInBrowser !chrome %
 
 
