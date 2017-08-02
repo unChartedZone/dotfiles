@@ -2,7 +2,6 @@ set -g default-command "login-shell"
 #this is how you do comments in tmux 
 
 set-option -ga terminal-overrides ",xterm-256color:Tc"
-# set -g default-terminal "xterm-256color"
 set -g default-terminal "screen-256color"
 source ~/.dotfiles/tmux/hybrid_tmux.sh
 # source ~/.dotfiles/tmux/human.sh
