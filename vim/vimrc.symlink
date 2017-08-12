@@ -1,6 +1,5 @@
 so ~/.dotfiles/vim/plugins.vim "Install plugins and set there settings
 
-"##########################################################
 " General Settings {{{
 
 set relativenumber
@@ -19,9 +18,7 @@ set hlsearch "Highlight words when searching
 set wildmenu
 
 " }}}
-"##########################################################
 
-"##########################################################
 " Colorscheme Settings {{{
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -32,10 +29,9 @@ set background=dark
 colorscheme hybrid
 let g:airline_theme='tomorrow'
 " }}}
-"##########################################################
 
-"##########################################################
 " Keybindings Settings {{{
+
 " set a map leader for more key combos
 let mapleader = ','
 let g:mapleader = ','
@@ -78,7 +74,6 @@ nnoremap <Leader>a <C-a>
 
 
 " }}}
-"##########################################################
 
 " vim:foldmethod=marker:foldlevel=0
 
