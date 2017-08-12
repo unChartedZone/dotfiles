@@ -17,3 +17,6 @@ printf -- $'\033]6;1;bg;red;brightness;222\a\033]6;1;bg;green;brightness;147\a\0
 
 # Shade of salmon pink
 # printf -- $'\033]6;1;bg;red;brightness;237\a\033]6;1;bg;green;brightness;101\a\033]6;1;bg;blue;brightness;104\a' # rgb(237, 101, 104)
+
+# Neon shade of green taken from hyper website
+# printf -- $'\033]6;1;bg;red;brightness;80\a\033]6;1;bg;green;brightness;227\a\033]6;1;bg;blue;brightness;194\a' # rgb(80, 227, 194)

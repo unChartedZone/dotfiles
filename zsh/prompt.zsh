@@ -80,6 +80,11 @@ precmd() {
 }
 
 # export PROMPT='%(?.%F{yellow}.%F{blue})➤ (?.%F{yellow}.%F{blue})➤ ➤%f '
-export PROMPT='%(?.%F{227}.%F{blue})⚡︎%f '
+# export PROMPT='%(?.%F{227}.%F{blue})⚡︎%f '
+# export PROMPT='%(?.%F{000}.%F{blue})⚡︎%f '
+
 # export PROMPT='%(?.%F{199}.%F{blue})➤%f '
+# export PROMPT='%(?.%F{227}.%F{blue})➤%f '
+export PROMPT='%(?.%F{227}.%F{blue})>%f '
+
 export RPROMPT='`git_dirty`%F{241}$vcs_info_msg_0_%f `git_arrows` '
