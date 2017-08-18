@@ -3,7 +3,11 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-"####### General Plugins ############################################
+"###########################################################################
+"
+"				GENERAL PLUGINS
+"
+"###########################################################################
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'			"Git integration  
 Plugin 'airblade/vim-gitgutter' 	" Show git changes on side gutter
@@ -12,34 +16,49 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'rstacruz/sparkup'
 Plugin 'tpope/vim-surround'
 Plugin 'christoomey/vim-tmux-navigator'
-"####### End of General Plugins ############################################
 
-"####### Autocomplete Plugins #######################################
+"###########################################################################
+"
+"				AUTOCOMPLETE PLUGINS
+"
+"###########################################################################
 Plugin 'Shougo/neocomplete'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'davidhalter/jedi-vim'
-"####### End of Autocomplete Plugins ################################
 
-"####### File Navigation Plugins ####################################
+"###########################################################################
+"
+"				FILE NAVIGATION PLUGINS
+"
+"###########################################################################
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ctrlpvim/ctrlp.vim'
-"####### End of File Navigation Plugins #############################
 
-"####### Status Bar Plugins #########################################
+"###########################################################################
+"
+"				STATUS BAR PLUGINS
+"
+"###########################################################################
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-"####### End of Status Bar Plugins ##################################
 
-"####### Syntax Plugins ###########################
+"###########################################################################
+"
+"				SYTNATX PLUGINS
+"
+"###########################################################################
 " Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'hdima/python-syntax'
-"####### Syntax Plugins ####################
 
-"####### Color Schemes ###########################
+"###########################################################################
+"
+"				COLORSCHEME PLUGINS
+"
+"###########################################################################
 Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'scwood/vim-hybrid'
@@ -56,9 +75,12 @@ Plugin 'cdmedia/itg_flat_vim'
 Plugin 'jacoborus/tender.vim'
 Plugin 'jnurmine/Zenburn'
 Plugin 'ryanoasis/vim-devicons'
-"####### End of Color Schemes ####################
 
-"####### Unused Plugins #############################################
+"###########################################################################
+"
+"				UNUSED PLUGINS
+"
+"###########################################################################
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'justmao945/vim-clang'
 "Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
@@ -74,7 +96,11 @@ Plugin 'ryanoasis/vim-devicons'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"####### PLUGIN SETTINGS #############################################
+"###########################################################################
+"
+"				PLUGIN SETTINGS
+"
+"###########################################################################
 
 "NerdTree Settings
 let NERDTreeIgnore = ['\.o$']
