@@ -5,8 +5,8 @@ call vundle#begin()
 
 "####### General Plugins ############################################
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'			"Git integration  
+Plugin 'airblade/vim-gitgutter' 	" Show git changes on side gutter
 Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'rstacruz/sparkup'
@@ -49,11 +49,13 @@ Plugin 'juanedi/predawn.vim'
 Plugin 'albertorestifo/github.vim'
 Plugin 'marciomazza/vim-brogrammer-theme'
 Plugin 'whatyouhide/vim-gotham'
-Plugin 'ryanoasis/vim-devicons'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'cdmedia/itg_flat_vim'
+Plugin 'jacoborus/tender.vim'
+Plugin 'jnurmine/Zenburn'
+Plugin 'ryanoasis/vim-devicons'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
