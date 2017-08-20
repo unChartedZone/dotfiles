@@ -15,7 +15,6 @@ Plugin 'tpope/vim-commentary'		" Comment out lines easier
 Plugin 'jiangmiao/auto-pairs' 		" 
 Plugin 'rstacruz/sparkup' 			" Emmet-like plugin
 Plugin 'tpope/vim-surround' 		" Surround things with other things easier
-Plugin 'christoomey/vim-tmux-navigator'
 
 "###########################################################################
 "

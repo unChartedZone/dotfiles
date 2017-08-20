@@ -12,7 +12,6 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'rstacruz/sparkup'
 Plugin 'tpope/vim-surround'
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'christoomey/vim-tmux-navigator'
 "####### End of General Plugins ############################################
 
 "####### Autocomplete Plugins #######################################
