@@ -8,13 +8,13 @@ call vundle#begin()
 "				GENERAL PLUGINS
 "
 "###########################################################################
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'			"Git integration  
+Plugin 'VundleVim/Vundle.vim'		" Pluign Manager
+Plugin 'tpope/vim-fugitive'			" Git integration  
 Plugin 'airblade/vim-gitgutter' 	" Show git changes on side gutter
-Plugin 'tpope/vim-commentary'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'rstacruz/sparkup'
-Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'		" Comment out lines easier
+Plugin 'jiangmiao/auto-pairs' 		" 
+Plugin 'rstacruz/sparkup' 			" Emmet-like plugin
+Plugin 'tpope/vim-surround' 		" Surround things with other things easier
 Plugin 'christoomey/vim-tmux-navigator'
 
 "###########################################################################
@@ -72,8 +72,6 @@ Plugin 'arcticicestudio/nord-vim'
 Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'cdmedia/itg_flat_vim'
-Plugin 'jacoborus/tender.vim'
-Plugin 'jnurmine/Zenburn'
 Plugin 'ryanoasis/vim-devicons'
 
 "###########################################################################
