@@ -28,8 +28,6 @@ syntax enable
 set background=dark
 colorscheme hybrid
 let g:airline_theme='tomorrow'
-" highlight LineNr guifg=grey guibg=yellow
-" highlight LineNr guifg=#969896 guibg=#282A2D
 if g:colors_name == 'hybrid'
 	highlight LineNr guifg=#969896 
 endif
