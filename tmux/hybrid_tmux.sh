@@ -1,6 +1,6 @@
 #### COLOUR
 
-tm_icon="🍔 "
+tm_icon="@"
 # tm_color_active=colour51
 # tm_color_active="#4973BD"
 tm_color_active="#D786E6"
@@ -54,8 +54,6 @@ set-option -g display-panes-colour $tm_color_inactive
 # clock
 set-window-option -g clock-mode-colour $tm_color_active
 
-tm_tunes="#[fg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/tunes.scpt)"
-tm_battery="#(~/.dotfiles/bin/battery_indicator.sh)"
 # temp="#4C89E7"
 # temp="#EAC171"
 # temp="#de935f"
