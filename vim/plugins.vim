@@ -11,7 +11,6 @@ Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'rstacruz/sparkup'
 Plugin 'tpope/vim-surround'
-Plugin 'christoomey/vim-tmux-navigator'
 "####### End of General Plugins ############################################
 
 "####### Autocomplete Plugins #######################################
@@ -49,11 +48,11 @@ Plugin 'juanedi/predawn.vim'
 Plugin 'albertorestifo/github.vim'
 Plugin 'marciomazza/vim-brogrammer-theme'
 Plugin 'whatyouhide/vim-gotham'
-Plugin 'ryanoasis/vim-devicons'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'cdmedia/itg_flat_vim'
+Plugin 'ryanoasis/vim-devicons'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
