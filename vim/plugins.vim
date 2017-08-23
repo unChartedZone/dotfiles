@@ -10,6 +10,7 @@ call vundle#begin()
 "###########################################################################
 Plugin 'VundleVim/Vundle.vim'		" Pluign Manager
 Plugin 'tpope/vim-fugitive'			" Git integration  
+Plugin 'tpope/vim-dispatch'
 Plugin 'airblade/vim-gitgutter' 	" Show git changes on side gutter
 Plugin 'tpope/vim-commentary'		" Comment out lines easier
 Plugin 'jiangmiao/auto-pairs' 		" 
