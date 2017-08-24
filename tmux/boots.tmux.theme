@@ -6,8 +6,15 @@
 #
 # Requires terminal to be using a powerline compatible font, find one here:
 # https://github.com/Lokaltog/powerline-fonts
-#
-tm_color_outer="#de935f"
+
+# Colors
+tm_color_outer="#4973bd"
+tm_active="#d786e6"
+tm_border_color="#de935f"
+
+
+
+
 # Status update interval
 set -g status-interval 1
 
@@ -25,11 +32,11 @@ set -g status-left "#[fg=colour233,bg=$tm_color_outer,bold] #S #[fg=$tm_color_ou
 set -g status-right-bg colour233
 set -g status-right-fg colour243
 set -g status-right-length 150
-set -g status-right "#[fg=colour235,bg=colour233]#[fg=colour240,bg=colour235] %H:%M:%S #[fg=colour240,bg=colour235]#[fg=colour233,bg=colour240] %d-%b-%y #[fg=colour227,bg=colour240]#[fg=colour233,bg=colour227,bold] #H "
+set -g status-right "#[fg=colour235,bg=colour233]#[fg=colour240,bg=colour235] %H:%M:%S #[fg=colour240,bg=colour235]#[fg=colour233,bg=colour240] %d-%b-%y #[fg=$tm_color_outer,bg=colour240]#[fg=colour233,bg=$tm_color_outer,bold] #H "
 
 # Window status
 set -g window-status-format "  #I:#W#F  "
-set -g window-status-current-format "#[fg=colour233,bg=black]#[fg=colour227,nobold] #I:#W#F #[fg=colour233,bg=black,nobold]"
+set -g window-status-current-format "#[fg=colour233,bg=black]#[fg=black,bg=$tm_active,nobold] #I:#W#F #[fg=colour233,bg=black,nobold]"
 
 # Current window status
 set -g window-status-current-bg colour227
@@ -47,11 +54,11 @@ set -g status-justify centre
 
 # Pane border
 set -g pane-border-bg default
-set -g pane-border-fg $tm_color_outer
+set -g pane-border-fg $tm_border_color
 
 # Active pane border
 set -g pane-active-border-bg default
-set -g pane-active-border-fg $tm_color_outer
+set -g pane-active-border-fg $tm_border_color
 
 # Pane number indicator
 set -g display-panes-colour colour233
