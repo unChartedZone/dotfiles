@@ -7,7 +7,7 @@
 # Requires terminal to be using a powerline compatible font, find one here:
 # https://github.com/Lokaltog/powerline-fonts
 #
-
+tm_color_background="#de935f"
 # Status update interval
 set -g status-interval 1
 
@@ -19,7 +19,7 @@ set -g status-bg colour233
 set -g status-left-bg colour233
 set -g status-left-fg colour243
 set -g status-left-length 40
-set -g status-left "#[fg=colour233,bg=colour227,bold] #S #[fg=colour227,bg=colour240,nobold]#[fg=colour233,bg=colour240] #(whoami) #[fg=colour240,bg=colour235]#[fg=colour240,bg=colour235] #I:#P #[fg=colour235,bg=colour233,nobold]"
+set -g status-left "#[fg=colour233,bg=$tm_color_background,bold] #S #[fg=$tm_color_background,bg=colour240,nobold]#[fg=colour233,bg=colour240] #(whoami) #[fg=colour240,bg=colour235]#[fg=colour240,bg=colour235] #I:#P #[fg=colour235,bg=colour233,nobold]"
 
 # Right side of status bar
 set -g status-right-bg colour233
@@ -47,11 +47,11 @@ set -g status-justify centre
 
 # Pane border
 set -g pane-border-bg default
-set -g pane-border-fg colour238
+set -g pane-border-fg $tm_color_background
 
 # Active pane border
 set -g pane-active-border-bg default
-set -g pane-active-border-fg colour227
+set -g pane-active-border-fg $tm_color_background
 
 # Pane number indicator
 set -g display-panes-colour colour233
