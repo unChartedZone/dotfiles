@@ -1,0 +1,80 @@
+#
+# Powerline Double Yellow - Tmux Theme
+# Created by Jim Myhrberg <contact@jimeh.me>.
+#
+# Inspired by vim-powerline: https://github.com/Lokaltog/powerline
+#
+# Requires terminal to be using a powerline compatible font, find one here:
+# https://github.com/Lokaltog/powerline-fonts
+
+# Colors
+tm_icon="🍔 "
+tm_color_outer="#81a2be"
+tm_yellow="#f0c674"
+tm_cyan="#72eacf"
+tm_active="#d786e6" # This is purple
+tm_border_color="#de935f"
+tm_color_music=colour203
+tm_tunes="#[fg=$tm_color_music,bg=colour235,nobold]#[fg=colour233,bg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/tunes.scpt)"
+
+# Status update interval
+set -g status-interval 1
+
+# Basic status bar colors
+set -g status-fg colour240
+set -g status-bg colour233
+
+# Left side of status bar
+set -g status-left-bg colour233
+set -g status-left-fg colour243
+set -g status-left-length 40
+set -g status-left "#[fg=colour233,bg=$tm_color_outer,bold]$tm_icon #S #[fg=$tm_color_outer,bg=$tm_yellow,nobold]#[fg=colour233,bg=$tm_yellow] #(whoami) #[fg=$tm_yellow,bg=$tm_cyan]#[fg=colour240,bg=$tm_cyan] #I:#P #[fg=$tm_cyan,bg=colour233,nobold]"
+
+# Right side of status bar
+set -g status-right-bg colour233
+set -g status-right-fg colour243
+set -g status-right-length 150
+set -g status-right "$tm_tunes#[fg=$tm_cyan,bg=$tm_color_music,nobold]#[fg=colour235,bg=$tm_cyan] %H:%M:%S #[fg=$tm_yellow,bg=$tm_cyan]#[fg=colour233,bg=$tm_yellow] %d-%b-%y #[fg=$tm_color_outer,bg=$tm_yellow]#[fg=colour233,bg=$tm_color_outer,bold] #H "
+
+# Window status
+set -g window-status-format "  #I:#W#F  "
+set -g window-status-current-format "#[fg=colour233,bg=$tm_active]#[fg=black,bg=$tm_active,nobold] #I:#W#F #[fg=$tm_active,bg=colour233,nobold]"
+
+# Current window status
+set -g window-status-current-bg colour227
+set -g window-status-current-fg colour235
+
+# Window with activity status
+set -g window-status-activity-bg colour245 # fg and bg are flipped here due to
+set -g window-status-activity-fg colour233 # a bug in tmux
+
+# Window separator
+set -g window-status-separator ""
+
+# Pane border
+set -g pane-border-bg default
+set -g pane-border-fg $tm_border_color
+
+# Active pane border
+set -g pane-active-border-bg default
+set -g pane-active-border-fg $tm_border_color
+
+# Pane number indicator
+set -g display-panes-colour colour233
+set -g display-panes-active-colour colour245
+
+# Clock mode
+set -g clock-mode-colour colour227
+set -g clock-mode-style 24
+
+# Message
+set -g message-bg black
+set -g message-fg $tm_active
+
+# Command message
+set -g message-command-bg colour233
+set -g message-command-fg black
+
+# Mode
+set -g mode-bg $tm_yellow
+set -g mode-fg colour235
