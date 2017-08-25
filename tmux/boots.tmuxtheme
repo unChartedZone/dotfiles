@@ -8,6 +8,7 @@
 # https://github.com/Lokaltog/powerline-fonts
 
 # Colors
+tm_icon="🍔 "
 tm_color_outer="#81a2be"
 tm_yellow="#f0c674"
 tm_active="#d786e6" # This is purple
@@ -25,7 +26,7 @@ set -g status-bg colour233
 set -g status-left-bg colour233
 set -g status-left-fg colour243
 set -g status-left-length 40
-set -g status-left "#[fg=colour233,bg=$tm_color_outer,bold] #S #[fg=$tm_color_outer,bg=$tm_yellow,nobold]#[fg=colour233,bg=$tm_yellow] #(whoami) #[fg=$tm_yellow,bg=colour235]#[fg=colour240,bg=colour235] #I:#P #[fg=colour235,bg=colour233,nobold]"
+set -g status-left "#[fg=colour233,bg=$tm_color_outer,bold]$tm_icon #S #[fg=$tm_color_outer,bg=$tm_yellow,nobold]#[fg=colour233,bg=$tm_yellow] #(whoami) #[fg=$tm_yellow,bg=colour235]#[fg=colour240,bg=colour235] #I:#P #[fg=colour235,bg=colour233,nobold]"
 
 # Right side of status bar
 set -g status-right-bg colour233
