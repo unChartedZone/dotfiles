@@ -64,13 +64,13 @@ set -g clock-mode-colour colour227
 set -g clock-mode-style 24
 
 # Message
-set -g message-bg colour227
-set -g message-fg black
+set -g message-bg black
+set -g message-fg $tm_active
 
 # Command message
 set -g message-command-bg colour233
 set -g message-command-fg black
 
 # Mode
-set -g mode-bg colour227
+set -g mode-bg $tm_yellow
 set -g mode-fg colour235
