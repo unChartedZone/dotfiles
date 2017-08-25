@@ -11,9 +11,11 @@
 tm_icon="🍔 "
 tm_color_outer="#81a2be"
 tm_yellow="#f0c674"
+tm_cyan="#72eacf"
 tm_active="#d786e6" # This is purple
 tm_border_color="#de935f"
-tm_tunes="#[fg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/tunes.scpt)"
+tm_color_music=colour203
+tm_tunes="#[fg=$tm_color_music,bg=colour235,nobold]#[fg=colour233,bg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/tunes.scpt)"
 
 # Status update interval
 set -g status-interval 1
@@ -26,13 +28,13 @@ set -g status-bg colour233
 set -g status-left-bg colour233
 set -g status-left-fg colour243
 set -g status-left-length 40
-set -g status-left "#[fg=colour233,bg=$tm_color_outer,bold]$tm_icon #S #[fg=$tm_color_outer,bg=$tm_yellow,nobold]#[fg=colour233,bg=$tm_yellow] #(whoami) #[fg=$tm_yellow,bg=colour235]#[fg=colour240,bg=colour235] #I:#P #[fg=colour235,bg=colour233,nobold]"
+set -g status-left "#[fg=colour233,bg=$tm_color_outer,bold]$tm_icon #S #[fg=$tm_color_outer,bg=$tm_yellow,nobold]#[fg=colour233,bg=$tm_yellow] #(whoami) #[fg=$tm_yellow,bg=$tm_cyan]#[fg=colour240,bg=$tm_cyan] #I:#P #[fg=$tm_cyan,bg=colour233,nobold]"
 
 # Right side of status bar
 set -g status-right-bg colour233
 set -g status-right-fg colour243
 set -g status-right-length 150
-set -g status-right "$tm_tunes#[fg=colour235,bg=colour233]#[fg=colour240,bg=colour235] %H:%M:%S #[fg=$tm_yellow,bg=colour235]#[fg=colour233,bg=$tm_yellow] %d-%b-%y #[fg=$tm_color_outer,bg=$tm_yellow]#[fg=colour233,bg=$tm_color_outer,bold] #H "
+set -g status-right "$tm_tunes#[fg=$tm_cyan,bg=$tm_color_music,nobold]#[fg=colour235,bg=$tm_cyan] %H:%M:%S #[fg=$tm_yellow,bg=$tm_cyan]#[fg=colour233,bg=$tm_yellow] %d-%b-%y #[fg=$tm_color_outer,bg=$tm_yellow]#[fg=colour233,bg=$tm_color_outer,bold] #H "
 
 # Window status
 set -g window-status-format "  #I:#W#F  "
