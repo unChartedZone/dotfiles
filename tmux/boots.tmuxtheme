@@ -36,7 +36,7 @@ set -g status-right "$tm_tunes#[fg=colour235,bg=colour233]#[fg=colour240,bg=c
 
 # Window status
 set -g window-status-format "  #I:#W#F  "
-set -g window-status-current-format "#[fg=colour233,bg=black]#[fg=black,bg=$tm_active,nobold] #I:#W#F #[fg=colour233,bg=black,nobold]"
+set -g window-status-current-format "#[fg=colour233,bg=$tm_active]#[fg=black,bg=$tm_active,nobold] #I:#W#F #[fg=$tm_active,bg=colour233,nobold]"
 
 # Current window status
 set -g window-status-current-bg colour227
