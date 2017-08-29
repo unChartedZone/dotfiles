@@ -9,9 +9,8 @@ source ~/.dotfiles/tmux/boots.tmuxtheme
 
 source ~/.dotfiles/tmux/keybindings.conf
 
-#set -g mouse on #This allows scrolling in tmux
+set -g mouse on #This allows scrolling in tmux
 #This is a test to see how to break up this config file
-source ~/.dotfiles/tmux/mouse.conf
 
 # fix ssh agent when tmux is detached
 setenv -g $SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
