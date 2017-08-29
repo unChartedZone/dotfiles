@@ -9,7 +9,7 @@ alias alucard="ssh chris@alucard.io"
 alias unchartedzone="ssh chris@unchartedzone.me"
 alias wordpress="ssh chris@138.68.246.123"
 alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
-alias school="cd ~/Documents/chrisSchoolWork/spring2017/"
+alias school="cd ~/Documents/chrisSchoolWork/"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
