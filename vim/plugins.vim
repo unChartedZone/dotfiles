@@ -14,14 +14,9 @@ Plugin 'tpope/vim-surround'
 "####### End of General Plugins ############################################
 
 "####### Autocomplete Plugins #######################################
-Plugin 'Shougo/neocomplete'
-Plugin 'ternjs/tern_for_vim'
-Plugin 'davidhalter/jedi-vim'
 "####### End of Autocomplete Plugins ################################
 
 "####### File Navigation Plugins ####################################
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ctrlpvim/ctrlp.vim'
 "####### End of File Navigation Plugins #############################
 
@@ -29,14 +24,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 "####### End of Status Bar Plugins ##################################
-
-"####### Syntax Plugins ###########################
-" Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'othree/yajs.vim'
-Plugin 'hdima/python-syntax'
-"####### Syntax Plugins ####################
 
 "####### Color Schemes ###########################
 Plugin 'chriskempson/base16-vim'
@@ -52,7 +39,6 @@ Plugin 'arcticicestudio/nord-vim'
 Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'cdmedia/itg_flat_vim'
-Plugin 'ryanoasis/vim-devicons'
 "####### End of Color Schemes ####################
 
 "####### Unused Plugins #############################################
