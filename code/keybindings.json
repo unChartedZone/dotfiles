@@ -1,1 +1,124 @@
-/Users/christianvaldez/Library/Application Support/Code/User/keybindings.json
+// Place your key bindings in this file to overwrite the defaults
+[
+    
+    {
+        "key": "shift+enter",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+    },
+  {
+        "key": "ctrl+x",
+        "command": "deleteLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "cursorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    }
+    ,{
+        "key": "ctrl+j",
+        "command": "cursorDown",
+        "when": "editorTextFocus"
+    }
+    ,{
+        "key": "ctrl+i",
+        "command": "deleteAllRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "cursorUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "cursorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },{
+        "key": "ctrl+shift+h",
+        "command": "cursorLeftSelect",
+        "when": "editorTextFocus"
+    },{
+        "key": "ctrl+shift+j",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
+    }
+    ,{
+        "key": "ctrl+shift+k",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "cursorHomeSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "cursorEndSelect",
+        "when": "editorTextFocus"
+    },{
+        "key": "cmd+r",
+        "command": "workbench.action.gotoSymbol",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+y",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus"
+    },
+    {   "key": "ctrl+c",                 
+        "command": "cancelSelection",
+        "when": "editorHasSelection && editorHasFocus" 
+    },
+    {
+        "key": "ctrl-shift-w",
+        "command": "cursorWordEndRightSelect",
+        "when": "editorTextFocus"
+    },
+    { 
+        "key": "ctrl+v",             
+        "command": "cursorWordStartLeft",
+        "when": "editorTextFocus" 
+    },
+    { 
+        "key": "shift+ctrl+v",        
+        "command": "cursorWordStartLeftSelect",
+        "when": "editorTextFocus" 
+    }
+]
