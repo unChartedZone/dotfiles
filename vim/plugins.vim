@@ -61,6 +61,7 @@ Plugin 'hdima/python-syntax'
 "###########################################################################
 Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
+Plugin 'rakr/vim-one'
 Plugin 'scwood/vim-hybrid'
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'morhetz/gruvbox'
