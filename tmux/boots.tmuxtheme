@@ -8,12 +8,12 @@
 # https://github.com/Lokaltog/powerline-fonts
 
 # Colors
-tm_icon="🍔 "
 tm_color_outer="#81a2be"
 tm_yellow="#f0c674"
 tm_cyan="#72eacf"
 tm_active="#d786e6" # This is purple
 tm_border_color="#de935f"
+tm_background_color="#2b2b2b"
 tm_color_music=colour203
 tm_tunes="#[fg=$tm_color_music,bg=colour235,nobold]#[fg=colour233,bg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/tunes.scpt)"
 
@@ -28,7 +28,7 @@ set -g status-bg colour233
 set -g status-left-bg colour233
 set -g status-left-fg colour243
 set -g status-left-length 40
-set -g status-left "#[fg=colour233,bg=$tm_color_outer,bold]$tm_icon #S #[fg=$tm_color_outer,bg=$tm_yellow,nobold]#[fg=colour233,bg=$tm_yellow] #(whoami) #[fg=$tm_yellow,bg=$tm_cyan]#[fg=colour240,bg=$tm_cyan] #I:#P #[fg=$tm_cyan,bg=colour233,nobold]"
+set -g status-left "#[fg=colour233,bg=$tm_color_outer,bold] #S #[fg=$tm_color_outer,bg=$tm_yellow,nobold]#[fg=colour233,bg=$tm_yellow] #(whoami) #[fg=$tm_yellow,bg=$tm_cyan]#[fg=colour240,bg=$tm_cyan] #I:#P #[fg=$tm_cyan,bg=colour233,nobold]"
 
 # Right side of status bar
 set -g status-right-bg colour233
@@ -45,7 +45,7 @@ set -g window-status-current-bg colour227
 set -g window-status-current-fg colour235
 
 # Window with activity status
-set -g window-status-activity-bg colour245 # fg and bg are flipped here due to
+set -g window-status-activity-bg $tm_background_color # fg and bg are flipped here due to
 set -g window-status-activity-fg colour233 # a bug in tmux
 
 # Window separator
@@ -73,8 +73,8 @@ set -g message-fg $tm_active
 
 # Command message
 set -g message-command-bg colour233
-set -g message-command-fg black
+set -g message-command-fg $tm_background_color
 
 # Mode
 set -g mode-bg $tm_yellow
-set -g mode-fg colour235
+set -g mode-fg $tm_background_color
