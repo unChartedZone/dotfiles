@@ -1,3 +1,8 @@
+
+             / / / / |/ / ___/ // / _ | / _ \/_  __/ __/ _ \/_  / / __ \/ |/ / __/
+            / /_/ /    / /__/ _  / __ |/ , _/ / / / _// // / / /_/ /_/ /    / _/  
+            \____/_/|_/\___/_//_/_/ |_/_/|_| /_/ /___/____/ /___/\____/_/|_/___/  
+
 # My Dotfiles for Linux!  These are the config files for a Linux environment.
 These files have been tested on a Manjaro Linux. 
 
@@ -17,3 +22,4 @@ choice. It is still a work in progress but I do plan on adding to it
 eventually.
 
 
+                                                                                  
