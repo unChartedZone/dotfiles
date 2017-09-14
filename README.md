@@ -3,10 +3,12 @@
                           / /_/ / /_/ / / /   / _/_/ // /__/ _/_\ \  
                          /_____/\____/ /_/   /_/ /___/____/___/___/  
                                                                      
-# My Dotfiles for Linux!  These are the config files for a Linux environment.
-These files have been tested on a Manjaro Linux. 
+# My Dotfiles for Linux!  These are the config files that I have made in a 
+# Manjaro Distro environment.
+Note: These files have only been tested on Manjaro Linux. 
 
-## Zsh I use zsh as my main shell. To set up, use the command `chsh -s
+## Zsh 
+I use zsh as my main shell. To set up, use the command `chsh -s
 /bin/zsh` to make zsh your default shell. If you would like to revert to your
 previous shell just run the previous command again but replace `/bin/zsh` with
 the shell of your choice. Then run the command `ln -s
