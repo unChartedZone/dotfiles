@@ -5,7 +5,6 @@ so ~/.dotfiles/vim/plugins.vim "Install plugins and set there settings
 "				GENERAL Settings
 "
 "###########################################################################
-" {{{
 
 set relativenumber
 set tabstop=4 shiftwidth=4 number autoindent noexpandtab nowrap linebreak nolist 
@@ -22,14 +21,12 @@ set splitright "This makes it so that splits are put on the right by default
 set hlsearch "Highlight words when searching
 set wildmenu
 
-" }}}
-
 "###########################################################################
 "
 "				COLORSCHEME  PLUGINS
 "
 "###########################################################################
-" {{{
+
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
@@ -41,14 +38,12 @@ let g:airline_theme='tomorrow'
 if g:colors_name == 'hybrid'
 	highlight LineNr guifg=#969896 
 endif
-" }}}
 
 "###########################################################################
 "
 "				KEYBINDINGS  PLUGINS
 "
 "###########################################################################
-"  {{{
 
 " set a map leader for more key combos
 let mapleader = ','
@@ -89,9 +84,6 @@ nmap ß :w<CR>
 command OpenInBrowser !chrome %
 
 nnoremap <Leader>a <C-a>
-
-
-" }}}
 
 " vim:foldmethod=marker:foldlevel=0
 
