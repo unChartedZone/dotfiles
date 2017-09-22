@@ -17,3 +17,5 @@ setenv -g $SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 set-option -g renumber-windows on
 
 set -sg escape-time 100
+set-window-option -g clock-mode-style 12
+
