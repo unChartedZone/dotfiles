@@ -9,6 +9,7 @@ alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 alias school="cd ~/Documents/chrisSchoolWork/fall2017"
 alias rscript="Rscript"
 alias pie="ssh chris@192.168.1.84"
+alias ice="ssh chris@107.170.209.236"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -30,6 +31,9 @@ alias l="ls -lah ${colorflag}"
 alias ll="ls -lFh ${colorflag}"
 #alias lld="ls -l | grep ^d"
 #alias rmf="rm -rf"
+
+#Youtube Dowloader
+alias getmp3="youtube-dl --extract-audio --audio-format mp3"
 
 # Helpers
 #alias grep='grep --color=auto'
