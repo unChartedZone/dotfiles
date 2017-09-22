@@ -81,7 +81,7 @@ precmd() {
 
 # export PROMPT='%(?.%F{yellow}.%F{blue})➤ (?.%F{yellow}.%F{blue})➤ ➤%f '
 export PROMPT='%(?.%F{227}.%F{blue})⚡︎%f '
-# export PROMPT='%(?.%F{000}.%F{blue})⚡︎%f '
+# export PROMPT='%(?.%F{010}.%F{blue})⚡︎%f '
 
 # export PROMPT='%(?.%F{199}.%F{blue})➤%f '
 # export PROMPT='%(?.%F{227}.%F{blue})➤%f '
