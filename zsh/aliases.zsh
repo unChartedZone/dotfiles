@@ -32,6 +32,9 @@ alias ll="ls -lFh ${colorflag}"
 #alias lld="ls -l | grep ^d"
 #alias rmf="rm -rf"
 
+# Shortcut to quickly edit my vimrc
+alias vimconf="vim ~/.dotfiles/vim/vimrc.symlink"
+
 #Youtube Dowloader
 alias getmp3="youtube-dl --extract-audio --audio-format mp3"
 
