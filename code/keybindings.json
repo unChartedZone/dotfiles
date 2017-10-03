@@ -25,16 +25,6 @@
         "key": "ctrl+j",
         "command": "cursorDown",
         "when": "editorTextFocus"
-    }
-    ,{
-        "key": "ctrl+i",
-        "command": "deleteAllRight",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "cursorUp",
-        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+j",
@@ -76,8 +66,7 @@
     },
     {
         "key": "cmd+`",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "editorTextFocus"
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "ctrl+shift+a",
@@ -120,5 +109,18 @@
         "key": "shift+ctrl+v",        
         "command": "cursorWordStartLeftSelect",
         "when": "editorTextFocus" 
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.tasks.runTask",
+        "args": "rscript"
     }
 ]

@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
     
-    "editor.fontFamily": "FuraCode Nerd Font, Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontFamily": " Monaco,FuraCode Nerd Font, Menlo, 'Courier New', monospace",
     "editor.fontSize": 12,
     "files.autoSave": "off",
     // "editor.cursorStyle": "block",
@@ -13,11 +13,19 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Ayu Mirage",
     "workbench.colorCustomizations": {
-        // "statusBar.background": "#50e3c2",
+        // "statusBar.background": "#a935e3",
         // "statusBar.foreground": "#000000"
     },
     "[c]": {
         "editor.quickSuggestions": true
-    }
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.idea": true
+    },
 }
 
