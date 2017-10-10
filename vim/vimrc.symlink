@@ -40,8 +40,7 @@ set termguicolors
 set t_Co=256
 syntax enable
 set background=dark
-let ayucolor="light"  " for light version of theme
-colorscheme ayu
+colorscheme hybrid
 let g:airline_theme='tomorrow'
 if g:colors_name == 'hybrid'
 	highlight LineNr guifg=#969896 
