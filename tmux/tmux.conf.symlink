@@ -5,7 +5,7 @@ set-option -ga terminal-overrides ",xterm-256color:Tc"
 set -g default-terminal "screen-256color"
 
 #Set the theme for tmux
-source ~/.dotfiles/tmux/boots.tmuxtheme
+source ~/.dotfiles/tmux/themes/gruvbox_spaced_theme.conf
 
 source ~/.dotfiles/tmux/keybindings.conf
 
@@ -16,3 +16,7 @@ source ~/.dotfiles/tmux/mouse.conf
 # fix ssh agent when tmux is detached
 setenv -g $SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 set-option -g renumber-windows on
+
+set -sg escape-time 100
+set-window-option -g clock-mode-style 12
+

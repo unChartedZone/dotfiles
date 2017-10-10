@@ -3,32 +3,45 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-"####### General Plugins ############################################
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-commentary'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'rstacruz/sparkup'
-Plugin 'tpope/vim-surround'
-"####### End of General Plugins ############################################
+"###########################################################################
+"
+"				GENERAL PLUGINS
+"
+"###########################################################################
+Plugin 'VundleVim/Vundle.vim'		" Pluign Manager
+Plugin 'tpope/vim-fugitive'			" Git integration  
+Plugin 'tpope/vim-dispatch'			"Takes advantage of Vim 8's asynchronous feature
+Plugin 'airblade/vim-gitgutter' 	" Show git changes on side gutter
+Plugin 'tpope/vim-commentary'		" Comment out lines easier
+Plugin 'jiangmiao/auto-pairs' 		" 
+Plugin 'rstacruz/sparkup' 			" Emmet-like plugin
+Plugin 'tpope/vim-surround' 		" Surround things with other things easier
 
-"####### Autocomplete Plugins #######################################
-Plugin 'Shougo/neocomplete'
-Plugin 'ternjs/tern_for_vim'
-Plugin 'davidhalter/jedi-vim'
-"####### End of Autocomplete Plugins ################################
+"###########################################################################
+"
+"				AUTOCOMPLETE PLUGINS
+"
+"###########################################################################
+Plugin 'Shougo/neocomplete'			"Provides autocompletion for html, css, and basic omnicomplete
+Plugin 'ternjs/tern_for_vim'		"Provides smarter autocompletion for javascript
+Plugin 'davidhalter/jedi-vim'		"Provides smarter autocompletion for python
 
-"####### File Navigation Plugins ####################################
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ctrlpvim/ctrlp.vim'
-"####### End of File Navigation Plugins #############################
+"###########################################################################
+"
+"				FILE NAVIGATION PLUGINS
+"
+"###########################################################################
+Plugin 'scrooloose/nerdtree'		 "Provides a tree view of all the files in the project
+Plugin 'Xuyuanp/nerdtree-git-plugin' "Displays git info inside nerdtree view
+Plugin 'ctrlpvim/ctrlp.vim' 		"Provides fuzzy find for files, tags, and functions in the project
 
-"####### Status Bar Plugins #########################################
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-"####### End of Status Bar Plugins ##################################
+"###########################################################################
+"
+"				STATUS BAR PLUGINS
+"
+"###########################################################################
+Plugin 'vim-airline/vim-airline' 			"Provides a nice statusline at the bottom of vim
+Plugin 'vim-airline/vim-airline-themes' 	"Provides different colorschemes for airline
 
 "####### Syntax Plugins ###########################
 " Plugin 'jelera/vim-javascript-syntax'

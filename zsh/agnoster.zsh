@@ -1,6 +1,6 @@
 # vim:ft=zsh ts=2 sw=2 sts=2
 #
-# agnoster's Theme - https://gist.github.com/3712874
+# Based off agnoster's Theme - https://gist.github.com/3712874
 # A Powerline-inspired theme for ZSH
 #
 # # README
@@ -105,7 +105,7 @@ prompt_git() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $PRIMARY_FG ' %~ '
+	prompt_segment blue $PRIMARY_FG ' %~ '
 }
 
 # Status:
