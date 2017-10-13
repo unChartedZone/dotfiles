@@ -58,11 +58,6 @@ fi
 
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-if [ -z ${DOTFILES_LOADED+x} ]; then
-    # install zsh-syntax-highlighting
-    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
-
 if [ -z "$BACKGROUND"  ]; then
 	export BACKGROUND="dark"
 fi
