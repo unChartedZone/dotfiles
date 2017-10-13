@@ -26,6 +26,9 @@
 # A few utility functions to make it easy and re-usable to draw segmented prompts
 
 CURRENT_BG='NONE'
+if [[ -z "$PRIMARY_FG" ]]; then
+	PRIMARY_FG=black
+fi
 SEGMENT_SEPARATOR='⮀'
 
 ONLINE='%{%F{green}%}◉'
@@ -96,7 +99,7 @@ function prompt_online() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue black '%~'
+  prompt_segment blue $PRIMARY_FG '%~'
 }
 
 # Status:
@@ -117,8 +120,8 @@ prompt_status() {
 build_prompt() {
   RETVAL=$?
   prompt_status
-  prompt_git
   prompt_dir
+  prompt_git
   prompt_end
 }
 
