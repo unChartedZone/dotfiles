@@ -98,7 +98,7 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDevIconsGetFileTypeSymbol(v:val) . " " . v:val) '
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|idea)|cmake-build-debug$',
+  \ 'dir':  '\v[\/]\.(git|hg|svn|idea|meteor)|cmake-build-debug|node_modules$',
   \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)|vsh$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
