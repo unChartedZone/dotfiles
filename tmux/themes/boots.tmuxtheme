@@ -11,7 +11,7 @@
 tm_icon=" 🍔 "
 tm_color_outer="#81a2be"
 tm_yellow="#f0c674"
-tm_cyan="#8abeb7"
+tm_cyan="#8FE7D0"
 tm_orange="#de935f"
 tm_active="#d786e6" # This is purple
 tm_border_color="#de935f"
@@ -29,7 +29,7 @@ set -g status-bg colour233
 set -g status-left-bg colour233
 set -g status-left-fg colour243
 set -g status-left-length 40
-set -g status-left "#[fg=colour233,bg=$tm_color_outer,bold]$tm_icon #S #[fg=$tm_color_outer,bg=$tm_yellow,nobold]#[fg=colour233,bg=$tm_yellow] #(whoami) #[fg=$tm_yellow,bg=$tm_cyan]#[fg=colour233,bg=$tm_cyan] #I:#P #[fg=$tm_cyan,bg=colour233,nobold]"
+set -g status-left "#[fg=colour233,bg=$tm_color_outer,bold]$tm_icon #S #[fg=$tm_color_outer,bg=$tm_yellow,nobold]#[fg=colour233,bg=$tm_yellow] #I:#P #[fg=$tm_yellow,bg=colour233,nobold]"
 
 # Right side of status bar
 set -g status-right-bg colour233
