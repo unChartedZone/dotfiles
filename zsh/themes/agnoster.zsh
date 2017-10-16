@@ -131,6 +131,10 @@ prompt_virtualenv() {
   fi
 }
 
+arrows() {
+	prompt_segment default red '»'
+}
+
 ## Main prompt
 prompt_agnoster_main() {
   RETVAL=$?
@@ -147,7 +151,7 @@ prompt_agnoster_precmd() {
   vcs_info
   # PROMPT='%{%f%b%k%}$(prompt_agnoster_main) '
 PROMPT='%{%f%b%k%}$(prompt_agnoster_main)
-» '
+$(arrows) '
 }
 
 prompt_agnoster_setup() {
