@@ -132,7 +132,7 @@ prompt_virtualenv() {
 }
 
 arrows() {
-	prompt_segment default red '»'
+	prompt_segment default red '»%{%F{yellow}%}»%{%F{cyan}%}»'
 }
 
 ## Main prompt
