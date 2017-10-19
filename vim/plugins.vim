@@ -43,15 +43,22 @@ Plugin 'ctrlpvim/ctrlp.vim' 		"Provides fuzzy find for files, tags, and function
 Plugin 'vim-airline/vim-airline' 			"Provides a nice statusline at the bottom of vim
 Plugin 'vim-airline/vim-airline-themes' 	"Provides different colorschemes for airline
 
-"####### Syntax Plugins ###########################
+"###########################################################################
+"
+"				SYTNATX PLUGINS
+"
+"###########################################################################
 " Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'hdima/python-syntax'
-"####### Syntax Plugins ####################
 
-"####### Color Schemes ###########################
+"###########################################################################
+"
+"				COLORSCHEME PLUGINS
+"
+"###########################################################################
 Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'rakr/vim-one'
@@ -67,9 +74,11 @@ Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'cdmedia/itg_flat_vim'
 Plugin 'ryanoasis/vim-devicons'
-"####### End of Color Schemes ####################
-
-"####### Unused Plugins #############################################
+"###########################################################################
+"
+"				UNUSED PLUGINS
+"
+"###########################################################################
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'justmao945/vim-clang'
 "Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
@@ -85,7 +94,11 @@ Plugin 'ryanoasis/vim-devicons'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"####### PLUGIN SETTINGS #############################################
+"###########################################################################
+"
+"				PLUGIN SETTINGS
+"
+"###########################################################################
 
 "NerdTree Settings
 let NERDTreeIgnore = ['\.o$']
@@ -97,7 +110,7 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDevIconsGetFileTypeSymbol(v:val) . " " . v:val) '
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|idea)|cmake-build-debug$',
+  \ 'dir':  '\v[\/]\.(git|hg|svn|idea|meteor)|cmake-build-debug|node_modules$',
   \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }

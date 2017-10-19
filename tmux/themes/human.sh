@@ -1,10 +1,13 @@
 #!/bin/bash
 
-tm_icon="♟"
+tm_icon="🍔 "
 tm_color_background=colour234
+# tm_color_background=colour255
+tm_color_foreground=colour0
+# tm_color_active="#FFFFFF"
 tm_color_active=colour176
 tm_color_inactive=colour241
-tm_color_feature=colour4
+tm_color_feature="#1EB0FC"
 tm_color_music=colour203
 
 # separators
@@ -47,7 +50,7 @@ set-option -g display-panes-colour $tm_color_inactive
 
 tm_tunes="#[fg=$tm_color_music,bg=$tm_color_background]$tm_right_separator_black#[fg=$tm_color_background,bg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/tunes.scpt)"
 tm_date="#[bg=$tm_color_music,fg=$tm_color_active]$tm_right_separator_black#[bg=$tm_color_active,fg=$tm_color_background] %R %d %b"
-tm_host="#[bg=$tm_color_active,fg=$tm_color_feature]$tm_right_separator_black#[bg=$tm_color_feature,fg=$tm_color_background,bold] #h "
+tm_host="#[bg=$tm_color_active,fg=$tm_color_feature]$tm_right_separator_black#[bg=$tm_color_feature,fg=$tm_color_foreground,bold] #h "
 
 tm_session_name="#[bg=$tm_color_feature,fg=$tm_color_background,bold]$tm_icon #S #[fg=$tm_color_feature,bg=default,nobold]$tm_left_separator_black"
 

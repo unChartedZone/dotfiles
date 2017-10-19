@@ -2,9 +2,6 @@
 alias reload!='source ~/.zshrc'
 
 # To quicly ssh to any of my desired servers
-alias masc='TERM=xterm-256color ssh masc0089@rohan.sdsu.edu'
-alias legolas='ssh valdez@legolas.sdsu.edu'
-alias edoras="ssh cssc0038@edoras.sdsu.edu"
 alias alucard="ssh chris@alucard.io"
 alias unchartedzone="ssh chris@unchartedzone.me"
 alias wordpress="ssh chris@138.68.246.123"
@@ -14,7 +11,6 @@ alias rscript="Rscript"
 alias pie="ssh chris@192.168.1.84" # Shortcut to ssh into my raspberry pie
 alias manjaro="ssh chris@146.244.240.73"
 alias ice="ssh chris@107.170.209.236" #Server used for CS532 project
-alias meteor_test_server="ssh chris@162.243.128.147"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

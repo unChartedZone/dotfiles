@@ -21,6 +21,13 @@ set splitright "This makes it so that splits are put on the right by default
 set hlsearch "Highlight words when searching
 set wildmenu
 
+set mouse+=a
+if &term =~ '^screen'
+    " tmux knows the extended mouse mode
+    set ttymouse=xterm2
+endif
+
+
 "###########################################################################
 "
 "				COLORSCHEME  PLUGINS
