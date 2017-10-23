@@ -496,3 +496,5 @@ syn match    cCustomClass    "\w\+\s*::" contains=cCustomScope
 
 hi def link cCustomFunc  Function
 hi def link cCustomClass Function
+" hi def cCustomClass gui=reverse guifg=#58FFDF
+

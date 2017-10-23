@@ -2,10 +2,10 @@ module.exports = {
   config: {
 	//potato
     // default font size in pixels for all tabs
-    fontSize: 13,
+    fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: 'Monaco, Fira Mono for Powerline,  Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: 'Monaco, FuraCode Nerd Font,  Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     //cursorColor: 'rgba(248,28,229,0.8)',
@@ -78,7 +78,7 @@ module.exports = {
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
-    shell: '',
+    shell: '/bin/zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used
@@ -105,10 +105,13 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperterm-atom-dark'],
+  plugins: ['hyperterm-hybrid', 'hyperborder'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: []
+  localPlugins: [],
+	hyperBorder: {
+		borderWidth: '1px'
+	}
 };

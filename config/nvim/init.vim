@@ -1,15 +1,16 @@
 source ~/.dotfiles/config/nvim/plugins.vim
 source ~/.dotfiles/config/nvim/colorscheme.vim
 source ~/.dotfiles/config/nvim/keybindings.vim
-source ~/.dotfiles/config/nvim/ctrlpSettings.vim
 
 set relativenumber
-set tabstop=4 shiftwidth=4 number autoindent noexpandtab wrap linebreak nolist 
+set tabstop=4 shiftwidth=4 number autoindent noexpandtab nowrap linebreak nolist 
 set backspace=2
 set autochdir
 set mouse=a
 set laststatus=2
 set clipboard=unnamed "Lets vim and clipboard play nice togehter
+set list lcs=tab:\|\ "This is for indent guides"
+set splitright
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store    " MacOSX/Linux
 let g:deoplete#enable_at_startup = 1
@@ -24,12 +25,6 @@ let g:python_host_prog = '/usr/local/bin/python'
 " let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_at_startup = 1
 " call deoplete#enable()
-
-let g:airline_powerline_fonts = 1
-"let g:airline_theme='wombat'
-let g:airline_theme='tomorrow'
-" let g:airline_section_c = '%t,%m'
-let g:airline_section_warning = ''
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support

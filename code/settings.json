@@ -1,0 +1,31 @@
+// Place your settings in this file to overwrite the default settings
+{
+    
+    "editor.fontFamily": " Monaco,FuraCode Nerd Font, Menlo, 'Courier New', monospace",
+    "editor.fontSize": 12,
+    "files.autoSave": "off",
+    // "editor.cursorStyle": "block",
+    "editor.renderIndentGuides": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorCustomizations": {
+        // "statusBar.background": "#a935e3",
+        // "statusBar.foreground": "#000000"
+    },
+    "[c]": {
+        "editor.quickSuggestions": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.idea": true
+    },
+}
+
