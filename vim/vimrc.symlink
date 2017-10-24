@@ -39,9 +39,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 set t_Co=256
 syntax enable
-set background=dark
-colorscheme hybrid
-let g:airline_theme='tomorrow'
+so ~/.dotfiles/vim/colorscheme.vim
 if g:colors_name == 'hybrid'
 	highlight LineNr guifg=#969896 
 endif
