@@ -74,6 +74,7 @@ Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'cdmedia/itg_flat_vim'
 Plugin 'ryanoasis/vim-devicons'
+
 "###########################################################################
 "
 "				UNUSED PLUGINS

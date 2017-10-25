@@ -1,5 +1,6 @@
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
+export HOMEBREW_GITHUB_API_TOKEN=`cat ~/.dotfiles/homebrew_access_token.txt`
 
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
