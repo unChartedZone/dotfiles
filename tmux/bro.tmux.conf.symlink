@@ -19,7 +19,7 @@ send-keys "clear" C-m
 new-window -n alucard -c ~/Workshop/webProjects/alucard/
 send-keys "clear" C-m
 
-new-window -n school -c ~/Documents/chrisSchoolWork/spring2017/
+new-window -n school -c ~/Documents/chrisSchoolWork/fall2017/
 send-keys "clear" C-m
 
 select-window -t dotfiles

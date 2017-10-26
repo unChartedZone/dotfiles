@@ -1,6 +1,10 @@
 so ~/.dotfiles/vim/plugins.vim "Install plugins and set there settings
 
-" General Settings {{{
+"###########################################################################
+"
+"				GENERAL Settings
+"
+"###########################################################################
 
 set number
 set tabstop=4 shiftwidth=4 number autoindent noexpandtab nowrap linebreak nolist 
@@ -15,17 +19,31 @@ set splitright "This makes it so that splits are put on the right by default
 set hlsearch "Highlight words when searching
 set wildmenu
 
-" }}}
+set mouse+=a
+if &term =~ '^screen'
+    " tmux knows the extended mouse mode
+    set ttymouse=xterm2
+endif
 
-" Colorscheme Settings {{{
+
+"###########################################################################
+"
+"				COLORSCHEME  PLUGINS
+"
+"###########################################################################
+
 set t_Co=256
 syntax enable
-set background=dark
-colorscheme hybrid
-let g:airline_theme='tomorrow'
-" }}}
+so ~/.dotfiles/vim/colorscheme.vim
+if g:colors_name == 'hybrid'
+	highlight LineNr guifg=#969896 
+endif
 
-" Keybindings Settings {{{
+"###########################################################################
+"
+"				KEYBINDINGS  PLUGINS
+"
+"###########################################################################
 
 " set a map leader for more key combos
 let mapleader = ','
@@ -37,8 +55,5 @@ inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
 nmap <C-n> :CtrlPTag<CR>
 nmap <C-m> :CtrlPBufTagAll<CR>
 nmap <C-b> :CtrlPBuffer<CR>
-
-" }}}
-
 " vim:foldmethod=marker:foldlevel=0
 

@@ -1,5 +1,6 @@
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
+export HOMEBREW_GITHUB_API_TOKEN=`cat ~/.dotfiles/homebrew_access_token.txt`
 
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
@@ -71,3 +72,8 @@ echo "Welcome Back, Christian Valdez"
 # alias tmux="env TERM=xterm-256color tmux"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

@@ -28,6 +28,7 @@ Plugin 'vim-airline/vim-airline-themes'
 "####### Color Schemes ###########################
 Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
+Plugin 'rakr/vim-one'
 Plugin 'scwood/vim-hybrid'
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'morhetz/gruvbox'
@@ -39,9 +40,13 @@ Plugin 'arcticicestudio/nord-vim'
 Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'cdmedia/itg_flat_vim'
-"####### End of Color Schemes ####################
+Plugin 'ryanoasis/vim-devicons'
 
-"####### Unused Plugins #############################################
+"###########################################################################
+"
+"				UNUSED PLUGINS
+"
+"###########################################################################
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'justmao945/vim-clang'
 "Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
@@ -57,7 +62,11 @@ Plugin 'cdmedia/itg_flat_vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"####### PLUGIN SETTINGS #############################################
+"###########################################################################
+"
+"				PLUGIN SETTINGS
+"
+"###########################################################################
 
 "NerdTree Settings
 let NERDTreeIgnore = ['\.o$']
@@ -69,7 +78,7 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDevIconsGetFileTypeSymbol(v:val) . " " . v:val) '
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|idea)|cmake-build-debug$',
+  \ 'dir':  '\v[\/]\.(git|hg|svn|idea|meteor)|cmake-build-debug|node_modules$',
   \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }

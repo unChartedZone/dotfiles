@@ -3,7 +3,11 @@ filetype off                  " required
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin('~/.config/nvim/bundle')
 
-"####### General Plugins ############################################
+"###########################################################################
+"
+"				GENERAL PLUGINS
+"
+"###########################################################################
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
@@ -12,31 +16,45 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'rstacruz/sparkup'
 Plugin 'tpope/vim-surround'
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'christoomey/vim-tmux-navigator'
-"####### End of General Plugins ############################################
 
-"####### Autocomplete Plugins #######################################
+"###########################################################################
+"
+"				AUTOCOMPLETE PLUGINS
+"
+"###########################################################################
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'davidhalter/jedi-vim'
-"####### End of Autocomplete Plugins ################################
 
-"####### File Navigation Plugins ####################################
+"###########################################################################
+"
+"				FILE NAVIGATION PLUGINS
+"
+"###########################################################################
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-"####### End of File Navigation Plugins #############################
 "
-"####### Status Bar Plugins #########################################
+"###########################################################################
+"
+"				STATUS BAR PLUGINS
+"
+"###########################################################################
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-"####### End of Status Bar Plugins ##################################
 
-"####### Syntax Plugins ###########################
+"###########################################################################
+"
+"				SYTNATX PLUGINS
+"
+"###########################################################################
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
-"####### Syntax Plugins ####################
 
-"####### Color Schemes ###########################
+"###########################################################################
+"
+"				COLORSCHEME PLUGINS
+"
+"###########################################################################
 " Plugin 'joshdick/onedark.vim'
 Plugin 'rakr/vim-one'
 Plugin 'chriskempson/base16-vim'
@@ -44,9 +62,12 @@ Plugin 'morhetz/gruvbox'
 Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'marciomazza/vim-brogrammer-theme'
 Plugin 'albertorestifo/github.vim'
-"####### End of Color Schemes ####################
 
-"####### Unused Plugins #############################################
+"###########################################################################
+"
+"				UNUSED PLUGINS
+"
+"###########################################################################
 " Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plugin 'KeitaNakamura/neodark.vim'
 " Plugin 'Shougo/neocomplete'
@@ -59,10 +80,15 @@ Plugin 'albertorestifo/github.vim'
 "Plugin 'artur-shaik/vim-javacomplete2'
 "Plugin 'godlygeek/tabular'
 "Plugin 'plasticboy/vim-markdown'
-"####### End of Unused Plugins #######################################
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+"###########################################################################
+"
+"				PLUGIN SETTINGS
+"
+"###########################################################################
 
 "NerdTree Settings
 let NERDTreeIgnore = ['\.o$']
@@ -72,7 +98,7 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDevIconsGetFileTypeSymbol(v:val) . " " . v:val) '
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|idea)|cmake-build-debug$',
+  \ 'dir':  '\v[\/]\.(git|hg|svn|idea|meteor)|cmake-build-debug|node_modules$',
   \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)|vsh$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
