@@ -55,6 +55,20 @@ prompt_segment() {
   [[ -n $3 ]] && print -n $3
 }
 
+right_prompt_segment() {
+  local bg fg
+  [[ -n $1 ]] && bg="%K{$1}" || bg="%k"
+  [[ -n $2 ]] && fg="%F{$2}" || fg="%f"
+  if [[ $CURRENT_BG != 'NONE' && $1 != $CURRENT_BG ]]; then
+    print -n "%{$bg%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{$fg%}"
+  else
+    print -n "%{$bg%}%{$fg%}"
+  fi
+  CURRENT_BG=$1
+  [[ -n $3 ]] && print -n $3
+
+}
+
 # End the prompt, closing any open segments
 prompt_end() {
   if [[ -n $CURRENT_BG ]]; then
@@ -87,20 +101,42 @@ prompt_git() {
   ref="$vcs_info_msg_0_"
   if [[ -n "$ref" ]]; then
     if is_dirty; then
-      color=yellow
-      ref="${ref} $PLUSMINUS"
+      color=red
+      ref="✗ ${ref}"
     else
       color=green
-      ref="${ref} "
+      ref="✔ ${ref}"
     fi
     if [[ "${ref/.../}" == "$ref" ]]; then
-      ref="$BRANCH $ref"
+      ref="$ref $BRANCH"
     else
-      ref="$DETACHED ${ref/.../}"
+      ref="${ref/.../} $DETACHED "
     fi
-    prompt_segment $color $PRIMARY_FG
+		ref="${ref/.../} $(git_arrows)"
+    right_prompt_segment $CURRENT_BG $color 
     print -n " $ref"
   fi
+}
+
+git_arrows() {
+    # do nothing if there is no upstream configured
+    command git rev-parse --abbrev-ref @'{u}' &>/dev/null || return
+
+    local arrows=""
+    local status
+    arrow_status="$(command git rev-list --left-right --count HEAD...@'{u}' 2>/dev/null)"
+	number_of_commits_ahead="$(git rev-list --left-right --count master...origin/master | awk '{print$1}')"
+    # do nothing if the command failed
+    (( !$? )) || return
+
+    # split on tabs
+    arrow_status=(${(ps:\t:)arrow_status})
+    local left=${arrow_status[1]} right=${arrow_status[2]}
+
+    (( ${right:-0} > 0 )) && arrows+="%F{011}⇣%f"
+    (( ${left:-0} > 0 )) && arrows+="%F{012}⇡%f"
+
+    echo $arrows 
 }
 
 # Dir: current working directory
@@ -143,8 +179,12 @@ prompt_agnoster_main() {
   # prompt_context
   prompt_virtualenv
   prompt_dir
-  prompt_git
+  # prompt_git
   prompt_end
+}
+
+right_prompt_agnoster_main() {
+	prompt_git
 }
 
 prompt_agnoster_precmd() {
@@ -152,6 +192,7 @@ prompt_agnoster_precmd() {
   # PROMPT='%{%f%b%k%}$(prompt_agnoster_main) '
 PROMPT='%{%f%b%k%}$(prompt_agnoster_main)
 $(arrows) '
+RPROMPT='%{%f%b%k%}$(right_prompt_agnoster_main)'
 }
 
 prompt_agnoster_setup() {
