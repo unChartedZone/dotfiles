@@ -1,6 +1,7 @@
 source ~/.dotfiles/config/nvim/plugins.vim
 source ~/.dotfiles/config/nvim/colorscheme.vim
 source ~/.dotfiles/config/nvim/keybindings.vim
+source ~/.dotfiles/vim/coldevicons.vim
 
 set relativenumber
 set tabstop=4 shiftwidth=4 number autoindent noexpandtab nowrap linebreak nolist 
