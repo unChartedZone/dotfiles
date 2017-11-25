@@ -48,7 +48,6 @@ Plugin 'vim-airline/vim-airline-themes' 	"Provides different colorschemes for ai
 "				SYTNATX PLUGINS
 "
 "###########################################################################
-" Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'othree/yajs.vim'
@@ -118,18 +117,8 @@ let g:ctrlp_custom_ignore = {
 
 "Vim Airline Settings
 let g:airline_powerline_fonts = 1
-"let g:airline_theme='wombat'
-" let g:airline_theme='github'
-" let g:airline_theme='onedark'
-" let g:airline_theme='base16_tomorrow'
-" let g:airline_theme='gruvbox'
-" let g:airline_theme='one'
-" let g:airline_theme='base16_eighties'
-" let g:airline_section_c = '%t,%m'
 let g:airline_section_warning = ''
-"Enable the tab bar styling
-let g:airline#extensions#tabline#enabled = 1
-" let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol='x'
+let g:airline#extensions#tabline#enabled = 1 "Enable the tab bar styling
 
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
@@ -147,28 +136,8 @@ let g:neocomplete#force_omni_input_patterns.javascript = '\h\w*\|[^. \t]\.\w*'
 let g:tern_show_argument_hints='on_hold'
 let g:tern_map_keys=1
 
-"Disables the preview window
-set completeopt-=preview
+set completeopt-=preview "Disables the preview window
 
+let g:used_javascript_libs = 'jquery' " Javascript Library Settings
 
-"Vim-clang settings
-" let g:clang_cpp_completeopt = 'longest,menuone'
-" let g:clang_auto = 1
-
-" Javascript Library Settings
-let g:used_javascript_libs = 'jquery'
-
-"Synstatic Recommended settings -------------------------------------------------------------------
-" set statusline+=%#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
-nnoremap <C-w>E :SyntasticCheck<CR> :lopen<CR>
-
-"Devicons Settings
-set guifont=FuraCode\ Nerd\ Font:h12
+set guifont=FuraCode\ Nerd\ Font:h12 "Devicons Settings

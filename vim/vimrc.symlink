@@ -43,6 +43,7 @@ syntax enable
 so ~/.dotfiles/vim/colorscheme.vim
 if g:colors_name == 'hybrid'
 	highlight LineNr guifg=#969896 
+	highlight LineNr guibg=#282a2e
 endif
 
 "###########################################################################
@@ -61,8 +62,10 @@ inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
 nmap <C-n> :CtrlPTag<CR>
 nmap <C-m> :CtrlPBufTagAll<CR>
 nmap <C-b> :CtrlPBuffer<CR>
+" Cmd-r will send alt-d which opens ctrlp tags buffer
 nmap ∂ :CtrlPBufTagAll<CR>
-nmap ¥ :CtrlP<CR>
+" Cmd-t will send alt-y which opens ctrlp
+nmap ¥ :CtrlP<CR> 
 
 "Nerdtree Keybinding(s)
 nmap <C-t> :NERDTreeToggle<CR>
