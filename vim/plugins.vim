@@ -1,78 +1,77 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
 
 "###########################################################################
 "
 "				GENERAL PLUGINS
 "
 "###########################################################################
-Plugin 'VundleVim/Vundle.vim'		" Pluign Manager
-Plugin 'tpope/vim-fugitive'			" Git integration  
-Plugin 'tpope/vim-dispatch'			"Takes advantage of Vim 8's asynchronous feature
-Plugin 'airblade/vim-gitgutter' 	" Show git changes on side gutter
-Plugin 'tpope/vim-commentary'		" Comment out lines easier
-Plugin 'jiangmiao/auto-pairs' 		" 
-Plugin 'rstacruz/sparkup' 			" Emmet-like plugin
-Plugin 'tpope/vim-surround' 		" Surround things with other things easier
+Plug 'tpope/vim-fugitive'			" Git integration  
+Plug 'tpope/vim-dispatch'			"Takes advantage of Vim 8's asynchronous feature
+Plug 'airblade/vim-gitgutter' 	" Show git changes on side gutter
+Plug 'tpope/vim-commentary'		" Comment out lines easier
+Plug 'jiangmiao/auto-pairs' 		" 
+Plug 'rstacruz/sparkup' 			" Emmet-like plugin
+Plug 'tpope/vim-surround' 		" Surround things with other things easier
 
 "###########################################################################
 "
 "				AUTOCOMPLETE PLUGINS
 "
 "###########################################################################
-Plugin 'Shougo/neocomplete'			"Provides autocompletion for html, css, and basic omnicomplete
-Plugin 'ternjs/tern_for_vim'		"Provides smarter autocompletion for javascript
-Plugin 'davidhalter/jedi-vim'		"Provides smarter autocompletion for python
+Plug 'Shougo/neocomplete'			"Provides autocompletion for html, css, and basic omnicomplete
+Plug 'ternjs/tern_for_vim'		"Provides smarter autocompletion for javascript
+Plug 'davidhalter/jedi-vim'		"Provides smarter autocompletion for python
 
 "###########################################################################
 "
 "				FILE NAVIGATION PLUGINS
 "
 "###########################################################################
-Plugin 'scrooloose/nerdtree'		 "Provides a tree view of all the files in the project
-Plugin 'Xuyuanp/nerdtree-git-plugin' "Displays git info inside nerdtree view
-Plugin 'ctrlpvim/ctrlp.vim' 		"Provides fuzzy find for files, tags, and functions in the project
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } "Provides a tree view of all the files in the project
+Plug 'Xuyuanp/nerdtree-git-plugin' "Displays git info inside nerdtree view
+Plug 'ctrlpvim/ctrlp.vim' 		"Provides fuzzy find for files, tags, and functions in the project
 
 "###########################################################################
 "
 "				STATUS BAR PLUGINS
 "
 "###########################################################################
-Plugin 'vim-airline/vim-airline' 			"Provides a nice statusline at the bottom of vim
-Plugin 'vim-airline/vim-airline-themes' 	"Provides different colorschemes for airline
+Plug 'vim-airline/vim-airline' 			"Provides a nice statusline at the bottom of vim
+Plug 'vim-airline/vim-airline-themes' 	"Provides different colorschemes for airline
 
 "###########################################################################
 "
 "				SYTNATX PLUGINS
 "
 "###########################################################################
-Plugin 'pangloss/vim-javascript'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'othree/yajs.vim'
-Plugin 'hdima/python-syntax'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'othree/javascript-libraries-syntax.vim'
+"Plugin 'othree/yajs.vim'
+"Plugin 'hdima/python-syntax'
 
 "###########################################################################
 "
 "				COLORSCHEME PLUGINS
 "
 "###########################################################################
-Plugin 'chriskempson/base16-vim'
-Plugin 'joshdick/onedark.vim'
-Plugin 'rakr/vim-one'
-Plugin 'scwood/vim-hybrid'
-Plugin 'kristijanhusak/vim-hybrid-material'
-Plugin 'morhetz/gruvbox'
-Plugin 'juanedi/predawn.vim'
-Plugin 'albertorestifo/github.vim'
-Plugin 'marciomazza/vim-brogrammer-theme'
-Plugin 'whatyouhide/vim-gotham'
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'colepeters/spacemacs-theme.vim'
-Plugin 'ayu-theme/ayu-vim'
-Plugin 'cdmedia/itg_flat_vim'
-Plugin 'ryanoasis/vim-devicons'
+Plug 'chriskempson/base16-vim'
+Plug 'joshdick/onedark.vim'
+Plug 'rakr/vim-one'
+Plug 'scwood/vim-hybrid'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'morhetz/gruvbox'
+Plug 'juanedi/predawn.vim'
+Plug 'albertorestifo/github.vim'
+Plug 'marciomazza/vim-brogrammer-theme'
+Plug 'whatyouhide/vim-gotham'
+Plug 'arcticicestudio/nord-vim'
+Plug 'colepeters/spacemacs-theme.vim'
+Plug 'ayu-theme/ayu-vim'
+Plug 'cdmedia/itg_flat_vim'
+Plug 'ryanoasis/vim-devicons'
 
 "###########################################################################
 "
@@ -91,8 +90,8 @@ Plugin 'ryanoasis/vim-devicons'
 " Plugin 'nathanaelkane/vim-indent-guides'
 "####### End of Unused Plugins #######################################
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+" Initialize plugin system
+call plug#end()
 
 "###########################################################################
 "
