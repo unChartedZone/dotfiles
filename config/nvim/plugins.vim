@@ -21,16 +21,16 @@ Plug 'ryanoasis/vim-devicons'
 "				AUTOCOMPLETE PLUGINS
 "
 "###########################################################################
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'javascript', 'cs'] }
 Plug 'ternjs/tern_for_vim'
-Plug 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
 "###########################################################################
 "
 "				FILE NAVIGATION PLUGINS
 "
 "###########################################################################
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
 "
 "###########################################################################
