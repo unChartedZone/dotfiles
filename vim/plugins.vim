@@ -22,8 +22,8 @@ Plug 'tpope/vim-surround' 		" Surround things with other things easier
 "
 "###########################################################################
 Plug 'Shougo/neocomplete'			"Provides autocompletion for html, css, and basic omnicomplete
-Plug 'ternjs/tern_for_vim'		"Provides smarter autocompletion for javascript
-Plug 'davidhalter/jedi-vim'		"Provides smarter autocompletion for python
+Plug 'ternjs/tern_for_vim', {'for': 'javascript'}	"Provides smarter autocompletion for javascript
+Plug 'davidhalter/jedi-vim', {'for': 'python'}		"Provides smarter autocompletion for python
 
 "###########################################################################
 "
