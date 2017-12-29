@@ -117,10 +117,5 @@
     {
         "key": "ctrl+k",
         "command": "workbench.action.focusActiveEditorGroup"
-    },
-    {
-        "key": "ctrl+r",
-        "command": "workbench.action.tasks.runTask",
-        "args": "rscript"
     }
 ]

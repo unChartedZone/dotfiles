@@ -1,4 +1,5 @@
 so ~/.dotfiles/vim/plugins.vim "Install plugins and set there settings
+so ~/.dotfiles/vim/coldevicons.vim " Adds colored highlighting for devicons in nerdtree
 
 "###########################################################################
 "
@@ -32,11 +33,13 @@ endif
 "
 "###########################################################################
 
+set termguicolors
 set t_Co=256
 syntax enable
 so ~/.dotfiles/vim/colorscheme.vim
 if g:colors_name == 'hybrid'
 	highlight LineNr guifg=#969896 
+	highlight LineNr guibg=#282a2e
 endif
 
 "###########################################################################
@@ -55,5 +58,37 @@ inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
 nmap <C-n> :CtrlPTag<CR>
 nmap <C-m> :CtrlPBufTagAll<CR>
 nmap <C-b> :CtrlPBuffer<CR>
+" Cmd-r will send alt-d which opens ctrlp tags buffer
+nmap ∂ :CtrlPBufTagAll<CR>
+" Cmd-t will send alt-y which opens ctrlp
+nmap ¥ :CtrlP<CR> 
+
+"Nerdtree Keybinding(s)
+nmap <C-t> :NERDTreeToggle<CR>
+nmap ∫ :NERDTreeToggle<CR>
+
+"Tagbar settings
+nmap <F8> :TagbarToggle<CR>
+
+"Little shorcut to create pdf file from a latex file in vim
+command C !pdflatex %
+nmap <C-i> :C<CR>
+
+"Shortcut command to stage whole repo while in vim
+command A !git add .
+
+"Remap escape key
+inoremap <C-c> <esc>
+
+" Lets me use shift enter to go to end of line, only works in iterm
+inoremap ✠ <esc>A
+
+"Save with command s
+nmap ß :w<CR>
+
+command OpenInBrowser !chrome %
+
+nnoremap <Leader>a <C-a>
+
 " vim:foldmethod=marker:foldlevel=0
 
