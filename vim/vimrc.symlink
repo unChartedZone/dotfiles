@@ -18,6 +18,7 @@ set ttyfast "No idea what this does
 set cursorline "Adds a highlight for the current line
 set list lcs=tab:\|\ "This is for indent guides"
 set splitright "This makes it so that splits are put on the right by default
+set splitbelow 
 set hlsearch "Highlight words when searching
 set wildmenu
 
