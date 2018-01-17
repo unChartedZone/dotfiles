@@ -71,6 +71,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'colepeters/spacemacs-theme.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'cdmedia/itg_flat_vim'
+Plug 'liuchengxu/space-vim-dark'
 Plug 'ryanoasis/vim-devicons'
 
 "###########################################################################

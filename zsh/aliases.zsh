@@ -8,6 +8,7 @@ alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 alias school="cd ~/Documents/chrisSchoolWork/fall2017"
 alias pie="ssh chris@192.168.1.84" # Shortcut to ssh into my raspberry pie
 alias manjaro="ssh chris@146.244.240.73"
+alias david="ssh chris@104.236.150.168"
 alias activateBoots="php -S localhost:8000"
 
 # Detect which `ls` flavor is in use
