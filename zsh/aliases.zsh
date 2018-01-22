@@ -9,6 +9,7 @@ alias school="cd ~/Documents/chrisSchoolWork/spring2018"
 alias pie="ssh chris@192.168.1.84" # Shortcut to ssh into my raspberry pie
 alias manjaro="ssh chris@146.244.240.73"
 alias david="ssh chris@104.236.150.168"
+alias edoras="ssh cssc0092@edoras.sdsu.edu"
 alias activateBoots="php -S localhost:8000"
 
 # Detect which `ls` flavor is in use
