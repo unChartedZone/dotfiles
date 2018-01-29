@@ -6,7 +6,10 @@ export HOMEBREW_GITHUB_API_TOKEN=`cat ~/.dotfiles/homebrew_access_token.txt`
 export REPORTTIME=10
 
 # source all .zsh files inside of the zsh/ directory
-for config ($ZSH/**/*.zsh) source $config
+for config ($ZSH/*.zsh) source $config
+
+# Source theme file
+source ~/.dotfiles/zsh/themes/boots.zsh
 
 # initialize autocomplete
 autoload -U compinit add-zsh-hook
