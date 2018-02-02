@@ -15,6 +15,7 @@ Plug 'tpope/vim-commentary'		" Comment out lines easier
 Plug 'jiangmiao/auto-pairs' 		" 
 Plug 'rstacruz/sparkup' 			" Emmet-like plugin
 Plug 'tpope/vim-surround' 		" Surround things with other things easier
+Plug 'christoomey/vim-tmux-navigator'
 
 "###########################################################################
 "
@@ -22,8 +23,8 @@ Plug 'tpope/vim-surround' 		" Surround things with other things easier
 "
 "###########################################################################
 Plug 'Shougo/neocomplete'			"Provides autocompletion for html, css, and basic omnicomplete
-Plug 'ternjs/tern_for_vim'		"Provides smarter autocompletion for javascript
-Plug 'davidhalter/jedi-vim'		"Provides smarter autocompletion for python
+Plug 'ternjs/tern_for_vim', {'for': 'javascript'}	"Provides smarter autocompletion for javascript
+Plug 'davidhalter/jedi-vim', {'for': 'python'}		"Provides smarter autocompletion for python
 
 "###########################################################################
 "
@@ -71,6 +72,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'colepeters/spacemacs-theme.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'cdmedia/itg_flat_vim'
+Plug 'liuchengxu/space-vim-dark'
 Plug 'ryanoasis/vim-devicons'
 
 "###########################################################################
@@ -116,18 +118,8 @@ let g:ctrlp_custom_ignore = {
 
 "Vim Airline Settings
 let g:airline_powerline_fonts = 1
-"let g:airline_theme='wombat'
-" let g:airline_theme='github'
-" let g:airline_theme='onedark'
-" let g:airline_theme='base16_tomorrow'
-" let g:airline_theme='gruvbox'
-" let g:airline_theme='one'
-" let g:airline_theme='base16_eighties'
-" let g:airline_section_c = '%t,%m'
 let g:airline_section_warning = ''
-"Enable the tab bar styling
-let g:airline#extensions#tabline#enabled = 1
-" let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol='x'
+let g:airline#extensions#tabline#enabled = 1 "Enable the tab bar styling
 
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
@@ -145,16 +137,8 @@ let g:neocomplete#force_omni_input_patterns.javascript = '\h\w*\|[^. \t]\.\w*'
 let g:tern_show_argument_hints='on_hold'
 let g:tern_map_keys=1
 
-"Disables the preview window
-set completeopt-=preview
+set completeopt-=preview "Disables the preview window
 
+let g:used_javascript_libs = 'jquery' " Javascript Library Settings
 
-"Vim-clang settings
-" let g:clang_cpp_completeopt = 'longest,menuone'
-" let g:clang_auto = 1
-
-" Javascript Library Settings
-let g:used_javascript_libs = 'jquery'
-
-"Devicons Settings
-set guifont=FuraCode\ Nerd\ Font:h12
+set guifont=FuraCode\ Nerd\ Font:h12 "Devicons Settings

@@ -21,16 +21,16 @@ Plug 'ryanoasis/vim-devicons'
 "				AUTOCOMPLETE PLUGINS
 "
 "###########################################################################
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'javascript', 'cs'] }
 Plug 'ternjs/tern_for_vim'
-Plug 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
 "###########################################################################
 "
 "				FILE NAVIGATION PLUGINS
 "
 "###########################################################################
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
 "
 "###########################################################################
@@ -97,7 +97,7 @@ let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDe
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn|idea|meteor)|cmake-build-debug|node_modules$',
-  \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)|vsh$',
+  \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)|vsh|.meta$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
