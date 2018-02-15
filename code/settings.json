@@ -1,31 +1,32 @@
 // Place your settings in this file to overwrite the default settings
 {
     
-    "editor.fontFamily": " Monaco,FuraCode Nerd Font, Menlo, 'Courier New', monospace",
-    "editor.fontSize": 12,
+     "editor.fontFamily": "Operator Mono",
+     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+     "terminal.integrated.fontFamily": "FuraCode Nerd Font",
+    //  "editor.fontFamily": "Source Code Pro for Powerline",
+    // "editor.fontFamily": "FuraCode Nerd Font",
+    // "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontSize": 14,
     "files.autoSave": "off",
     // "editor.cursorStyle": "block",
     "editor.renderIndentGuides": true,
-    "terminal.external.osxExec": "iTerm.app",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.minimap.enabled": true,
-    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+	"terminal.external.osxExec": "iTerm.app",
+	"terminal.explorerKind": "external",
+    "editor.minimap.enabled": false,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Ayu Mirage",
+	"workbench.colorTheme": "Panda Syntax",
     "workbench.colorCustomizations": {
-        // "statusBar.background": "#a935e3",
-        // "statusBar.foreground": "#000000"
+        "statusBar.background": "#f21e64",
+		"statusBar.foreground": "#000000",
+        // "terminal.ansiBlue": "#458588", // Tweaked the integrated terminal colors to match gruvbox theme
+        // "terminal.ansiYellow": "#fabd2f"
     },
     "[c]": {
         "editor.quickSuggestions": true
-    },
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/.idea": true
-    },
+	},
+	"git.autofetch": true
 }
 
