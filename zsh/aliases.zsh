@@ -26,6 +26,8 @@ alias tat='tmux attach -t'
 alias tns='tmux new-session -s'
 alias tks="tmux kill-session"
 
+# School
+alias carroll="scp p2.c cssc0092@edoras.sdsu.edu:~/Two"
 
 # Filesystem aliases
 alias ..='cd ..'
