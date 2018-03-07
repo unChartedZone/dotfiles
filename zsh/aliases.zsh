@@ -5,7 +5,6 @@ alias reload!='source ~/.zshrc'
 alias alucard="ssh chris@alucard.io"
 alias unchartedzone="ssh chris@uncharted.zone"
 alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
-alias school="cd ~/Documents/chrisSchoolWork/spring2018"
 alias pie="ssh chris@192.168.1.84" # Shortcut to ssh into my raspberry pie
 alias manjaro="ssh chris@146.244.240.73"
 alias david="ssh chris@104.236.150.168"
@@ -32,6 +31,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias school="cd ~/Documents/chrisSchoolWork/spring2018"
+alias goVSH="cd ~/Workshop/cprograms/c/vsh/"
 
 alias ls="ls ${colorflag}"
 alias l="ls -lah ${colorflag}"
