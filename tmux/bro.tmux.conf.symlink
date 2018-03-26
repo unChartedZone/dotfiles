@@ -2,24 +2,16 @@
 source-file ~/.tmux.conf
 new-session -s brogrammer -n dotfiles -c ~/.dotfiles/
 send-keys "clear" C-m
-split-window -v -p 10 -t dotfiles -c ~/.dotfiles/
+split-window -v -p 30 -t dotfiles -c ~/.dotfiles/
 send-keys "clear" C-m
-split-window -h -t dotfiles -c ~/.dotfiles/
+select-pane -t 0
+split-window -h -p 10 -t dotfiles -c ~/.dotfiles/
 # send-keys "cd ~/.dotfiles" C-m
 send-keys "clear" C-m
 select-pane -t 0
 send-keys "vim" C-m
 
-new-window -n personalResume -c ~/WebstormProjects/personalResume/
-send-keys "clear" C-m
-
-new-window -n unchartedzone -c ~/Workshop/webProjects/unchartedzoneRepo/
-send-keys "clear" C-m
-
-new-window -n alucard -c ~/Workshop/webProjects/alucard/
-send-keys "clear" C-m
-
-new-window -n school -c ~/Documents/chrisSchoolWork/fall2017/
+new-window -n school -c ~/Documents/chrisSchoolWork/spring2018
 send-keys "clear" C-m
 
 select-window -t dotfiles
