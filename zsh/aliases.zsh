@@ -10,6 +10,7 @@ alias manjaro="ssh chris@146.244.240.73"
 alias david="ssh chris@104.236.150.168"
 alias edoras="ssh cssc0092@edoras.sdsu.edu"
 alias activateBoots="php -S localhost:8000"
+alias zeroPie="ssh chris@192.168.0.17"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
