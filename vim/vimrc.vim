@@ -75,10 +75,6 @@ nmap ∫ :NERDTreeToggle<CR>
 "Tagbar settings
 nmap <F8> :TagbarToggle<CR>
 
-"Little shorcut to create pdf file from a latex file in vim
-command C !pdflatex %
-nmap <C-i> :C<CR>
-
 "Shortcut command to stage whole repo while in vim
 command A !git add .
 
@@ -99,3 +95,6 @@ nnoremap <Leader>a <C-a>
 
 " Disable tmux navigator when zooming the Vim pane
 let g:tmux_navigator_disable_when_zoomed = 1
+
+"Spellcheck
+map <F6> :setlocal spell! spellang=en_us<CR>

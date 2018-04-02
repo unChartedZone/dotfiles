@@ -15,7 +15,6 @@ Plug 'tpope/vim-commentary'		" Comment out lines easier
 Plug 'jiangmiao/auto-pairs' 		" 
 Plug 'rstacruz/sparkup' 			" Emmet-like plugin
 Plug 'tpope/vim-surround' 		" Surround things with other things easier
-Plug 'christoomey/vim-tmux-navigator'
 
 "###########################################################################
 "
@@ -142,3 +141,5 @@ set completeopt-=preview "Disables the preview window
 let g:used_javascript_libs = 'jquery' " Javascript Library Settings
 
 set guifont=FuraCode\ Nerd\ Font:h12 "Devicons Settings
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1

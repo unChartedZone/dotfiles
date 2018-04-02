@@ -1,4 +1,6 @@
 URxvt.font: xft:FuraCode Nerd Font: size=12
+URxvt.internalBorder: 2
+URxvt.geometry: 64x16
 URxvt.scrollBar: false
 
 !
@@ -8,6 +10,7 @@ URxvt.scrollBar: false
 *.foreground:  #b7bcba
 *.background:  #161719
 *.cursorColor: #b7bcba
+/* *.borderColor: #FFFFFF */
 !
 ! Black
 *.color0:      #2a2e33

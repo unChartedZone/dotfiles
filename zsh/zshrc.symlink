@@ -8,13 +8,14 @@ export REPORTTIME=10
 for config ($ZSH/*.zsh) source $config
 
 # Source theme file
-source ~/.dotfiles/zsh/themes/boots.zsh
+source ~/.dotfiles/zsh/themes/agnoster.zsh
 
 # initialize autocomplete
 autoload -U compinit add-zsh-hook
 compinit
 
 export EDITOR='vim'
+export TERMINAL='xfce4-terminal'
 
 export PATH=/usr/local/bin:$PATH
 
@@ -50,4 +51,9 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+  eval `ssh-agent`
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -l > /dev/null || ssh-add

@@ -90,6 +90,8 @@ call plug#end()            " required
 
 "NerdTree Settings
 let NERDTreeIgnore = ['\.o$']
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
 "Ctrlp Settings
 let g:ctrlp_show_hidden = 1
@@ -97,7 +99,7 @@ let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDe
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn|idea|meteor)|cmake-build-debug|node_modules$',
-  \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)|vsh|.meta$',
+  \ 'file': '\v\.(DS_STORE|idea|o|exe|so|dll)|.meta$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
@@ -118,3 +120,6 @@ set completeopt-=preview
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
