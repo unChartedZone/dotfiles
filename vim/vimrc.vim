@@ -1,9 +1,12 @@
+" 
 " ██╗   ██╗██╗███╗   ███╗
 " ██║   ██║██║████╗ ████║
 " ██║   ██║██║██╔████╔██║
 " ╚██╗ ██╔╝██║██║╚██╔╝██║
 "  ╚████╔╝ ██║██║ ╚═╝ ██║
 "   ╚═══╝  ╚═╝╚═╝     ╚═╝
+"
+
 so ~/.dotfiles/vim/plugins.vim "Install plugins and set there settings
 so ~/.dotfiles/vim/coldevicons.vim " Adds colored highlighting for devicons in nerdtree
 
