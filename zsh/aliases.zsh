@@ -37,7 +37,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias school="cd ~/Documents/chrisSchoolWork/spring2018"
 alias goVSH="cd ~/Workshop/cprograms/c/vsh/"
-alias carroll="scp p2.c p2.h cssc0092@edoras.sdsu.edu:~/Two"
+alias fuckCarroll="scp p2.c p2.h cssc0092@edoras.sdsu.edu:~/Two"
 
 alias ls="ls ${colorflag}"
 alias l="ls -lah ${colorflag}"
