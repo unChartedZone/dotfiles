@@ -61,6 +61,7 @@ Plug 'morhetz/gruvbox'
 Plug 'colepeters/spacemacs-theme.vim'
 Plug 'marciomazza/vim-brogrammer-theme'
 Plug 'albertorestifo/github.vim'
+Plug 'markvincze/panda-vim'
 
 "###########################################################################
 "
