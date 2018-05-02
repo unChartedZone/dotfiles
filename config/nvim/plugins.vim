@@ -22,7 +22,7 @@ Plug 'ryanoasis/vim-devicons'
 "
 "###########################################################################
 Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'javascript', 'cs'] }
-Plug 'ternjs/tern_for_vim'
+Plug 'ternjs/tern_for_vim', {'for': 'javascript'}
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
 "###########################################################################

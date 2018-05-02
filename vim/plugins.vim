@@ -15,6 +15,7 @@ Plug 'tpope/vim-commentary'		" Comment out lines easier
 Plug 'jiangmiao/auto-pairs' 		" 
 Plug 'rstacruz/sparkup' 			" Emmet-like plugin
 Plug 'tpope/vim-surround' 		" Surround things with other things easier
+Plug 'nathanaelkane/vim-indent-guides'
 
 "###########################################################################
 "
@@ -139,6 +140,9 @@ let g:tern_map_keys=1
 set completeopt-=preview "Disables the preview window
 
 let g:used_javascript_libs = 'jquery' " Javascript Library Settings
+
+" Jedi Vim Settings
+let g:jedi#show_call_signatures = "0"
 
 set guifont=FuraCode\ Nerd\ Font:h12 "Devicons Settings
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
