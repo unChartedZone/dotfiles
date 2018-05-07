@@ -151,10 +151,10 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-		position top
-}
+# bar {
+#         status_command i3status
+# 		position top
+# }
 
 bindsym $mod+shift+x exec i3lock
 
@@ -177,3 +177,5 @@ gaps outer 10
 # Set wallpaper for i3
 exec --no-startup-id feh --bg-scale '/home/chris/Pictures/backgroundImages/beach.png' 
 
+# Start up polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh

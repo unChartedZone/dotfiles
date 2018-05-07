@@ -7,7 +7,7 @@ alias unchartedzone="ssh chris@uncharted.zone"
 alias pie="ssh chris@192.168.1.84" # Shortcut to ssh into my raspberry pie
 alias david="ssh chris@104.236.150.168"
 alias edoras="ssh cssc0092@edoras.sdsu.edu"
-alias zeroPie="ssh chris@192.168.0.17"
+alias zeroPie="ssh chris@192.168.0.7"
 
 # alias to run tmux profile script
 alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
@@ -30,7 +30,7 @@ alias tns='tmux new-session -s'
 alias tks="tmux kill-session"
 
 # School
-alias carroll="scp p3helper.c cssc0092@edoras.sdsu.edu:~/Three"
+alias carroll="scp p2.c p2.h getword.c cssc0092@edoras.sdsu.edu:~/Two"
 
 # Filesystem aliases
 alias ..='cd ..'
@@ -38,8 +38,7 @@ alias ...='cd ../..'
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias school="cd ~/Documents/chrisSchoolWork/spring2018"
-alias goVSH="cd ~/Workshop/cprograms/c/vsh/"
-alias carroll="scp p3helper.c cssc0092@edoras.sdsu.edu:~/Three"
+alias goVSH="cd ~/Workshop/cprograms/c/VSH/"
 
 alias ls="ls ${colorflag}"
 alias l="ls -lah ${colorflag}"

@@ -1,9 +1,11 @@
+"
 " ██╗   ██╗██╗███╗   ███╗
 " ██║   ██║██║████╗ ████║
 " ██║   ██║██║██╔████╔██║
 " ╚██╗ ██╔╝██║██║╚██╔╝██║
 "  ╚████╔╝ ██║██║ ╚═╝ ██║
 "   ╚═══╝  ╚═╝╚═╝     ╚═╝
+"
 so ~/.dotfiles/vim/plugins.vim "Install plugins and set there settings
 so ~/.dotfiles/vim/coldevicons.vim " Adds colored highlighting for devicons in nerdtree
 
@@ -69,6 +71,7 @@ inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
 nmap <C-n> :CtrlPTag<CR>
 nmap <C-m> :CtrlPBufTagAll<CR>
 nmap <C-b> :CtrlPBuffer<CR>
+nmap <C-i> :!pdflatex %<CR>
 " Cmd-r will send alt-d which opens ctrlp tags buffer
 nmap ∂ :CtrlPBufTagAll<CR>
 " Cmd-t will send alt-y which opens ctrlp
