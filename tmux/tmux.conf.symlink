@@ -13,7 +13,7 @@ set -g mouse on #This allows scrolling in tmux
 #This is a test to see how to break up this config file
 
 # fix ssh agent when tmux is detached
-setenv -g $SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
+# setenv -g $SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 set-option -g renumber-windows on
 
 set -sg escape-time 100
