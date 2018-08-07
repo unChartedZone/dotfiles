@@ -1,1 +1,1 @@
-source ~/.dotfiles/tmux/themes/gruvbox_spaced_theme.conf
+source ~/.dotfiles/tmux/themes/tmux-gruvbox-dark.conf
