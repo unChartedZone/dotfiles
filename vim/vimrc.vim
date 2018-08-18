@@ -71,8 +71,8 @@ nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
 " set a map leader for more key combos
-let mapleader = ','
-let g:mapleader = ','
+let mapleader = ' '
+let g:mapleader = ' '
 
 "Sets neocomplete on and lets tab work for selecting suggestions
 inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
