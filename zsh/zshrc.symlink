@@ -1,3 +1,11 @@
+
+# ███████╗███████╗██╗  ██╗
+# ╚══███╔╝██╔════╝██║  ██║
+#   ███╔╝ ███████╗███████║
+#  ███╔╝  ╚════██║██╔══██║
+# ███████╗███████║██║  ██║
+# ╚══════╝╚══════╝╚═╝  ╚═╝
+
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
 
@@ -51,9 +59,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-if [ ! -S ~/.ssh/ssh_auth_sock ]; then
-  eval `ssh-agent`
-  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
-fi
-export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
-ssh-add -l > /dev/null || ssh-add
+

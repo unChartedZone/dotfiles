@@ -1,3 +1,11 @@
+
+#  █████╗ ██╗     ██╗ █████╗ ███████╗███████╗███████╗
+# ██╔══██╗██║     ██║██╔══██╗██╔════╝██╔════╝██╔════╝
+# ███████║██║     ██║███████║███████╗█████╗  ███████╗
+# ██╔══██║██║     ██║██╔══██║╚════██║██╔══╝  ╚════██║
+# ██║  ██║███████╗██║██║  ██║███████║███████╗███████║
+# ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
+
 # reload zsh config
 alias reload!='source ~/.zshrc'
 
@@ -9,7 +17,7 @@ alias school="cd ~/Documents/chrisSchoolWork/fall2017"
 alias pie="ssh chris@192.168.1.84" # Shortcut to ssh into my raspberry pie
 alias david="ssh chris@104.236.150.168"
 alias edoras="ssh cssc0092@edoras.sdsu.edu"
-alias zeroPie="ssh chris@192.168.0.7"
+alias zeroPie="ssh chris@192.168.0.2"
 
 # alias to run tmux profile script
 alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"

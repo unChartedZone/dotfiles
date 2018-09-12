@@ -1,11 +1,11 @@
-"
+
 " ██╗   ██╗██╗███╗   ███╗
 " ██║   ██║██║████╗ ████║
 " ██║   ██║██║██╔████╔██║
 " ╚██╗ ██╔╝██║██║╚██╔╝██║
 "  ╚████╔╝ ██║██║ ╚═╝ ██║
 "   ╚═══╝  ╚═╝╚═╝     ╚═╝
-"
+
 so ~/.dotfiles/vim/plugins.vim "Install plugins and set there settings
 so ~/.dotfiles/vim/coldevicons.vim " Adds colored highlighting for devicons in nerdtree
 
@@ -62,8 +62,12 @@ endif
 "###########################################################################
 
 " set a map leader for more key combos
-let mapleader = ','
-let g:mapleader = ','
+let mapleader = ' '
+let g:mapleader = ' '
+
+" Set scroll to be 3 times faster
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
 
 "Sets neocomplete on and lets tab work for selecting suggestions
 inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"

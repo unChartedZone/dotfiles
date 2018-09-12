@@ -140,6 +140,6 @@ set completeopt-=preview "Disables the preview window
 
 let g:used_javascript_libs = 'jquery' " Javascript Library Settings
 
-set guifont=FuraCode\ Nerd\ Font:h12 "Devicons Settings
+set guifont=Fura\ Code\ Regular\ Nerd\ Font\ Complete:h12 "Devicons Settings
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1

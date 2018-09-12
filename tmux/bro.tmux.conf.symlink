@@ -5,13 +5,6 @@ send-keys "clear" C-m
 split-window -v -p 30 -t dotfiles -c ~/.dotfiles/
 send-keys "clear" C-m
 select-pane -t 0
-split-window -h -p 10 -t dotfiles -c ~/.dotfiles/
-# send-keys "cd ~/.dotfiles" C-m
-send-keys "clear" C-m
-select-pane -t 0
-send-keys "vim" C-m
-
-new-window -n school -c ~/Documents/chrisSchoolWork/spring2018
-send-keys "clear" C-m
+send-keys "vim ~/.dotfiles/vim/vimrc.vim" C-m
 
 select-window -t dotfiles
