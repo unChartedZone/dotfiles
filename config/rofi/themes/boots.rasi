@@ -2,7 +2,7 @@
 	/* accent: #FE7A61; */
 	accent: #F6A03C;
     foreground:         		@accent;
-    background:         		rgba(0, 0, 0, 0.50);
+    background:         		rgba(45, 48, 59, 0.90);
     transparent:				rgba(0, 0, 0, 0);
     
     normal-background: 			@transparent;
