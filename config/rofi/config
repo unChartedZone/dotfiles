@@ -1,8 +1,8 @@
 rofi.modi: window,run,ssh,drun
 rofi.fullscreen: true
 rofi.display-run: 
-rofi.lines: 3 
+rofi.lines: 5 
 rofi.width: 100
-rofi.font: "System San Francisco" 18
-rofi.theme: .dotfiles/config/rofi/themes/rofi_full
+rofi.font: "System San Francisco" 16
+rofi.theme: .dotfiles/config/rofi/themes/boots
 rofi.eh: 2
