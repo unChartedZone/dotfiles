@@ -28,4 +28,6 @@ YouCompleteMe plugin.
 choice. It is still a work in progress but I do plan on adding to it
 eventually.
 
+## A screenshot of how it looks
+![alt text](images/image2.png "Rice Screeshot")
 
