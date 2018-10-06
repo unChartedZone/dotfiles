@@ -31,6 +31,7 @@ set splitright "This makes it so that splits are put on the right by default
 set splitbelow 
 set hlsearch "Highlight words when searching
 set wildmenu
+set updatetime=100
 
 set mouse+=a
 if &term =~ '^screen'
@@ -54,6 +55,9 @@ so ~/.dotfiles/vim/colorscheme.vim
 if g:colors_name == 'hybrid'
 	highlight LineNr guifg=#969896 
 	highlight LineNr guibg=#282a2e
+	" let &t_ZH="\e[3m"
+	" let &t_ZR="\e[23m"
+	" highlight Comment cterm=italic
 endif
 
 "###########################################################################
