@@ -1,16 +1,5 @@
-# My macOS 
+# My macOS dotfiles
 
-```
-      ██            ██     ████ ██  ██
-     ░██           ░██    ░██░ ░░  ░██
-     ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
-  ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░
- ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████
-░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██
-░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████
- ░░░░░░  ░░░░░░     ░░    ░░   ░░ ░░░  ░░░░░░ ░░░░░░
-
-```
 These are the config files for zsh,tmux, hyperterm, intellij, clion, ctags, and
 everything else I need to be productive on my computer. These settings are
 primarily tailored for a macOS setting, if you would like to see my linux
@@ -40,12 +29,7 @@ the YouCompleteMe plugin.
 tmux is a great tool that I use to manage multiple terminal sessions all while
 being able to keep my hands on my keyboard instead of having to reach for a
 mouse. To set up run the command `ln -s dotfiles/tmux/tmux.conf.symlink
-~/.tmux.conf``
+~/.tmux.conf`
 
-## emacs
-I currently use spacemacs, they are located in another repository that you can
-find here: 
-
-> TODO: update image of how it looks
 ## how it all looks
 ![alt text](images/pic1.png "Logo Title Text 1")
