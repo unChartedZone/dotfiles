@@ -30,6 +30,7 @@ set splitright "This makes it so that splits are put on the right by default
 set splitbelow 
 set hlsearch "Highlight words when searching
 set wildmenu
+set updatetime=100
 
 set mouse+=a
 if &term =~ '^screen'
