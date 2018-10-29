@@ -20,110 +20,41 @@ alert = #bd2c40
 
 [bar/top]
 width = 100%
-height = 27
-radius = 1.0
-fixed-center = false
+height = 30
 background = ${colors.background}
 foreground = ${colors.foreground}
-line-size = 3
-line-color = #f00
-border-size = 0
-border-color = #00000000
-padding-left = 0
-padding-right = 2
+overline-size = 4
+overline-color = #f00
+underline-size = 4
+underline-color = #00f
+border-color = transparent
+# padding-left = 1
+# padding-right = 1
 module-margin-left = 1
-module-margin-right = 2
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-font-3 = FontAwesome:pixelsize=10;1
-modules-left = i3
-modules-center = mpd
+module-margin-right = 0
+font-0 = Dank Mono:pixelsize=10;3
+font-1 = FontAwesome:fontformat=truetype:size=10;3
+font-2 = siji:pixelsize=10
+font-3 = Font Awesome 5 Free:pixelsize=10;3
+font-4 = Font Awesome 5 Free Solid:pixelsize=10;3
+font-5 = Font Awesome 5 Brands:pixelsize=10;3
+modules-left = bspwm i3
+modules-center = xwindow
 modules-right = filesystem pulseaudio memory cpu date powermenu
 tray-position = right
 tray-padding = 2
-cursor-click = pointer
-cursor-scroll = ns-resize
-
-[bar/bottom]
-monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-height = 27
-radius = 1.0
-fixed-center = false
-bottom=true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-size = 0
-border-color = #00000000
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-
-modules-left = i3
-modules-center = mpd
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-
-tray-position = right
-tray-padding = 2
-
-;==============================================================================
-;
-;	Secondary Bar
-;
-;==============================================================================
-
-[bar/top2]
-monitor = ${env:MONITOR:DVI-D-1}
-width = 100%
-height = 27
-radius = 1.0
-fixed-center = false
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-size = 0
-border-color = #00000000
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-
-modules-left = i3
-modules-center = mpd
-modules-right = filesystem pulseaudio memory cpu date powermenu
-
-tray-position = right
-tray-padding = 2
+# tray-transparent = true
+;tray-background = #0063ff
+tray-detached = false
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:40:...%
+label = %title:0:20:...%
+# format-background = "#616669"
 format-foreground = "#dfdfdf"
-format-width = 40
-format-padding = 80
+format-width = 20
+format-prefix = "  "
+format-padding = 10
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -157,53 +88,60 @@ type = internal/bspwm
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 1
 
 label-occupied = %index%
-label-occupied-padding = 2
+label-occupied-padding = 1
 
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
 label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 1
 
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
-pin-workspaces = true
+; fuzzy-match = true
+; pin-workspaces = true
 ; Only show workspaces on the same output as the bar
-label-mode-padding = 2 
+
+; label-mode-padding = 2 
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+label-focused = %index% %icon%
 label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
+label-unfocused = %index% %icon%
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %index%
+label-visible = %index% %icon%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%
+label-urgent = %index% %icon%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 ; Separator in between workspaces
 ; label-separator = |
+ws-icon-0 = 1;  term 
+ws-icon-1 = 2;  code
+ws-icon-2 = 3;  web
+ws-icon-3 = 4;  git
+ws-icon-4 = 5;  music
 
 
 [module/mpd]
@@ -453,6 +391,7 @@ screenchange-reload = true
 
 [global/wm]
 margin-top = 5
+margin-left = 5
 margin-bottom = 5
 
 ; vim:ft=dosini

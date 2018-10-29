@@ -30,7 +30,7 @@ font pango:System San Francisco 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -95,16 +95,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: term "
-set $ws2 "2: web "
-set $ws3 "3: code "
-set $ws4 "4: music "
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws10 10
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -191,8 +191,6 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec ~/.screenlayout/home-display.sh
 
 # Open workspace 1 on primary monitor and workspace 2 on secondary monitor
-workspace $ws1 output HDMI-1
-workspace $ws2 output DVI-D-1
 
 # Alternate quickly between workspaces
 bindsym $mod+Tab workspace next
@@ -218,10 +216,10 @@ exec --no-startup-id xinput --set-prop 10 "libinput Natural Scrolling Enabled" 1
 # Set the gaps around windows
 for_window [class="^.*"] border pixel 0 # Removes black bar at top of screen
 gaps inner 10
-gaps outer 10
+gaps outer 40
 
 # Set wallpapers for each monitor, starting with primary and then secondary
-exec --no-startup-id feh --bg-scale '/home/chris/Pictures/backgroundImages/zelda.jpg' --bg-scale '/home/chris/Pictures/backgroundImages/starlite.png' 
+exec --no-startup-id feh --bg-scale '/home/chris/Pictures/backgroundImages/sunset.png' 
 
 exec_always compton -f 
 

@@ -1,6 +1,6 @@
 rofi.modi: window,run,ssh,drun
-rofi.fullscreen: true
-rofi.display-run: 
+rofi.fullscreen: false
+/* rofi.display-run:  */
 rofi.lines: 3 
 rofi.width: 100
 rofi.font: "System San Francisco" 18
