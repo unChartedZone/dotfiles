@@ -2,9 +2,15 @@
 source-file ~/.tmux.conf
 new-session -s brogrammer -n dotfiles -c ~/.dotfiles/
 send-keys "clear" C-m
-split-window -v -p 30 -t dotfiles -c ~/.dotfiles/
+split-window -v -p 20 -t dotfiles -c ~/.dotfiles/
 send-keys "clear" C-m
 select-pane -t 0
 send-keys "vim ~/.dotfiles/vim/vimrc.vim" C-m
+
+new-window -n unchartedzone  -c ~/Workshop/webProjects/unchartedzoneRepo/
+
+new-window -n david -c ~/WebstormProjects/davidPortfolio/
+
+new-window -n "node dev course" -c ~/Workshop/webProjects/nodeDeveloperCourse/
 
 select-window -t dotfiles
