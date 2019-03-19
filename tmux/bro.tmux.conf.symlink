@@ -4,7 +4,7 @@ source-file ~/.tmux.conf
 # Start brogrammer session and make dotfiles window
 new-session -s brogrammer -n dotfiles -c ~/.dotfiles/
 send-keys "clear" C-m
-split-window -v -p 30 -t dotfiles -c ~/.dotfiles/
+split-window -v -p 20 -t dotfiles -c ~/.dotfiles/
 send-keys "clear" C-m
 select-pane -t 0
 send-keys "vim ~/.dotfiles/vim/vimrc.vim" C-m
