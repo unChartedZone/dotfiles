@@ -35,6 +35,8 @@ if [[ -d ~/bin ]]; then
     export PATH=~/bin:$PATH
 fi
 
+eval $(keychain --eval --quiet --agents ssh id_rsa)
+
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if [ -z ${DOTFILES_LOADED+x} ]; then
