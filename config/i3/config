@@ -219,7 +219,7 @@ gaps inner 10
 gaps outer 40
 
 # Set wallpapers for each monitor, starting with primary and then secondary
-exec --no-startup-id feh --bg-scale '/home/chris/Pictures/pixelDear.png' 
+exec --no-startup-id feh --bg-scale '/home/chris/Pictures/sierra.jpg' 
 
 exec_always compton -f 
 
