@@ -59,6 +59,7 @@ Plug 'pangloss/vim-javascript'
 "
 "###########################################################################
 Plug 'chriskempson/base16-vim'
+Plug 'tomasr/molokai'
 Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
 Plug 'scwood/vim-hybrid'
