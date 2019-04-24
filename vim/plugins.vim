@@ -1,3 +1,11 @@
+"                                                        
+" ██╗   ██╗██╗███╗   ███╗    ██████╗ ██╗     ██╗   ██╗ ██████╗ ██╗███╗   ██╗███████╗
+" ██║   ██║██║████╗ ████║    ██╔══██╗██║     ██║   ██║██╔════╝ ██║████╗  ██║██╔════╝
+" ██║   ██║██║██╔████╔██║    ██████╔╝██║     ██║   ██║██║  ███╗██║██╔██╗ ██║███████╗
+" ╚██╗ ██╔╝██║██║╚██╔╝██║    ██╔═══╝ ██║     ██║   ██║██║   ██║██║██║╚██╗██║╚════██║
+"  ╚████╔╝ ██║██║ ╚═╝ ██║    ██║     ███████╗╚██████╔╝╚██████╔╝██║██║ ╚████║███████║
+"   ╚═══╝  ╚═╝╚═╝     ╚═╝    ╚═╝     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝
+"
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
@@ -48,7 +56,7 @@ Plug 'vim-airline/vim-airline-themes' 	"Provides different colorschemes for airl
 "				SYTNATX PLUGINS
 "
 "###########################################################################
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript', {'for': 'javascript'}
 "Plugin 'othree/javascript-libraries-syntax.vim'
 "Plugin 'othree/yajs.vim'
 "Plugin 'hdima/python-syntax'
@@ -68,12 +76,8 @@ Plug 'morhetz/gruvbox'
 Plug 'juanedi/predawn.vim'
 Plug 'albertorestifo/github.vim'
 Plug 'marciomazza/vim-brogrammer-theme'
-Plug 'whatyouhide/vim-gotham'
-Plug 'arcticicestudio/nord-vim'
-Plug 'colepeters/spacemacs-theme.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'cdmedia/itg_flat_vim'
-Plug 'liuchengxu/space-vim-dark'
 Plug 'ryanoasis/vim-devicons'
 
 "###########################################################################
@@ -142,3 +146,4 @@ let g:jedi#show_call_signatures = "0"
 set guifont=FuraCode\ Nerd\ Font:h12 "Devicons Settings
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
+                                                                                  
