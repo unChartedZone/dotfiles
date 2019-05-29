@@ -216,10 +216,10 @@ exec --no-startup-id xinput --set-prop 10 "libinput Natural Scrolling Enabled" 1
 # Set the gaps around windows
 for_window [class="^.*"] border pixel 0 # Removes black bar at top of screen
 gaps inner 10
-gaps outer 40
+gaps outer 40 
 
 # Set wallpapers for each monitor, starting with primary and then secondary
-exec --no-startup-id feh --bg-scale '/home/chris/Pictures/sierra.jpg' 
+exec --no-startup-id feh --bg-scale '/home/chris/Pictures/saltMountains.jpg' 
 
 exec_always compton -f 
 

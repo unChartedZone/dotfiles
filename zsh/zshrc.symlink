@@ -22,9 +22,11 @@ source ~/.dotfiles/zsh/themes/agnoster.zsh
 autoload -U compinit add-zsh-hook
 compinit
 
+# setup default editor and terminal
 export EDITOR='vim'
 export TERMINAL='xfce4-terminal'
 
+# setup path directory for executables
 export PATH=/usr/local/bin:$PATH
 
 # adding path directory for custom scripts

@@ -47,10 +47,11 @@ Plug 'vim-airline/vim-airline-themes' 	"Provides different colorschemes for airl
 "				SYTNATX PLUGINS
 "
 "###########################################################################
-"Plugin 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript', {'for': 'javascript'}
 "Plugin 'othree/javascript-libraries-syntax.vim'
 "Plugin 'othree/yajs.vim'
 "Plugin 'hdima/python-syntax'
+Plug 'posva/vim-vue', {'for': 'vue'}
 
 "###########################################################################
 "
