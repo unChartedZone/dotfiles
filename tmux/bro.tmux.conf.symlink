@@ -13,4 +13,6 @@ new-window -n david -c ~/WebstormProjects/davidPortfolio/
 
 new-window -n "node dev course" -c ~/Workshop/webProjects/nodeDeveloperCourse/
 
+new-wndow -n "react dev" -c ~/Workshop/webProjects/reactDeveloperCourse/
+
 select-window -t dotfiles
