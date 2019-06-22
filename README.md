@@ -32,4 +32,4 @@ mouse. To set up run the command `ln -s dotfiles/tmux/tmux.conf.symlink
 ~/.tmux.conf`
 
 ## how it all looks
-![alt text](images/pic1.png "Logo Title Text 1")
+![alt text](images/screenShot.png "Logo Title Text 1")
