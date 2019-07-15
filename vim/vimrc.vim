@@ -53,8 +53,9 @@ set t_Co=256
 syntax enable
 so ~/.dotfiles/vim/colorscheme.vim
 if g:colors_name == 'hybrid'
-	highlight LineNr guifg=#969896 
-	highlight LineNr guibg=#282a2e
+	highlight LineNr guifg=#555555 
+	highlight LineNr guibg=#1C1E26
+	highlight Normal guibg=#1C1E26
 	" let &t_ZH="\e[3m"
 	" let &t_ZR="\e[23m"
 	" highlight Comment cterm=italic
