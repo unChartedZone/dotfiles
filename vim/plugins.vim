@@ -30,7 +30,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 "				AUTOCOMPLETE PLUGINS
 "
 "###########################################################################
-Plug 'Shougo/neocomplete'			"Provides autocompletion for html, css, and basic omnicomplete
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ternjs/tern_for_vim', {'for': 'javascript'}	"Provides smarter autocompletion for javascript
 Plug 'davidhalter/jedi-vim', {'for': 'python'}		"Provides smarter autocompletion for python
 
@@ -57,6 +57,7 @@ Plug 'vim-airline/vim-airline-themes' 	"Provides different colorschemes for airl
 "
 "###########################################################################
 Plug 'pangloss/vim-javascript', {'for': 'javascript'}
+Plug 'posva/vim-vue'
 "Plugin 'othree/javascript-libraries-syntax.vim'
 "Plugin 'othree/yajs.vim'
 "Plugin 'hdima/python-syntax'
