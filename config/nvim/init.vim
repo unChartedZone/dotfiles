@@ -18,7 +18,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store    " MacOSX/Linux
 let g:deoplete#enable_at_startup = 1
 
 set encoding=utf-8
-set termguicolors
 set cursorline!
 set lazyredraw
 set synmaxcol=128

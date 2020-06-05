@@ -1,3 +1,11 @@
+"
+" ███╗   ██╗██╗   ██╗██╗███╗   ███╗    ██████╗ ██╗     ██╗   ██╗ ██████╗ ██╗███╗   ██╗███████╗
+" ████╗  ██║██║   ██║██║████╗ ████║    ██╔══██╗██║     ██║   ██║██╔════╝ ██║████╗  ██║██╔════╝
+" ██╔██╗ ██║██║   ██║██║██╔████╔██║    ██████╔╝██║     ██║   ██║██║  ███╗██║██╔██╗ ██║███████╗
+" ██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║    ██╔═══╝ ██║     ██║   ██║██║   ██║██║██║╚██╗██║╚════██║
+" ██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║    ██║     ███████╗╚██████╔╝╚██████╔╝██║██║ ╚████║███████║
+" ╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝    ╚═╝     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝
+"
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
@@ -21,7 +29,7 @@ Plug 'ryanoasis/vim-devicons'
 "				AUTOCOMPLETE PLUGINS
 "
 "###########################################################################
-Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'javascript', 'cs'] }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ternjs/tern_for_vim', {'for': 'javascript'}
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
@@ -38,8 +46,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 "				STATUS BAR PLUGINS
 "
 "###########################################################################
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 
 "###########################################################################
 "
@@ -47,7 +56,9 @@ Plug 'vim-airline/vim-airline-themes'
 "
 "###########################################################################
 Plug 'jelera/vim-javascript-syntax'
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript', {'for': 'javascript'}
+Plug 'posva/vim-vue'
+" Plug 'pangloss/vim-javascript'
 
 "###########################################################################
 "
@@ -62,6 +73,7 @@ Plug 'colepeters/spacemacs-theme.vim'
 Plug 'marciomazza/vim-brogrammer-theme'
 Plug 'albertorestifo/github.vim'
 Plug 'markvincze/panda-vim'
+Plug 'ntk148v/vim-horizon'
 
 "###########################################################################
 "
@@ -105,11 +117,11 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 "Airline Settings
-let g:airline_theme='gruvbox'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+" let g:airline_theme='gruvbox'
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline_powerline_fonts = 1
 " let g:airline_section_c = '%t,%m'
-let g:airline_section_warning = ''
+" let g:airline_section_warning = ''
 
 "Autocomplete Plugins Settings
 let g:tern_show_argument_hints='on_hold'
@@ -124,3 +136,4 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
+                                                                                            
