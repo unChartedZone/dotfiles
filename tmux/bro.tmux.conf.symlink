@@ -1,18 +1,16 @@
 # tmux -f (config file) attach is the command to execute this script
 source-file ~/.tmux.conf
-new-session -s brogrammer -n dotfiles -c ~/.dotfiles/
+new-session -s brogrammer -n dotfiles -c ~/
+send-keys "cd ~/.dotfiles" C-m
 send-keys "clear" C-m
-split-window -v -p 20 -t dotfiles -c ~/.dotfiles/
-send-keys "clear" C-m
-select-pane -t 0
-send-keys "vim ~/.dotfiles/vim/vimrc.vim" C-m
 
-new-window -n unchartedzone  -c ~/Workshop/webProjects/unchartedzoneRepo/
+new-window -n unchartedzone  -c ~/Workshop/webProjects/unchartedzone
+new-window -n portfolio -c ~/Workshop/webProjects/portfolio
 
-new-window -n david -c ~/WebstormProjects/davidPortfolio/
+# new-window -n david -c ~/WebstormProjects/davidPortfolio
 
-new-window -n "node dev course" -c ~/Workshop/webProjects/nodeDeveloperCourse/
+# new-window -n "node dev course" -c ~/Workshop/webProjects/nodeDeveloperCourse/
 
-new-wndow -n "react dev" -c ~/Workshop/webProjects/reactDeveloperCourse/
+# new-window -n "react dev" -c ~/Workshop/webProjects/reactDeveloperCourse/
 
 select-window -t dotfiles
