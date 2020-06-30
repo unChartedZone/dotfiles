@@ -1,59 +1,26 @@
-# 
-# ███████╗███████╗██╗  ██╗
-# ╚══███╔╝██╔════╝██║  ██║
-#   ███╔╝ ███████╗███████║
-#  ███╔╝  ╚════██║██╔══██║
-# ███████╗███████║██║  ██║
-# ╚══════╝╚══════╝╚═╝  ╚═╝
-#
 
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
-export HOMEBREW_GITHUB_API_TOKEN=`cat ~/.dotfiles/homebrew_access_token.txt`
 
-# display how long all tasks over 10 seconds take
-export REPORTTIME=10
-
-# source all .zsh files inside of the zsh/ directory
 for config ($ZSH/*.zsh) source $config
 
-# Source theme file
-source ~/.dotfiles/zsh/themes/agnoster.zsh
 
-# initialize autocomplete
-autoload -U compinit add-zsh-hook
-compinit
+# Setup prompt
 
-export EDITOR='vim'
+# Allow us to use variabls within prompt string
+setopt PROMPT_SUBST
 
-export PATH=/usr/local/bin:$PATH
+# Load vsc info
+autoload -Uz vcs_info
+autoload -U colors && colors
+precmd() { vcs_info }
 
-# adding path directory for custom scripts
-export PATH=$DOTFILES/bin:$PATH
+zstyle ':vcs_info:git:*' formats 'branch %b '
 
-# check for custom bin directory and add to path
-if [[ -d ~/bin ]]; then
-    export PATH=~/bin:$PATH
-fi
+BRANCH="\ue0a0"
 
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+PROMPT='%{$bg[red]$fg[black]%} %~ %{$reset_color%}%{$bg[blue]$fg[black] %} ${vcs_info_msg_0_} %{$reset_color%}
+%{%F{red}%}»%{%F{yellow}%}»%{%F{cyan}%}» %{$reset_color%}'
 
-if [ -z ${DOTFILES_LOADED+x} ]; then
-    # install zsh-syntax-highlighting
-    source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
-
-if [ -z "$BACKGROUND"  ]; then
-	export BACKGROUND="dark"
-fi
-
-DOTFILES_LOADED=1
-
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}  
-
-# echo "Welcome Back, Christian Valdez"
-
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+echo "Welcome Back Chris"
 

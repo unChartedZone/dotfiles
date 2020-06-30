@@ -1,0 +1,37 @@
+so ~/.dotfiles/vim/plugins.vim "Install plugins and set there settings
+
+set nu
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set mouse=a
+set nowrap " turn off line wrapping
+set clipboard=unnamed
+set backspace=indent,eol,start " make backspace behave in a sane manner
+set laststatus=2 " show the status line all the time
+set incsearch " Show results as search is typed out
+set hlsearch " Show hightlight when searching for word
+set splitright
+set splitbelow
+
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
+set t_Co=256
+set background=dark
+syntax enable
+" colorscheme horizon
+" let g:airline_theme='onedark'
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
+
+" Keybindings
+
+let mapleader = " "
+
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
+
