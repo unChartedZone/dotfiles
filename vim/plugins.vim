@@ -13,6 +13,7 @@ Plug 'Rigellute/shades-of-purple.vim'
 " Language
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
+Plug 'maxmellon/vim-jsx-pretty'
 
 " Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

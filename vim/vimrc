@@ -23,8 +23,8 @@ set background=dark
 syntax enable
 " colorscheme horizon
 " let g:airline_theme='onedark'
-colorscheme gruvbox
-let g:airline_theme='gruvbox'
+colorscheme horizon
+let g:airline_theme='onedark'
 
 " Keybindings
 
