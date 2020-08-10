@@ -9,13 +9,28 @@
 
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
-export EDITOR='vim'
+export EDITOR="vim"
+
+THEME="boots.theme.zsh"
+
+# matches case insensitive for lowercase
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# pasting with tabs doesn't perform completion
+zstyle ':completion:*' insert-tab pending
+
+setopt PROMPT_SUBST
 
 # source all .zsh files inside of the zsh/ directory
 for config ($ZSH/*.zsh) source $config
 
+# source zsh theme
+source $ZSH/themes/$THEME
+
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
 
-PROMPT="%B%F{blue}%1~%f%b
-%{%F{red}%}»%{%F{yellow}%}»%{%F{cyan}%}» "
+# initialize autocomplete
+autoload -U compinit add-zsh-hook
+compinit
+
