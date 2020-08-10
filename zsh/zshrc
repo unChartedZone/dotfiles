@@ -1,0 +1,21 @@
+#
+# ███████╗███████╗██╗  ██╗
+# ╚══███╔╝██╔════╝██║  ██║
+#   ███╔╝ ███████╗███████║
+#  ███╔╝  ╚════██║██╔══██║
+# ███████╗███████║██║  ██║
+# ╚══════╝╚══════╝╚═╝  ╚═╝
+#
+
+export DOTFILES=$HOME/.dotfiles
+export ZSH=$DOTFILES/zsh
+export EDITOR='vim'
+
+# source all .zsh files inside of the zsh/ directory
+for config ($ZSH/*.zsh) source $config
+
+# display how long all tasks over 10 seconds take
+export REPORTTIME=10
+
+PROMPT="%B%F{blue}%1~%f%b
+%{%F{red}%}»%{%F{yellow}%}»%{%F{cyan}%}» "
