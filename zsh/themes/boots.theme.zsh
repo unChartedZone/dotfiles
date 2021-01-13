@@ -73,7 +73,7 @@ prompt_git() {
     repo_path=$(git rev-parse --git-dir 2>/dev/null)
     dirty=$(parse_git_dirty)
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git rev-parse --short HEAD 2> /dev/null)"
-    if [[ -n parse_git_dirty ]]; then
+    if parse_git_dirty; then
       prompt_segment yellow black
     else
       prompt_segment green $CURRENT_FG
@@ -103,7 +103,8 @@ prompt_git() {
 }
 
 arrows() {
-  prompt_segment default red '»%{%F{yellow}%}»%{%F{cyan}%}»'
+  # prompt_segment default red '»%{%F{yellow}%}»%{%F{cyan}%}»'
+  echo '%{%F{red}%}»%{%F{yellow}%}»%{%F{cyan}%}»%{%f%}%'
 }
 
 build_prompt() {
@@ -114,4 +115,4 @@ build_prompt() {
 }
 
 PROMPT='%{%f%b%k%}$(build_prompt)
-$(arrows) '
+$(arrows)  '

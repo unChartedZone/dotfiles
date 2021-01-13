@@ -9,6 +9,9 @@
 # reload zsh config
 alias reload!='source ~/.zshrc'
 
+# ssh aliases
+alias unchartedzone="ssh chris@uncharted.zone"
+
 # tmux aliases
 alias ta='tmux attach'
 alias tls='tmux ls'
