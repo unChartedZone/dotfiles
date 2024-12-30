@@ -4,12 +4,16 @@ new-session -s brogrammer -n dotfiles -c ~/
 send-keys "cd ~/.dotfiles" C-m
 send-keys "clear" C-m
 
-# new-window -n unchartedzone  -c ~/Workshop/webProjects/unchartedzone
 new-window -n portfolio -c ~/Workshop/webdev/portfolio
-new-window -n david -c ~/Workshop/webdev/david-portfolio
+new-window -n her -c ~/Workshop/webdev/ari
+new-window -n twitter -c ~/Workshop/webdev/twitter-clone
+new-window -n instagram -c ~/Workshop/webdev/instagram-clone
+new-window -n shop-ping -c ~/Workshop/webdev/shop-ping
+new-window -n cine -c ~/Workshop/webdev/cine
+new-window -n studies -c ~/Workshop/courses
 
+# new-window -n unchartedzone  -c ~/Workshop/webProjects/unchartedzone
 # new-window -n "node dev course" -c ~/Workshop/webProjects/nodeDeveloperCourse/
-
 # new-window -n "react dev" -c ~/Workshop/webProjects/reactDeveloperCourse/
 
 select-window -t dotfiles
