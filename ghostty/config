@@ -44,3 +44,5 @@
 font-size=14
 font-family=GeistMono Nerd Font 
 theme=GruvboxDark
+
+keybind = global:cmd+j=toggle_quick_terminal
