@@ -23,13 +23,6 @@ alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 # start php local server, named after my cat :)
 alias activateBoots="php -S localhost:8000"
 
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-    colorflag="--color"
-else # OS X `ls`
-    colorflag="-G"
-fi
-
 # tmux aliases
 alias ta='tmux attach'
 alias tls='tmux ls'
@@ -47,10 +40,10 @@ alias school="cd ~/Documents/chrisSchoolWork/spring2018"
 alias goVSH="cd ~/Workshop/cprograms/c/vsh/"
 alias fuckCarroll="scp p2.c p2.h cssc0092@edoras.sdsu.edu:~/Two"
 
-alias ls="ls ${colorflag}"
-alias l="ls -lah ${colorflag}"
+alias ls="ls --color"
+alias l="ls -lah --color"
 #alias la="ls -AF ${colorflag}"
-alias ll="ls -lFh ${colorflag}"
+alias ll="ls -lFh --color"
 #alias lld="ls -l | grep ^d"
 #alias rmf="rm -rf"
 
@@ -59,6 +52,13 @@ alias vimconf="vim ~/.dotfiles/vim/vimrc.symlink"
 
 # Alias to quickly go to my dotfile directory
 alias dot="cd ~/.dotfiles"
+
+alias lg="lazygit"
+
+# git
+alias gs="git status"
+alias gfetch="git fetch"
+alias gpull="git push"
 
 #Youtube Dowloader
 alias getmp3="youtube-dl --extract-audio --audio-format mp3"
