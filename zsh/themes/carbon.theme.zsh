@@ -7,16 +7,6 @@ esac
 
 () {
   local LC_ALL="" LC_CTYPE="en_US.UTF-8"
-  # NOTE: This segment separator character is correct.  In 2012, Powerline changed
-  # the code points they use for their special characters. This is the new code point.
-  # If this is not working for you, you probably have an old version of the
-  # Powerline-patched fonts installed. Download and install the new version.
-  # Do not submit PRs to change this unless you have reviewed the Powerline code point
-  # history and have new information.
-  # This is defined using a Unicode escape sequence so it is unambiguously readable, regardless of
-  # what font the user is viewing this source code in. Do not replace the
-  # escape sequence with a single literal character.
-  # Do not change this! Do not make it '\u2b80'; that is the old, wrong code point.
   SEGMENT_SEPARATOR=$'\ue0b0'
 }
 
@@ -28,9 +18,9 @@ prompt_segment() {
   [[ -n $1 ]] && bg="%K{$1}" || bg="%k"
   [[ -n $2 ]] && fg="%F{$2}" || fg="%f"
   if [[ $CURRENT_BG != 'NONE' && $1 != $CURRENT_BG ]]; then
-    echo -n " %{$bg%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{$fg%} "
+    echo -n " %{$bg%F{$CURRENT_FG}%}$SEGMENT_SEPARATOR%{$CURRENT_FG%} on "
   else
-    echo -n "%{$bg%}%{$fg%} "
+    echo -n "%{$bg%}%{$fg%} on "
   fi
   CURRENT_BG=$1
   [[ -n $3 ]] && echo -n $3
@@ -49,7 +39,7 @@ prompt_end() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%~'
+  prompt_segment $CURRENT_BG yellow '%~ '
 }
 
 parse_git_dirty() {
@@ -76,7 +66,7 @@ prompt_git() {
     if parse_git_dirty; then
       prompt_segment yellow black
     else
-      prompt_segment green $CURRENT_FG
+      prompt_segment $CURRENT_BG magenta
     fi
 
     if [[ -e "${repo_path}/BISECT_LOG" ]]; then
@@ -104,14 +94,13 @@ prompt_git() {
 
 arrows() {
   # prompt_segment default red '»%{%F{yellow}%}»%{%F{cyan}%}»'
-  echo '%{%F{red}%}»%{%F{yellow}%}»%{%F{green}%}»%{%f%}%'
+  echo '%{%F{red}%}»%{%F{yellow}%}»%{%F{magenta}%}»%{%f%}%'
 }
 
 build_prompt() {
   RETVAL=$?
   prompt_dir
   prompt_git
-  prompt_end
 }
 
 PROMPT='%{%f%b%k%}$(build_prompt)

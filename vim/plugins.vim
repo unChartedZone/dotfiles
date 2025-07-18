@@ -10,5 +10,4 @@ Plug 'gkeep/iceberg-dark'
 Plug 'morhetz/gruvbox'
 Plug 'ntk148v/vim-horizon'
 
-
 call plug#end()

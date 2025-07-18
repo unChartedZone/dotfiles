@@ -6,31 +6,106 @@
 # ███████╗███████║██║  ██║
 # ╚══════╝╚══════╝╚═╝  ╚═╝
 #
-
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
-export EDITOR="vim"
-
 THEME="boots.theme.zsh"
+
+export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+export PATH="/usr/local/opt/sbt@0.13/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/flutter/bin:$PATH"
+export PATH="$PATH:/Users/cvaldez/.dotnet/tools"
+export PATH="~/bin:$PATH"
+export EDITOR="nvim"
+
+# Set java home var
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+# Android Stuido Vars
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Chatmeter Env Vars
+export CHATMETER_CONFIG_HOME="$HOME/batcave/deploy-utility"
+export CHATMETER_HOME="$HOME/batcave/chatmeter"
+export ASTRONAUT_BUCKET="local-pages"
+
+# Path Addons
+export PATH="$CHATMETER_CONFIG_HOME/scripts/:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+# Configure NVM
+export NVM_DIR=$HOME/.nvm
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# Load zsh-vi-mode
+source /usr/local/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+# zsh-vi-mode config
+ZVM_VI_ESCAPE_BINDKEY=jk
+ZVM_CURSOR_STYLE_ENABLED=false
 
 # matches case insensitive for lowercase
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
-# pasting with tabs doesn't perform completion
-zstyle ':completion:*' insert-tab pending
+# tab completion
+zstyle ':completions' insert-tab pending
+
 
 setopt PROMPT_SUBST
 
-# source all .zsh files inside of the zsh/ directory
 for config ($ZSH/*.zsh) source $config
 
-# source zsh theme
+# set theme
 source $ZSH/themes/$THEME
 
-# display how long all tasks over 10 seconds take
-export REPORTTIME=10
-
-# initialize autocomplete
 autoload -U compinit add-zsh-hook
-compinit
 
+autoload -Uz git-escape-magic
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+
+_fzf_compgen_path() {
+  fd --hidden --follow --exclude ".git" . "out" . "node_modules" . "$1"
+}
+
+# Load rbenv
+eval "$(rbenv init -)"
+
+# pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# pnpm
+export PNPM_HOME="/Users/cvaldez/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Kubectl Completion
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+echo "Welcome Back Chris"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+
+                       
