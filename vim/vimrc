@@ -19,7 +19,7 @@ set mouse=a                         " allow mouse to move cursor
 set clipboard=unnamed               " Lets vim and clipboard play nice togehter
 set backspace=indent,eol,start      " Make backspace act normal
 set splitbelow splitright           " Splits open below and to the right
-set list listchars=tab:›\ ,trail:·  " Define how we show tabs and trailing spaces
+set list listchars=tab:›\   " Define how we show tabs and trailing spaces
 
 " Indentation
 set autoindent	                    " Auto-indent new lines
@@ -40,10 +40,21 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 syntax enable
-colorscheme gruvbox
+colorscheme palenight
+
+let g:palenight_terminal_italics=1
 
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'palenight',
+      \ 'tabline': { 'left': [['buffers']], 'right': [['close']] },
+      \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+      \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
+      \ 'component_expand': { 
+      \   'buffers': 'lightline#bufferline#buffers' 
+      \ },
+      \ 'component_type': { 
+      \   'buffers': 'tabsel' 
+      \ }
       \ }
 
 " Remove hightlight color of whitespace
@@ -56,3 +67,5 @@ inoremap fd <Esc>
 " Set scroll to be 3 times faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
+
+set wildignore+=*.xcodeproj     " Linux/MacOSX
