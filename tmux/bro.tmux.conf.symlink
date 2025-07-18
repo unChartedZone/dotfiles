@@ -1,16 +1,18 @@
 # tmux -f (config file) attach is the command to execute this script
 source-file ~/.tmux.conf
-new-session -s brogrammer -n dotfiles -c ~/
+new-session -s "🍔 brogrammer" -n dotfiles -c ~/
 send-keys "cd ~/.dotfiles" C-m
 send-keys "clear" C-m
 
 new-window -n portfolio -c ~/Workshop/webdev/portfolio
-new-window -n her -c ~/Workshop/webdev/ari
+# new-window -n "her 💜" -c ~/Workshop/webdev/ari
+new-window -n airbnb -c ~/Workshop/webdev/airbnb-clone
 new-window -n twitter -c ~/Workshop/webdev/twitter-clone
 new-window -n instagram -c ~/Workshop/webdev/instagram-clone
-new-window -n shop-ping -c ~/Workshop/webdev/shop-ping
+# new-window -n discord -c ~/Workshop/webdev/discord-clone
 new-window -n cine -c ~/Workshop/webdev/cine
-new-window -n studies -c ~/Workshop/courses
+# new-window -n shop-ping -c ~/Workshop/webdev/shop-ping
+new-window -n studies -c ~/Workshop/studies
 
 # new-window -n unchartedzone  -c ~/Workshop/webProjects/unchartedzone
 # new-window -n "node dev course" -c ~/Workshop/webProjects/nodeDeveloperCourse/
