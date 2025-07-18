@@ -9,28 +9,63 @@
 
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
-export EDITOR="vim"
+export EDITOR="nvim"
+export PATH=/usr/local/bin:$PATH
 
-THEME="boots.theme.zsh"
+# Initialize Powerlevel10k, Zinit, and plugins
+source $DOTFILES/zsh/plugins.zsh
 
-# matches case insensitive for lowercase
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+# Initialize Aliases
+source $DOTFILES/zsh/aliases.zsh
 
-# pasting with tabs doesn't perform completion
-zstyle ':completion:*' insert-tab pending
+source $DOTFILES/zsh/keybindings.zsh
+source $DOTFILES/zsh/completions.zsh
 
-setopt PROMPT_SUBST
+# History
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 
-# source all .zsh files inside of the zsh/ directory
-for config ($ZSH/*.zsh) source $config
+# Shell integrations
+eval "$(fzf --zsh)"
 
-# source zsh theme
-source $ZSH/themes/$THEME
+# Language Version Managers and Dependency Managers
+#######################################################################################
+# Rbenv Setup
+eval "$(rbenv init -)"
 
-# display how long all tasks over 10 seconds take
-export REPORTTIME=10
+# Python Setup
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
-# initialize autocomplete
-autoload -U compinit add-zsh-hook
-compinit
+# >>> coursier install directory >>>
+export PATH="$PATH:/Users/chris/Library/Application Support/Coursier/bin"
+# <<< coursier install directory <<<
+
+# Node Setup
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add .NET Core SDK tools
+export PATH="$PATH:/Users/chris/.dotnet/tools"
+
+# ASDF
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# UV
+. "$HOME/.local/bin/env"
+
+# Java
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 

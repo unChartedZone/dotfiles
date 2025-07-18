@@ -29,14 +29,27 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias dot="cd ~/.dotfiles"
 alias dev="cd ~/Workshop"
-alias l="ls -l"
-alias la="ls -la"
+alias l="ls -la --color=auto"
+alias ls="ls --color=auto"
+alias la="ls -la --color=auto"
 
 # git aliases
 alias ga='git add'
 alias gb='git branch'
 alias gdiff='git diff'
 alias glog="git log"
+alias gdog="git log --all --decorate --oneline --graph"
 alias gpull='git pull'
 alias gpush='git push'
 alias gs='git status'
+
+# Lazygit
+alias lg="lazygit"
+
+# go air
+alias air='~/go/bin/air'
+
+# chmod fixer
+alias repair-dirs="find . -type d -exec chmod 755 {} \;"
+alias repair-files="find . -type f -exec chmod 644 {} \;"
+
