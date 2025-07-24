@@ -1,0 +1,162 @@
+{
+  "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light Soft",
+  "workbench.preferredLightColorTheme": "Monokai Pro",
+  "workbench.preferredDarkColorTheme": "Monokai Pro",
+  "workbench.colorTheme": "Default Dark+",
+  "window.autoDetectColorScheme": true,
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "html.autoClosingTags": true,
+  "workbench.editor.wrapTabs": true,
+  "editor.suggestSelection": "first",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "terminal.integrated.fontFamily": "Geist Mono, JetbrainsMono Nerd Font, Consolas, FiraCode Nerd Font, Menlo",
+  "editor.fontFamily": "Geist Mono, Dank Mono, FiraCode Nerd Font, MonoLisa, Consolas, SF Mono, Menlo, Monaco, JetbrainsMono Nerd Font, Cascadia Code, Source Code Pro, Fira Code, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "files.readonlyInclude": {
+    "**/.cargo/registry/src/**/*.rs": true,
+    "**/lib/rustlib/src/rust/library/**/*.rs": true
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/bin": true,
+    "**/obj": true
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "vsintellicode.features.apiExamplests": "disabled",
+  "vsintellicode.features.apiExamples": "disabled",
+  "vsintellicode.features.python.deepLearning": "disabled",
+  "editor.fontWeight": "normal",
+  "rest-client.fontWeight": "normal",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.openRepositoryInParentFolders": "always",
+  "explorer.confirmDragAndDrop": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.formatOnSave": true,
+  "rubyLsp.formatter": "auto",
+  "nxConsole.showNodeVersionOnStartup": false,
+  "window.commandCenter": false,
+  "[elixir]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[ruby]": {
+    "editor.formatOnSave": true
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "vue.complete.casing.props": "autoCamel",
+  "vue.complete.casing.tags": "autoPascal",
+  "terminal.integrated.fontSize": 14,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "editor.accessibilitySupport": "off",
+  // "vim.insertModeKeyBindings": [
+  //   {
+  //     "before": ["j", "k"],
+  //     "after": ["<Esc>"]
+  //   }
+  // ],
+  // "extensions.experimental.affinity": {
+  //   "vscodevim.vim": 1
+  // },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:claude-3.5-sonnet",
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+    "*.dart": "${capture}.g.dart",
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "git.confirmSync": false,
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      // Use lua to execute any logic
+      "command": "vscode-neovim.lua",
+      "args": [
+        [
+          "local code = require('vscode')",
+          "code.action('vscode-neovim.escape')"
+        ]
+      ]
+    }
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
+}
+// {
+//   "workbench.colorTheme": "Palenight Operator",
+//   "editor.fontFamily": "Dank Mono, Operator Mono Light,  Consolas, 'Courier New', monospace",
+//   "ruby.codeCompletion": "rcodetools",
+//   "ruby.intellisense": "rubyLocate",
+//   "ruby.useLanguageServer": true,
+//   "workbench.iconTheme": "material-icon-theme",
+//   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+//   "editor.defaultFormatter": "esbenp.prettier-vscode",
+//   "editor.formatOnSave": true,
+//   "editor.formatOnPaste": true,
+//   "terminal.integrated.fontSize": 16,
+//   "go.autocompleteUnimportedPackages": true,
+//   "emmet.includeLanguages": {
+//     "javascript": "javascriptreact"
+//   },
+//   "editor.fontSize": 16,
+//   "workbench.tree.indent": 12,
+//   "workbench.activityBar.visible": true,
+//   "[javascript]": {
+//     "editor.tabSize": 2
+//   },
+//   "[javascriptreact]": {
+//     "editor.tabSize": 2
+//   },
+//   "[typescript]": {
+//     "editor.tabSize": 2
+//   },
+//   "[typescriptreact]": {
+//     "editor.tabSize": 2
+//   },
+//   "editor.tabSize": 2,
+//   "vim.useSystemClipboard": true,
+//   "editor.linkedEditing": true
+// }
