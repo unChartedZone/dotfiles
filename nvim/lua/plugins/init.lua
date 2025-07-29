@@ -17,7 +17,7 @@ return {
     opts = function()
       local conf = require "nvchad.configs.telescope"
 
-       conf.defaults.file_ignore_patterns = { "node_modules", "dist", ".next", "tmp", "_build", "target" }
+       conf.defaults.file_ignore_patterns = { "node_modules" }
        conf.defaults.mappings.i = {
          ["<C-j>"] = require("telescope.actions").move_selection_next,
          ["<C-k>"] = require("telescope.actions").move_selection_previous,
