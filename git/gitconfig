@@ -1,0 +1,8 @@
+[user]
+	email = christian@lawmatics.com
+	name = Chris Valdez
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RF
+	editor = nvim
+[interactive]
+	diffFilter = diff-so-fancy --patch
