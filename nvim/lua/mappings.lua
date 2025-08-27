@@ -13,5 +13,10 @@ end, { noremap = true, desc = "Remap toggle side term" })
 
 map({ "n", "t" }, "<C-t>", function()
   require("nvchad.term").toggle { pos = "float", id = "floaty" }
-end, { noremap = true, desc = "Remap toggle side term" })
+end, { noremap = true, desc = "Toggle floating terminal" })
+
+map("n", "<leader>gb", function()
+  require("snacks").git.blame_line()
+end, { desc = "Git Blame Line" })
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
