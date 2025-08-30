@@ -39,6 +39,10 @@ if [[ -d ~/bin ]]; then
     export PATH=~/bin:$PATH
 fi
 
+if [[ -d ~/config/emacs/bin ]]; then
+    export PATH=~/.config/emacs/bin:$PATH
+fi
+
 
 # export DOTFILES=$HOME/.dotfiles
 # export ZSH=$DOTFILES/zsh
