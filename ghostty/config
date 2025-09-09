@@ -42,7 +42,7 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 font-size=14
-font-family=GeistMono Nerd Font 
-theme=GruvboxDark
+font-family=JetBrainsMono Nerd Font 
+theme = dark:GruvboxDark,light:Monokai Pro Light Sun
 
 keybind = global:cmd+j=toggle_quick_terminal
