@@ -4,6 +4,7 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     javascript = { "prettier" },
+    typescript = { "prettier" },
     typescriptreact = { "prettier" },
     vue = { "prettier" },
   },
