@@ -1,7 +1,7 @@
 {
   "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light Soft",
   "workbench.preferredLightColorTheme": "Monokai Pro",
-  "workbench.preferredDarkColorTheme": "Monokai Pro",
+  "workbench.preferredDarkColorTheme": "Gruvbox Dark Medium",
   "workbench.colorTheme": "Default Dark+",
   "window.autoDetectColorScheme": true,
   "workbench.tree.indent": 16,
@@ -19,6 +19,7 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.watcherExclude": {
