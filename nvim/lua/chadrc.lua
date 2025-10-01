@@ -6,8 +6,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "gruvbox",
-  theme_toggle = { "gruvbox", "gruvbox" },
+  theme = "catppuccin",
+  theme_toggle = { "catppuccin", "catppuccin" },
 
   -- hl_override = {
   -- 	Comment = { italic = true },
@@ -30,6 +30,7 @@ M.nvdash = { load_on_startup = true }
 M.ui = {
   statusline = {
     separator_style = "round",
+    theme = "default",
   },
   tabufline = {
     lazyload = false,
