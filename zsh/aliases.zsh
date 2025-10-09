@@ -24,21 +24,16 @@ alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 alias activateBoots="php -S localhost:8000"
 
 # tmux aliases
-alias ta='tmux attach'
+alias ta='tmux attach -t'
 alias tls='tmux ls'
-alias tat='tmux attach -t'
 alias tns='tmux new-session -s'
 alias tks="tmux kill-session"
-
 
 # Filesystem aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias school="cd ~/Documents/chrisSchoolWork/spring2018"
-alias goVSH="cd ~/Workshop/cprograms/c/vsh/"
-alias fuckCarroll="scp p2.c p2.h cssc0092@edoras.sdsu.edu:~/Two"
 
 alias ls="ls --color"
 alias l="ls -lah --color"
@@ -47,21 +42,16 @@ alias ll="ls -lFh --color"
 #alias lld="ls -l | grep ^d"
 #alias rmf="rm -rf"
 
-# Shortcut to quickly edit my vimrc
-alias vimconf="vim ~/.dotfiles/vim/vimrc.symlink"
-
 # Alias to quickly go to my dotfile directory
 alias dot="cd ~/.dotfiles"
 
+# Lazygit
 alias lg="lazygit"
 
 # git
 alias gs="git status"
-alias gfetch="git fetch"
-alias gpull="git push"
-
-#Youtube Dowloader
-alias getmp3="youtube-dl --extract-audio --audio-format mp3"
+alias gf="git fetch"
+alias gp="git push"
 
 # Helpers
 alias grep='grep --color=auto' # Add color support for grep
