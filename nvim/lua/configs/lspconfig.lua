@@ -1,7 +1,6 @@
 require("nvchad.configs.lspconfig").defaults()
 
 local util = require("lspconfig/util")
-local lspconfig = require("lspconfig")
 local nvlsp = require("nvchad.configs.lspconfig")
 
 local servers = { "html", "cssls" }
@@ -9,7 +8,7 @@ local servers = { "html", "cssls" }
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
-	lspconfig[lsp].setup({
+	vim.lsp.config(lsp, {
 		on_attach = nvlsp.on_attach,
 		on_init = nvlsp.on_init,
 		capabilities = nvlsp.capabilities,
@@ -17,7 +16,7 @@ for _, lsp in ipairs(servers) do
 end
 
 -- configuring single server, example: typescript
-lspconfig.ts_ls.setup({
+vim.lsp.config("ts_ls", {
 	on_attach = nvlsp.on_attach,
 	on_init = nvlsp.on_init,
 	capabilities = nvlsp.capabilities,
@@ -25,7 +24,7 @@ lspconfig.ts_ls.setup({
 	root_dir = util.root_pattern("package.json"),
 })
 
-lspconfig.ruby_lsp.setup({
+vim.lsp.config("ruby_lsp",{
 	on_attach = nvlsp.on_attach,
 	on_init = nvlsp.on_init,
 	capabilities = nvlsp.capabilities,
