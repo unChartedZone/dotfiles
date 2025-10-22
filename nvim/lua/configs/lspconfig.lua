@@ -7,7 +7,7 @@ local lspconfig = require "lspconfig"
 -- EXAMPLE
 local servers = { "html", "cssls" }
 local nvlsp = require "nvchad.configs.lspconfig"
-local vue_ls_path = "/Users/chris/.nvm/versions/node/v22.6.0/lib/node_modules/@vue/language-server"
+local vue_ls_path = "/Users/chris/.nvm/versions/node/v24.9.0/lib/node_modules/@vue/language-server"
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
