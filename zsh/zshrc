@@ -10,83 +10,15 @@
 export EDITOR="nvim"
 export XDG_CONFIG_HOME="$HOME/.config"
 export DOOMDIR="$XDG_CONFIG_HOME/doom"
+export DOTFILES=$HOME/.dotfiles
+export ZSH=$DOTFILES/zsh
 
 source ~/.dotfiles/zsh/plugins.zsh
 source ~/.dotfiles/zsh/completion.zsh
 source ~/.dotfiles/zsh/aliases.zsh
 source ~/.dotfiles/zsh/path.sh
 source ~/.dotfiles/zsh/history.zsh
+source ~/.dotfiles/zsh/keybindings.zsh
 
-
-# Keybindings
-bindkey '^f' autosuggest-accept
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
-
-# Shell integrations
-eval "$(fzf --zsh)"
-
-
-# Added by `rbenv init` on Tue Jul  8 09:41:27 PDT 2025
-eval "$(rbenv init - --no-rehash zsh)"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# check for custom bin directory and add to path
-if [[ -d ~/bin ]]; then
-    export PATH=~/bin:$PATH
-fi
-
-if [[ -d ~/config/emacs/bin ]]; then
-    export PATH=~/.config/emacs/bin:$PATH
-fi
-
-
-# export DOTFILES=$HOME/.dotfiles
-# export ZSH=$DOTFILES/zsh
-# export HOMEBREW_GITHUB_API_TOKEN=`cat ~/.dotfiles/homebrew_access_token.txt`
-#
-# # display how long all tasks over 10 seconds take
-# export REPORTTIME=10
-#
-# # source all .zsh files inside of the zsh/ directory
-# for config ($ZSH/*.zsh) source $config
-#
-# # Source theme file
-# source ~/.dotfiles/zsh/themes/agnoster.zsh
-#
-# # initialize autocomplete
-# autoload -U compinit add-zsh-hook
-# compinit
-#
-# export EDITOR='vim'
-#
-# export PATH=/usr/local/bin:$PATH
-#
-# # adding path directory for custom scripts
-# export PATH=$DOTFILES/bin:$PATH
-#
-#
-# #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-#
-# if [ -z ${DOTFILES_LOADED+x} ]; then
-#     # install zsh-syntax-highlighting
-#     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# fi
-#
-# if [ -z "$BACKGROUND"  ]; then
-# 	export BACKGROUND="dark"
-# fi
-#
-# DOTFILES_LOADED=1
-#
-# zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}  
-#
-# # echo "Welcome Back, Christian Valdez"
-#
-# fpath=(/usr/local/share/zsh-completions $fpath)
-#
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
+# echo "Welcome Back, Christian Valdez"
+eval "$(mise activate zsh)"
