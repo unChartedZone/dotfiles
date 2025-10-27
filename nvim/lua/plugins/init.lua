@@ -51,6 +51,7 @@ return {
 				"typescript",
 				"tsx",
 				"elixir",
+				"ruby",
 			},
 		},
 	},
