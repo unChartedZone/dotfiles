@@ -58,6 +58,9 @@ alias grep='grep --color=auto' # Add color support for grep
 alias df='df -h' # disk free, in Gigabytes, not bytes
 alias du='du -h -c' # calculate disk usage for a folder
 
+# Docker
+alias dpa="docker ps --all"
+
 # Applications
 alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chrome"
 alias nvim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
