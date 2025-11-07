@@ -1,0 +1,44 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.quickOpen",
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.gotoSymbol",
+    },
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\\\r\n"
+        },
+        "when": "terminalFocus"
+    },
+    {
+      "key": "ctrl+k",
+      "command": "workbench.action.quickOpenSelectPrevious",
+      "when": "inQuickOpen"
+    },
+    {
+      "key": "ctrl+p",
+      "command": "-workbench.action.quickOpenSelectPrevious",
+      "when": "inQuickOpen"
+    },
+    {
+      "key": "ctrl+k",
+      "command": "selectPrevSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+      "key": "ctrl+j",
+      "command": "selectNextSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+      {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+]
