@@ -84,7 +84,20 @@ return {
 			vim.g.blamer_enabled = true
 		end,
 	},
-
+	{
+		"NeogitOrg/neogit",
+    cmd = "Neogit",
+		dependencies = {
+			"nvim-lua/plenary.nvim", -- required
+			"sindrets/diffview.nvim", -- optional - Diff integration
+			"nvim-telescope/telescope.nvim", -- optional
+		},
+    config = function ()
+      require("neogit").setup()
+      dofile(vim.g.base46_cache .. "git")
+      dofile(vim.g.base46_cache .. "neogit")
+    end,
+	},
 	-- test new blink
 	-- { import = "nvchad.blink.lazyspec" },
 
