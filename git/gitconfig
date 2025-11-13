@@ -2,7 +2,22 @@
 	email = christian@lawmatics.com
 	name = Chris Valdez
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RF
+	; pager = diff-so-fancy | less --tabs=4 -RF
 	editor = nvim
+  pager = delta
 [interactive]
-	diffFilter = diff-so-fancy --patch
+	; diffFilter = diff-so-fancy --patch
+  diffFilter = delta --color-only
+[delta]
+  navigate = true  # use n and N to move between diff sections
+  ;dark = true      # or light = true, or omit for auto-detection
+  ; light = true
+  side-by-side = true
+  line-numbers = true
+  ; syntax-theme = Monokai Extended
+[merge]
+    conflictStyle = zdiff3
+[pull]
+	rebase = false
+[commit]
+	verbose = true
