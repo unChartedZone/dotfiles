@@ -47,6 +47,7 @@ return {
         "styled",
         "typescript",
         "tsx",
+        "ruby",
         "elixir",
         "latex",
         "php",
@@ -72,5 +73,19 @@ return {
     keys = {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
     },
+  },
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = function(_, opts)
+      opts.on_attach = function(bufnr)
+        local api = require "nvim-tree.api"
+
+        api.config.mappings.default_on_attach(bufnr)
+        vim.keymap.del("n", "<C-e>", { buffer = bufnr })
+      end
+
+      return opts
+    end,
   },
 }
