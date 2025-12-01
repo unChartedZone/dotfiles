@@ -1,2 +1,32 @@
-
-portraitMode: 'never'
+git:
+  pagers:
+    - colorArg: always
+      pager: delta --paging=never --syntax-theme base16-256 --diff-so-fancy
+gui:
+  useHunkModeInStagingView: false
+  theme:
+    # activeBorderColor:
+    #   - '#89b4fa'
+    #   - bold
+    # inactiveBorderColor:
+    #   - '#a6adc8'
+    # optionsTextColor:
+    #   - '#89b4fa'
+    selectedLineBgColor:
+      - '#393954'
+      - bold
+      # - '#ccd0da'
+      # - '#E3D6AE'
+      #   - '#2E2E2E'
+      # cherryPickedCommitBgColor:
+      #   - '#45475a'
+      # cherryPickedCommitFgColor:
+      #   - '#89b4fa'
+      # unstagedChangesColor:
+      #   - '#f38ba8'
+      # defaultFgColor:
+      #   - '#cdd6f4'
+      # searchingActiveBorderColor:
+      #   - '#f9e2af'
+      # authorColors:
+      #   '*': '#b4befe'
