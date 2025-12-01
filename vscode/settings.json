@@ -1,14 +1,14 @@
 {
     "editor.formatOnSave": false,
-    "editor.fontSize": 15,
-    "editor.fontFamily": "Menlo, GeistMono Nerd Font, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "GeistMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
-    "workbench.editor.wrapTabs": true,
+    "workbench.editor.wrapTabs": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "GitHub Dark",
-    "workbench.preferredLightColorTheme": "GitHub Light",
-    "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+    "workbench.preferredLightColorTheme": "Expo Light",
+    "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Machine)",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
