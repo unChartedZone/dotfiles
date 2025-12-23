@@ -27,6 +27,7 @@ map("n", "<leader>fm", function()
 	require("conform").format()
 end, { desc = "Format file" })
 
+-- Run code actions
 map("n", "<leader>ca", function()
   vim.lsp.buf.code_action()
 end, { desc = "Code actions" })
@@ -34,5 +35,10 @@ end, { desc = "Code actions" })
 map("n", "<leader>ls", function()
   vim.lsp.buf.signature_help { focus = false, silent = true, max_height = 7, border = "single" }
 end, { desc = "LSP signature help" })
+
+-- Show Github pull requests
+map("n", "<leader>gp", function()
+  require("snacks").picker.gh_pr()
+end, { desc = "Github Pull Requests" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

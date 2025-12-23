@@ -66,6 +66,7 @@ return {
 				"tsx",
 				"elixir",
 				"ruby",
+				"tmux",
 			},
 		},
 	},
@@ -90,38 +91,61 @@ return {
 			scroll = { enabled = false },
 			statuscolumn = { enabled = true },
 			words = { enabled = true },
+			gh = { enabled = true },
 		},
 	},
 	{
 		"APZelos/blamer.nvim",
+		lazy = false,
 		config = function()
 			vim.g.blamer_enabled = true
 		end,
 	},
 	{
 		"NeogitOrg/neogit",
-    cmd = "Neogit",
+		cmd = "Neogit",
 		dependencies = {
 			"nvim-lua/plenary.nvim", -- required
 			"sindrets/diffview.nvim", -- optional - Diff integration
 			"nvim-telescope/telescope.nvim", -- optional
 		},
-    config = function ()
-      require("neogit").setup()
-      dofile(vim.g.base46_cache .. "git")
-      dofile(vim.g.base46_cache .. "neogit")
-    end,
+		config = function()
+			require("neogit").setup()
+			dofile(vim.g.base46_cache .. "git")
+			dofile(vim.g.base46_cache .. "neogit")
+			dofile(vim.g.base46_cache .. "diffview")
+		end,
+	},
+	{
+		"vague2k/vague.nvim",
+		-- lazy = false, -- make sure we load this during startup if it is your main colorscheme
+		priority = 1000, -- make sure to load this before all the other plugins
+		config = function()
+			-- NOTE: you do not need to call setup if you don't want to.
+			require("vague").setup({
+				-- optional configuration here
+			})
+			-- vim.cmd("colorscheme vague")
+		end,
+	},
+	{
+		"f-person/auto-dark-mode.nvim",
+		lazy = false,
+		opts = {
+			set_dark_mode = function()
+				-- Change to your preferred dark theme
+				-- require("nvconfig").base46.theme = 'vscode_dark'
+				-- require("base46").load_all_highlights()
+			end,
+			set_light_mode = function()
+				-- Change to your preferred light theme
+				-- require("nvconfig").base46.theme = 'vscode_light'
+				-- require("base46").load_all_highlights()
+			end,
+			update_interval = 3000,
+			fallback = "dark",
+		},
 	},
 	-- test new blink
-	-- { import = "nvchad.blink.lazyspec" },
-
-	-- {
-	-- 	"nvim-treesitter/nvim-treesitter",
-	-- 	opts = {
-	-- 		ensure_installed = {
-	-- 			"vim", "lua", "vimdoc",
-	--      "html", "css"
-	-- 		},
-	-- 	},
-	-- },
+	{ import = "nvchad.blink.lazyspec" },
 }
