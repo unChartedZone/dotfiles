@@ -1,36 +1,29 @@
 require("nvchad.configs.lspconfig").defaults()
 
-local util = require("lspconfig/util")
+local util = require("vim.lsp.util")
 local nvlsp = require("nvchad.configs.lspconfig")
+
+-- Custom on_attach that adds NvChad signature help
+local on_attach = function(client, bufnr)
+  nvlsp.on_attach(client, bufnr)
+  require("nvchad.lsp.signature").setup(client, bufnr)
+end
 
 local servers = { "html", "cssls" }
 -- vim.lsp.enable(servers)
 
 -- lsps with default config
-for _, lsp in ipairs(servers) do
-	vim.lsp.config(lsp, {
-		on_attach = nvlsp.on_attach,
-		on_init = nvlsp.on_init,
-		capabilities = nvlsp.capabilities,
-	})
-end
+-- for _, lsp in ipairs(servers) do
+-- 	vim.lsp.config(lsp, {
+-- 		on_attach = on_attach,
+-- 		on_init = nvlsp.on_init,
+-- 		capabilities = nvlsp.capabilities,
+-- 	})
+-- end
 
--- configuring single server, example: typescript
-vim.lsp.config("ts_ls", {
-	on_attach = nvlsp.on_attach,
-	on_init = nvlsp.on_init,
-	capabilities = nvlsp.capabilities,
-	filetypes = { "js", "ts", "jsx", "tsx", "typescript", "typescriptreact" },
-	root_dir = util.root_pattern("package.json"),
-})
+vim.lsp.enable("ts_ls")
+vim.lsp.enable("eslint_d")
+-- vim.lsp.enable("ruby_lsp")
+vim.lsp.enable("gopls")
 
-vim.lsp.config("ruby_lsp",{
-	on_attach = nvlsp.on_attach,
-	on_init = nvlsp.on_init,
-	capabilities = nvlsp.capabilities,
-	cmd = { "ruby-lsp" },
-	filetypes = { "ruby" },
-	root_dir = util.root_pattern("Gemfile", ".git"),
-	init_options = {},
-})
 -- read :h vim.lsp.config for changing options of lsp servers
