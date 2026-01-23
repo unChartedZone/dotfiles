@@ -43,8 +43,7 @@
 # resize-overlay-duration = 4s 200ms
 font-size=15
 font-family=JetBrainsMono Nerd Font 
-# theme = dark:TokyoNight,light:Gitlab Light 
-theme = TokyoNight
+theme = dark:XCode Dark hc,light:Gitlab Light 
 quick-terminal-size = 65%,100%
 
 keybind = global:cmd+j=toggle_quick_terminal
