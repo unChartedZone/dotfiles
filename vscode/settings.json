@@ -5,10 +5,9 @@
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "workbench.editor.wrapTabs": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Monokai Pro (Filter Machine)",
-    "workbench.preferredLightColorTheme": "Expo Light",
-    "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Machine)",
+    "workbench.colorTheme": "Tokyo Night",
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "workbench.preferredLightColorTheme": "Solarized Light",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
@@ -56,4 +55,5 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "window.autoDetectColorScheme": true,
     "githubPullRequests.pullBranch": "never",
+    "claudeCode.preferredLocation": "panel",
 }

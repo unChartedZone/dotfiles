@@ -74,3 +74,4 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 
 alias smc="~/batcave/boost-api/bin/smc"
+alias ldf="lazydocker --file docker-compose-dev.yml"

@@ -1,4 +1,4 @@
-# My macOS dotfiles
+# My Lawmatics Dotfiles
 
 These are the config files for zsh,tmux, hyperterm, intellij, clion, ctags, and
 everything else I need to be productive on my computer. These settings are
