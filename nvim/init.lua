@@ -687,7 +687,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
           --    https://github.com/pmizio/typescript-tools.nvim
           --
           -- But for many setups, the LSP (`ts_ls`) will work just fine
-          -- ts_ls = {},
+          ts_ls = {},
           --
           ruby_lsp = {},
 
@@ -843,7 +843,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
           -- <c-k>: Toggle signature help
           --
           -- See :h blink-cmp-config-keymap for defining your own keymap
-          preset = 'default',
+          preset = 'super-tab',
 
           -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
           --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
@@ -905,17 +905,18 @@ P.S. You can delete this when you're done too. It's your config now! :)
         -- Simple and easy statusline.
         --  You could remove this setup call if you don't like it,
         --  and try some other statusline plugin
-        local statusline = require 'mini.statusline'
-        -- set use_icons to true if you have a Nerd Font
-        statusline.setup { use_icons = vim.g.have_nerd_font }
-
-        -- You can configure sections in the statusline by overriding their
-        -- default behavior. For example, here we set the section for
-        -- cursor location to LINE:COLUMN
-        ---@diagnostic disable-next-line: duplicate-set-field
-        statusline.section_location = function()
-          return '%2l:%-2v'
-        end
+        -- NOTE: Commented out to use NvChad statusline instead.
+        -- local statusline = require 'mini.statusline'
+        -- -- set use_icons to true if you have a Nerd Font
+        -- statusline.setup { use_icons = vim.g.have_nerd_font }
+        --
+        -- -- You can configure sections in the statusline by overriding their
+        -- -- default behavior. For example, here we set the section for
+        -- -- cursor location to LINE:COLUMN
+        -- ---@diagnostic disable-next-line: duplicate-set-field
+        -- statusline.section_location = function()
+        --   return '%2l:%-2v'
+        -- end
 
         -- ... and there is more!
         --  Check out: https://github.com/echasnovski/mini.nvim
