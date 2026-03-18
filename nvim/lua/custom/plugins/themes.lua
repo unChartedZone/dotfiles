@@ -8,7 +8,7 @@ return {
       require('vague').setup {
         -- optional configuration here
       }
-      -- vim.cmd 'colorscheme vague'
+      vim.cmd 'colorscheme vague'
     end,
   },
   {
@@ -16,7 +16,7 @@ return {
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other plugins
     config = function()
-      vim.cmd 'colorscheme material-darker'
+      -- vim.cmd 'colorscheme material-darker'
     end,
   },
   { -- You can easily change to a different colorscheme.
@@ -37,7 +37,30 @@ return {
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      -- vim.cmd.colorscheme 'tokyonight-day'
+      -- vim.cmd 'colorscheme tokyonight-night'
+    end,
+  },
+  {
+    'olivercederborg/poimandres.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      local p = require 'poimandres.palette'
+      require('poimandres').setup {
+        -- leave this setup function empty for default config
+        -- or refer to the configuration section
+        -- for configuration options
+        highlight_groups = {
+          LspReferenceText = { bg = p.background1 },
+          LspReferenceRead = { bg = p.background1 },
+          LspReferenceWrite = { bg = p.background1 },
+        },
+      }
+    end,
+
+    -- optionally set the colorscheme within lazy config
+    init = function()
+      -- vim.cmd 'colorscheme poimandres'
     end,
   },
 }
