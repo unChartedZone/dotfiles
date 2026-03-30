@@ -9,12 +9,14 @@ return {
     'nvimdev/dashboard-nvim',
     event = 'VimEnter',
     config = function()
+      local dashboard_header = require 'custom.dashboard_header'
+      dashboard_header.patch()
+
       require('dashboard').setup {
         theme = 'hyper',
         config = {
-          week_header = {
-            enable = true,
-          },
+          header = dashboard_header.colored_header.lines,
+          custom_header_hl = dashboard_header.colored_header,
           shortcut = {
             { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
             {
@@ -38,6 +40,7 @@ return {
               key = 'd',
             },
           },
+          packages = { enable = true },
         },
       }
     end,
