@@ -1,10 +1,8 @@
 if vim.g.vscode then
   -- VSCode extension
   vim.opt.clipboard = 'unnamedplus'
-  vim.o.relativenumber = true
 else
   --[[
-
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
@@ -25,42 +23,7 @@ else
 =====================================================================
 =====================================================================
 
-What is Kickstart?
-
-  Kickstart.nvim is *not* a distribution.
-
-  Kickstart.nvim is a starting point for your own configuration.
-    The goal is that you can read every line of code, top-to-bottom, understand
-    what your configuration is doing, and modify it to suit your needs.
-
-    Once you've done that, you can start exploring, configuring and tinkering to
-    make Neovim your own! That might mean leaving Kickstart just the way it is for a while
-    or immediately breaking it into modular pieces. It's up to you!
-
-    If you don't know anything about Lua, I recommend taking some time to read through
-    a guide. One possible example which will only take 10-15 minutes:
-      - https://learnxinyminutes.com/docs/lua/
-
-    After understanding a bit more about Lua, you can use `:help lua-guide` as a
-    reference for how Neovim integrates Lua.
-    - :help lua-guide
-    - (or HTML version): https://neovim.io/doc/user/lua-guide.html
-
 Kickstart Guide:
-
-  TODO: The very first thing you should do is to run the command `:Tutor` in Neovim.
-
-    If you don't know what this means, type the following:
-      - <escape key>
-      - :
-      - Tutor
-      - <enter key>
-
-    (If you already know the Neovim basics, you can skip this step.)
-
-  Once you've completed that, you can continue working through **AND READING** the rest
-  of the kickstart init.lua.
-
   Next, run AND READ `:help`.
     This will open up a help window with some basic information
     about reading, navigating and searching the builtin help documentation.
@@ -71,22 +34,7 @@ Kickstart Guide:
     MOST IMPORTANTLY, we provide a keymap "<space>sh" to [s]earch the [h]elp documentation,
     which is very useful when you're not exactly sure of what you're looking for.
 
-  I have left several `:help X` comments throughout the init.lua
-    These are hints about where to find more information about the relevant settings,
-    plugins or Neovim features used in Kickstart.
-
-   NOTE: Look for lines like this
-
-    Throughout the file. These are for you, the reader, to help you understand what is happening.
-    Feel free to delete them once you know what you're doing, but they should serve as a guide
-    for when you are first encountering a few different constructs in your Neovim config.
-
 If you experience any errors while trying to install kickstart, run `:checkhealth` for more info.
-
-I hope you enjoy your Neovim journey,
-- TJ
-
-P.S. You can delete this when you're done too. It's your config now! :)
 --]]
 
   -- Set <space> as the leader key
@@ -157,6 +105,8 @@ P.S. You can delete this when you're done too. It's your config now! :)
   -- Show which line your cursor is on
   vim.o.cursorline = true
 
+  vim.o.ignorecase = true
+
   -- Minimal number of screen lines to keep above and below the cursor.
   vim.o.scrolloff = 10
 
@@ -174,7 +124,9 @@ P.S. You can delete this when you're done too. It's your config now! :)
 
   -- Diagnostic keymaps
   vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+  vim.keymap.set('n', '<leader>x', '<cmd>bdelete<CR>', { desc = 'Close current buffer' })
 
+  -- Custom escape sequence
   vim.keymap.set('i', 'jk', '<Esc>')
 
   -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
@@ -404,6 +356,8 @@ P.S. You can delete this when you're done too. It's your config now! :)
         formatters_by_ft = {
           lua = { 'stylua' },
           ruby = { 'rubocop' },
+          javascript = { 'prettier' },
+          typescript = { 'prettier' },
           -- Conform can also run multiple formatters sequentially
           -- python = { "isort", "black" },
           --
@@ -471,7 +425,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
           -- <c-k>: Toggle signature help
           --
           -- See :h blink-cmp-config-keymap for defining your own keymap
-          preset = 'super-tab',
+          preset = 'enter',
 
           -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
           --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
@@ -552,11 +506,13 @@ P.S. You can delete this when you're done too. It's your config now! :)
     },
     { -- Highlight, edit, and navigate code
       'nvim-treesitter/nvim-treesitter',
+      branch = 'master', -- keep the API compatible with the config below
+      lazy = false, -- nvim-treesitter should initialize at startup
       build = ':TSUpdate',
-      main = 'nvim-treesitter', -- Sets main module to use for opts
+      main = 'nvim-treesitter.configs',
       -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
       opts = {
-        ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+        ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'elixir' },
         -- Autoinstall languages that are not installed
         auto_install = true,
         highlight = {
@@ -564,9 +520,9 @@ P.S. You can delete this when you're done too. It's your config now! :)
           -- Some languages depend on vim's regex highlighting system (such as Ruby) for indent rules.
           --  If you are experiencing weird indenting issues, add the language to
           --  the list of additional_vim_regex_highlighting and disabled languages for indent.
-          additional_vim_regex_highlighting = { 'ruby' },
+          additional_vim_regex_highlighting = { 'ruby', 'elixir' },
         },
-        indent = { enable = true, disable = { 'ruby' } },
+        indent = { enable = true, disable = { 'ruby', 'elixir' } },
       },
       -- There are additional nvim-treesitter modules that you can use to interact
       -- with nvim-treesitter. You should go explore a few and see what interests you:
