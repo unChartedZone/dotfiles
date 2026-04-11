@@ -10,16 +10,13 @@
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
 export EDITOR="nvim"
+export XDG_CONFIG_HOME="$HOME/.config"
 export PATH=/usr/local/bin:$PATH
 
-# Initialize Powerlevel10k, Zinit, and plugins
-source $DOTFILES/zsh/plugins.zsh
-
-# Initialize Aliases
-source $DOTFILES/zsh/aliases.zsh
-
-source $DOTFILES/zsh/keybindings.zsh
-source $DOTFILES/zsh/completions.zsh
+source $DOTFILES/zsh/plugins.zsh          # Initialize Zinit and plugins
+source $DOTFILES/zsh/aliases.zsh          # Initialize Aliases
+source $DOTFILES/zsh/keybindings.zsh      # Keybindings
+source $DOTFILES/zsh/completions.zsh      # Auto completions
 
 # History
 HISTSIZE=5000
@@ -27,6 +24,7 @@ HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt appendhistory
+setopt sharehistory
 setopt hist_ignore_space
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
