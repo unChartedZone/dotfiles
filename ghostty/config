@@ -44,6 +44,6 @@
 # theme = light:rose-pine-dawn,dark:rose-pine 
 cursor-style = block
 theme = TokyoNight Night
-font-family = "Geist Mono"
+font-family = "Maple Mono"
 font-size = 15
 keybind = global:cmd+j=toggle_quick_terminal
