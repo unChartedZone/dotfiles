@@ -46,9 +46,6 @@ alias gs='git status'
 # Lazygit
 alias lg="lazygit"
 
-# go air
-alias air='~/go/bin/air'
-
 # chmod fixer
 alias repair-dirs="find . -type d -exec chmod 755 {} \;"
 alias repair-files="find . -type f -exec chmod 644 {} \;"
