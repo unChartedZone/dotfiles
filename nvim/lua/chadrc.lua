@@ -13,6 +13,13 @@ M.base46 = {
   },
 }
 
+M.mason = {
+  pkgs = {
+    "eslint_d",
+    "gopls",
+    "ruby-lsp",
+  },
+}
 M.nvdash = { load_on_startup = true }
 M.ui = {
   statusline = {
@@ -30,8 +37,8 @@ M.term = {
     row = 0.05,
     col = 0.05,
     width = 0.8,
-    height = 0.8
-  }
+    height = 0.8,
+  },
 }
 
 return M
