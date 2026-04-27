@@ -17,3 +17,4 @@ source ~/.dotfiles/zsh/keybindings.zsh
 
 # echo "Welcome Back, Christian Valdez"
 eval "$(mise activate zsh)"
+eval "$(zoxide init --cmd cd zsh)"
