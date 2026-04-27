@@ -7,12 +7,7 @@
 # ╚══════╝╚══════╝╚═╝  ╚═╝
 #
 
-export EDITOR="nvim"
-export XDG_CONFIG_HOME="$HOME/.config"
-export DOOMDIR="$XDG_CONFIG_HOME/doom"
-export DOTFILES=$HOME/.dotfiles
-export ZSH=$DOTFILES/zsh
-
+source ~/.dotfiles/zsh/variables.zsh
 source ~/.dotfiles/zsh/plugins.zsh
 source ~/.dotfiles/zsh/completion.zsh
 source ~/.dotfiles/zsh/aliases.zsh
