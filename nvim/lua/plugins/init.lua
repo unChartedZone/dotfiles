@@ -11,25 +11,6 @@ return {
     end,
   },
   {
-    "mason-org/mason-lspconfig.nvim",
-    lazy = false,
-    opts = {
-      ensure_installed = {
-        "lua_ls",
-        "ruby_lsp",
-        "elixirls",
-        "ts_ls",
-        "emmet_ls",
-        "rust_analyzer",
-        "gopls",
-      },
-    },
-    dependencies = {
-      { "mason-org/mason.nvim", opts = {} },
-      "neovim/nvim-lspconfig",
-    },
-  },
-  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -46,6 +27,7 @@ return {
         "elixir",
         "rust",
         "go",
+        "php",
       },
     },
   },

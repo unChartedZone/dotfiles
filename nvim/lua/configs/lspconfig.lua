@@ -9,6 +9,7 @@ local servers = {
   "prettierd",
   "emmet-ls",
   "rust_analyzer",
+  "gopls",
 }
 vim.lsp.enable(servers)
 

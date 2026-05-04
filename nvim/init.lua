@@ -1,7 +1,9 @@
 if vim.g.vscode then
   -- VSCode extension
+  vim.g.clipboard = vim.g.vscode_clipboard
+  vim.opt.clipboard:append("unnamedplus")
   vim.opt.clipboard = "unnamedplus"
-  vim.o.cmdheight=4
+  vim.o.cmdheight=50000
 else
 -- ordinary Neovim/Nvchad
   vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
