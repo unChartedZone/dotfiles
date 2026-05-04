@@ -1,59 +1,54 @@
 {
-    "editor.formatOnSave": false,
-    "editor.fontSize": 16,
-    "editor.fontFamily": "GeistMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
-    "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false,
-    "workbench.editor.wrapTabs": false,
-    "workbench.colorTheme": "Tokyo Night",
-    "workbench.preferredDarkColorTheme": "Solarized Dark",
-    "workbench.preferredLightColorTheme": "Solarized Light",
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
+  "window.autoDetectColorScheme": true,
+  "editor.formatOnSave": false,
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Maple Mono, GeistMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "GeistMono Nerd Font, MesloLGS NF",
+  "terminal.integrated.fontSize": 15,
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
+  "workbench.editor.wrapTabs": false,
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.preferredLightColorTheme": "Better Solarized Light",
+  "workbench.preferredDarkColorTheme": "Moonlight II",
+  "workbench.tree.indent": 16,
+  "editor.tabSize": 2,
+  "claudeCode.preferredLocation": "panel",
+  "eslint.format.enable": true,
+  "prettier.requireConfig": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1,
+  },
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      "command": "vscode-neovim.escape",
+      "args": [],
     },
-    "terminal.integrated.fontSize": 15,
-    "terminal.integrated.fontFamily": "GeistMono Nerd Font, MesloLGS NF",
-    "vscode-neovim.compositeKeys": {
-        "jk": {
-            "command": "vscode-neovim.escape",
-            "args": []
-        }
-    },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
-    },
-    "eslint.format.enable": true,
-    "prettier.requireConfig": true,
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false,
-        "javascript": false
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.tabSize": 2,
-    "github.copilot.nextEditSuggestions.enabled": true,
-    "window.autoDetectColorScheme": true,
-    "githubPullRequests.pullBranch": "never",
-    "claudeCode.preferredLocation": "panel",
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+  },
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "vscode-neovim.neovimClean": true,
+  "chat.disableAIFeatures": true,
+  "workbench.iconTheme": "material-icon-theme",
 }
