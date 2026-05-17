@@ -1,0 +1,19 @@
+[[language]]
+name = "ruby"
+language-servers = ["ruby-lsp"]
+
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server"]
