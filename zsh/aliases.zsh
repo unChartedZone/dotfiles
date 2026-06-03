@@ -75,3 +75,4 @@ alias pumpitup="osascript -e 'set volume 10'"
 
 alias smc="~/batcave/boost-api/bin/smc"
 alias ldf="lazydocker --file docker-compose-dev.yml"
+alias lsb="lazysql 'postgres://root:password@localhost:5432/boost_development?sslmode=disable'"
