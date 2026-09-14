@@ -9,14 +9,6 @@
 # reload zsh config
 alias reload!='source ~/.zshrc'
 
-# IP addresses to quicly ssh to any of my desired servers
-alias alucard="ssh chris@alucard.io"
-alias unchartedzone="ssh chris@uncharted.zone"
-alias pie="ssh chris@192.168.1.84" # Shortcut to ssh into my raspberry pie
-alias david="ssh chris@104.236.150.168"
-alias edoras="ssh cssc0092@edoras.sdsu.edu"
-alias zeroPie="ssh chris@192.168.0.2"
-
 # alias to run tmux profile script
 alias bro="tmux -f ~/.dotfiles/tmux/bro.tmux.conf.symlink attach"
 
@@ -74,5 +66,4 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 
 alias smc="~/batcave/boost-api/bin/smc"
-alias ldf="lazydocker --file docker-compose-dev.yml"
 alias lsb="lazysql 'postgres://root:password@localhost:5432/boost_development?sslmode=disable'"
