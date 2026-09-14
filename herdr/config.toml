@@ -1,0 +1,12 @@
+onboarding = false
+
+[ui]
+agent_panel_sort = "priority"
+
+[keys]
+prefix = "ctrl+a"
+rename_tab = "prefix+,"
+
+[theme]
+name = "gruvbox"
+auto_switch = false
